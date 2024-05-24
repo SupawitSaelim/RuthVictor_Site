@@ -1,113 +1,19 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>เปลี่ยนโมเดล</title>
- <style>
-  .container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 20px;
-  }
-
-  .button {
-   padding: 10px 20px;
-   border: 1px solid #ccc;
-   border-radius: 5px;
-   cursor: pointer;
-   margin-bottom: 10px;
-  }
-
-  .button:hover {
-   background-color: #eee;
-  }
-
-  .model {
-   display: none;
-   padding: 20px;
-   border: 1px solid #ccc;
-   border-radius: 5px;
-   margin-bottom: 10px;
-  }
-
-  .table {
-   width: 100%;
-   border-collapse: collapse;
-  }
-
-  .table th, .table td {
-   padding: 5px;
-   border: 1px solid #ccc;
-   text-align: center;
-  }
- </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แทนที่ไอคอนด้วยรูปภาพ</title>
+    <style>
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('path/to/icon.svg');
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
- <div class="container">
-  <h1>เลือกโมเดล</h1>
-
-  <table class="table">
-   <tr>
-    <th>ประเภท</th>
-    <th>ปุ่ม</th>
-    <th>โมเดล</th>
-   </tr>
-   <tr>
-    <td>Entry-Level</td>
-    <td><button class="button" id="entry-level">Entry-Level</button></td>
-    <td id="entry-level-model" class="model"><h2>โมเดล Entry-Level</h2></td>
-   </tr>
-   <tr>
-    <td>Mid-Range</td>
-    <td><button class="button" id="mid-range">Mid-Range</button></td>
-    <td id="mid-range-model" class="model"><h2>โมเดล Mid-Range</h2></td>
-   </tr>
-   <tr>
-    <td>High-End</td>
-    <td><button class="button" id="high-end">High-End</button></td>
-    <td id="high-end-model" class="high-end-model"><h2>โมเดล High-End</h2></td>
-   </tr>
-  </table>
-
- </div>
-
- <script>
-  const entryLevelButton = document.getElementById('entry-level');
-  const midRangeButton = document.getElementById('mid-range');
-  const highEndButton = document.getElementById('high-end');
-  const entryLevelModel = document.getElementById('entry-level-model');
-  const midRangeModel = document.getElementById('mid-range-model');
-  const highEndModel = document.getElementById('high-end-model');
-
-  function changeMode(mode) {
-   if (mode === "entry-level") {
-    entryLevelModel.style.display = "block";
-    midRangeModel.style.display = "none";
-    highEndModel.style.display = "none";
-   } else if (mode === "mid-range") {
-    entryLevelModel.style.display = "none";
-    midRangeModel.style.display = "block";
-    highEndModel.style.display = "none";
-   } else if (mode === "high-end") {
-    entryLevelModel.style.display = "none";
-    midRangeModel.style.display = "none";
-    highEndModel.style.display = "block";
-   }
-  }
-
-  entryLevelButton.addEventListener('click', () => {
-   changeMode("entry-level");
-  });
-
-  midRangeButton.addEventListener('click', () => {
-   changeMode("mid-range");
-  });
-
-  highEndButton.addEventListener('click', () => {
-   changeMode("high-end");
-  });
- </script>
+    <img src="path/to/icon.svg" alt="Shield with Checkmark Icon">
 </body>
 </html>

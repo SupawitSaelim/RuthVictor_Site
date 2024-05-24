@@ -40,6 +40,11 @@
 		.spaced-paragraph {
             margin-bottom: 20px;
         }
+        .custom-icon {
+            
+            width: 150px; /* กำหนดขนาดความกว้าง */
+            height: auto; /* กำหนดขนาดความสูง */
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -99,6 +104,7 @@
                 <button class="tablinks" onclick="navigateTo('Sophos.html')">Sophos</button>
                 <button class="tablinks" onclick="navigateTo('Check_Point.html')">Check Point</button>
                 <button class="tablinks" onclick="openModel(event, 'Model3')">Model 3</button>
+                
               </div>
   
               <!-- Tab Content -->
@@ -112,6 +118,7 @@
               <div id="Check_Point" class="tabcontent" >
                
               </div>
+              
               <script>
                   function navigateTo(url) {
                       window.location.href = url;
@@ -185,8 +192,9 @@
                         <div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-toolbox" style="margin-left: 60px;"></span>
                                     <center>
+									<img src="images/icon-UncompromisingSecurity_1.png" alt="" class="custom-icon" style="margin-left: 10px;"/> 
+                                    
 									<h3>Uncompromising Security</h3>
                                     
 									<p>Delivers the highest-caliber threat prevention with award winning SandBlast Zero Day protection out of the box </p>
