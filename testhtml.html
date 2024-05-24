@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Popup</title>
+  <title>Text Popup in Table</title>
   <style>
     /* ปรับสไตล์สำหรับป๊อปอัพ */
     .popup {
@@ -57,38 +57,65 @@
 </head>
 <body>
 
-<!-- ข้อความที่กดได้ -->
-<p id="myText" class="trigger-text">Click here to see the popup</p>
+<table border="1">
+  <tr>
+    <td id="text1" class="trigger-text" data-popup="popup1">Click here to see the first popup1</td>
+    <td id="text1-1" class="trigger-text" data-popup="popup1">Click here to see the first popup1.1</td>
+    <td id="text2" class="trigger-text" data-popup="popup2">Click here to see the second popup</td>
+  </tr>
+</table>
 
 <!-- ป๊อปอัพ -->
-<div id="myPopup" class="popup">
+<div id="popup1" class="popup">
   <span class="close">&times;</span>
   <div class="popup-content">
-    <p><img src="images/Sophos-firewall-XGS-2u-models-Photoroom.png-Photoroom.png"
-        alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+    <p><img src="images/checkproduct/1530-1555.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+  </div>
+</div>
+
+<div id="popup2" class="popup">
+  <span class="close">&times;</span>
+  <div class="popup-content">
+    <p><img src="images/image2.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
   </div>
 </div>
 
 <script>
-  // รับองค์ประกอบต่างๆ
-  var popup = document.getElementById("myPopup");
-  var text = document.getElementById("myText");
-  var span = document.getElementsByClassName("close")[0];
-
-  // เมื่อกดที่ข้อความ ให้เปิดป๊อปอัพ
-  text.onclick = function() {
+  // ฟังก์ชันสำหรับเปิดป๊อปอัพ
+  function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
     popup.style.display = "block";
   }
 
-  // เมื่อกดที่ปุ่มปิด (x) ให้ปิดป๊อปอัพ
-  span.onclick = function() {
+  // ฟังก์ชันสำหรับปิดป๊อปอัพ
+  function closePopup(popup) {
     popup.style.display = "none";
+  }
+
+  // รับองค์ประกอบต่างๆ
+  var triggerTexts = document.getElementsByClassName("trigger-text");
+  var closeButtons = document.getElementsByClassName("close");
+
+  // เมื่อกดที่ข้อความ ให้เปิดป๊อปอัพที่ถูกต้อง
+  for (var i = 0; i < triggerTexts.length; i++) {
+    triggerTexts[i].onclick = function() {
+      var popupId = this.getAttribute("data-popup");
+      showPopup(popupId);
+    }
+  }
+
+  // เมื่อกดที่ปุ่มปิด (x) ให้ปิดป๊อปอัพ
+  for (var i = 0; i < closeButtons.length; i++) {
+    closeButtons[i].onclick = function() {
+      var popup = this.closest(".popup");
+      closePopup(popup);
+    }
   }
 
   // เมื่อกดที่ใดๆ ที่ไม่ใช่ป๊อปอัพ ให้ปิดป๊อปอัพ
   window.onclick = function(event) {
-    if (event.target == popup) {
-      popup.style.display = "none";
+    if (event.target.classList.contains('popup')) {
+      closePopup(event.target);
     }
   }
 </script>
