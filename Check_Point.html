@@ -41,16 +41,23 @@
         .spaced-paragraph {
             margin-bottom: 20px;
         }
+
         .custom-icon {
-            
-            width: 100%; /* กำหนดขนาดความกว้าง */
-            height: auto; /* กำหนดขนาดความสูง */
+
+            width: 100%;
+            /* กำหนดขนาดความกว้าง */
+            height: auto;
+            /* กำหนดขนาดความสูง */
         }
+
         .custom-icon1 {
-            
-            width: 100%; /* กำหนดขนาดความกว้าง */
-            height: auto; /* กำหนดขนาดความสูง */
+
+            width: 100%;
+            /* กำหนดขนาดความกว้าง */
+            height: auto;
+            /* กำหนดขนาดความสูง */
         }
+
         /* ปรับสไตล์สำหรับป๊อปอัพ */
         .popup {
             display: none;
@@ -62,8 +69,8 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.9);
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
         }
 
         .popup-content {
@@ -96,7 +103,7 @@
 
         .trigger-text {
             color: rgb(231, 10, 120);
-            
+
             cursor: pointer;
         }
     </style>
@@ -126,6 +133,12 @@
                         <a href="#">Products</a>
                         <ul>
                             <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="#">Switche</a></li>
+                                </ul>
+                            </li>
                             <li><a href="right-sidebar.html">Right Sidebar</a></li>
                             <li><a href="no-sidebar.html">No Sidebar</a></li>
                             <li>
@@ -146,623 +159,689 @@
             </nav>
         </header>
 
-    <!-- Main -->
-    <div id="main" class="wrapper style1">
-        <div class="container">
-            <header class="major">
-                <h2>Check Point Firewall</h2>
-                <p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
-                <img src="images/quantum-stacked-security.png" alt="" width="40%" height="40%"/><br><br>
-                <!-- Tab Navigation -->
-            <div class="tab">
-                <button class="tablinks" onclick="navigateTo('Fortinet.html')">Fortinet</button>
-                <button class="tablinks" onclick="navigateTo('Sophos.html')">Sophos</button>
-                <button class="tablinks" onclick="navigateTo('Check_Point.html')">Check Point</button>
-                <button class="tablinks" onclick="openModel(event, 'Model3')">Model 3</button>
-              </div>
-  
-              <!-- Tab Content -->
-              <div id="Fortinet" class="tabcontent">
-              </div>
-  
-              <div id="Sophos" class="tabcontent">
-                
-              </div>
-  
-              <div id="Check_Point" class="tabcontent" >
-               
-              </div>
-              <script>
-                  function navigateTo(url) {
-                      window.location.href = url;
-                  }
-          
-                  function openModel(evt, modelName) {
-                      var i, tabcontent, tablinks;
-          
-                      // Hide all tab content
-                      tabcontent = document.getElementsByClassName("tabcontent");
-                      for (i = 0; i < tabcontent.length; i++) {
-                          tabcontent[i].style.display = "none";
-                      }
-          
-                      // Remove the background color of all tablinks/buttons
-                      tablinks = document.getElementsByClassName("tablinks");
-                      for (i = 0; i < tablinks.length; i++) {
-                          tablinks[i].className = tablinks[i].className.replace(" active", "");
-                      }
-          
-                      // Show the specific tab content
-                      document.getElementById(modelName).style.display = "block";
-                      evt.currentTarget.className += " active";
-                  }
-              </script>
-            </header>
-            
-            
-            
-            <div class="row gtr-150"style="margin-top: 20px;">
-                <div class="col-4 col-12-medium">
-                    <!-- Sidebar -->
-                    <section id="sidebar">
-                        <section>
-                            <h3>Secure Your Enterprise with Quantum™ Network Security</h3>
-                            <p>Cyber threats are becoming more sophisticated and harder to detect. Check Point Quantum Network Security provides ultra-scalable protection against Gen V cyber attacks on your network, cloud, data center, IoT and remote users.</p>
-                            <p>Check Point Quantum Next Generation Firewall Security Gateways™ combine SandBlast threat prevention, hyper-scale networking, a unified management platform, remote access VPN and IOT security to protect you against the most sophisticated cyber attacks.</p>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">Learn More</a></li>
-                                </ul>
-                            </footer>
-                        </section>
-                        <hr />
-                        <section>
-                            <a href="#" class="image fit"><img src="images/diagram-gartner-network-firewalls1.png" alt="" /></a>
-                            <h3>Check Point a Leader in the 2022 Gartner® Magic Quadrant™ for Network Firewalls</h3>
-                            
-                            <footer>
-                                
-                            </footer>
-                        </section>
-                    </section>
-                </div>
-                <div class="col-8 col-12-medium imp-medium">
-                    <!-- Content -->
-                    <section id="content">
-                        
-                        <h3>Overview:</h3>
-                        <p>Why is Quantum Network Security Important?</p>
-                        
-                        <ul>
-                            <li>Cyber threats are becoming more sophisticated and harder to detect. Check Point Quantum Network Security provides ultra-scalable protection against Gen V cyber attacks on your network, cloud, data center, IoT and remote users.</li>
-                            <li>Check Point Quantum Next Generation Firewall Security Gateways™ combine SandBlast threat prevention, hyper-scale networking, a unified management platform, remote access VPN and IOT security to protect you against the most sophisticated cyber attacks.</li>
-                            
-                        </ul>
-                        <center>
-                        <h3>Key Benefits:</h3>
-                        </center>
-                        <div class="box alt">
-							<div class="row gtr-uniform">
-								<section class="col-4 col-6-medium col-12-xsmall">
-                                    <center>
-									<img src="images/icon-UncompromisingSecurity_1.png" alt="" class="custom-icon" />
-                                    
-									<h3>Uncompromising Security</h3>
-                                    
-									<p>Delivers the highest-caliber threat prevention with award winning SandBlast Zero Day protection out of the box </p>
-                                    </center>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-                                    <center>
-									<img src="images/icon-SecurityatHyperscale_1.png" alt="" class="custom-icon1" />
-                                    
-									<h3>Security at Hyperscale</h3>
-									<p>On-demand hyperscale threat prevention performance providing enterprises cloud level expansion and resiliency on premises</p>
-                                    </center>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-                                    <center>
-									<img src="images/icon-UnifiedSecurity_1.png" alt="" class="custom-icon" />
-                                    
-									<h3>Unified Security</h3>
-									<p>R81 unified security management control across networks, clouds, and IoT increases efficiency cutting security operations up to 80%</p>
-                                    </center>
-								</section>
-								
-							</div>
-						</div>
-                        <hr/>
-                        <div class="contain">
-                            <table class="table"
-                                style="display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
-                                <tr>
-                                    <td style="margin: 0 10px;">
-                                        <button class="button1" id="high-end"
-                                            style="display: flex; flex-direction: column; align-items: center;">
-                                            <img src="images/checkproduct/category-small.png"
-                                                alt="" style="max-width: 100%; height: auto; margin-top: 60px;">
-                                            <h3 style="color:black;">Small Business Firewalls</h3>
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Check Point Firewall</h2>
+                    <p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+                    <img src="images/quantum-stacked-security.png" alt="" width="40%" height="40%" /><br><br>
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('Fortinet.html')"
+                            style="color: white;">Fortinet</button>
+                        <button class="tablinks" onclick="navigateTo('Sophos.html')"
+                            style="color: white;">Sophos</button>
+                        <button class="tablinks" onclick="navigateTo('Check_Point.html')"
+                            style="color: white;">Checkpoint</button>
+                        <button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
+                            style="color: white;">Cisco</button>
+                    </div>
 
-                                        </button>
-                                    </td>
-                                    <td style="margin: 0 10px;">
-                                        <button class="button1" id="mid-range"
-                                            style="display: flex; flex-direction: column; align-items: center;">
-                                            <img src="images/checkproduct/category-Midsize Enterprise.png"
-                                                alt="" style="max-width: 100%; height: auto; margin-top: 80px;">
-                                            <h3 style="color:black;">Midsize Enterprise</h3>
-                                        </button>
-                                    </td>
-                                    <td style="margin: 0 10px;">
-                                        <button class="button1" id="entry-level"
-                                            style="display: flex; flex-direction: column; align-items: center;">
-                                            <img src="images/checkproduct/quantum-stacked-security.png"
-                                                alt="" style="max-width: 60%; height: auto; margin-top: 50px;">
-                                            <h3 style="color:black;">Data Center and High-End Enterprise</h3>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div id="high-end-details1" class="model">
-                                <table class="table">
-                                    <h1>Small Business Firewalls</h1>
-                                    <p>Small and Medium Business Firewall Quantum Spark™
-                                        The Quantum Spark Next Generation Firewalls for small and medium size businesses, feature best-in-class threat protection, are easy to deploy and manage, and integrate communication and security into an “all in one” security gateway solution.<br><br>
+                    <!-- Tab Content -->
+                    <div id="Fortinet" class="tabcontent">
+                    </div>
 
-                                        Quantum Spark security gateways provide protection for businesses with one to 500 employees, and can be easily managed from a web portal and from a mobile app.</p>
-                                </table>
+                    <div id="Sophos" class="tabcontent">
+                    </div>
 
-                            </div>
-                            <div id="mid-range-details1" class="model">
-                                <table class="table">
-                                    <h1>Midsize Enterprise</h1>
-                                    <p>Midsize Enterprise Firewall
+                    <div id="Check_Point" class="tabcontent">
+                    </div>
 
-                                        The Quantum Spark™ Next Generation Firewalls are designed for midsize enterprises, offering best-in-class threat protection. These firewalls are easy to deploy and manage, integrating communication and security into an "all-in-one" security gateway solution. By leveraging advanced security technologies, midsize enterprises can ensure robust protection against cyber threats, allowing them to focus on growth and innovation while maintaining a secure operational environment.</p>
-                                </table>
+                    <div id="cisco_firewall" class="tabcontent">
+                    </div>
+                    <script>
+                        function navigateTo(url) {
+                            window.location.href = url;
+                        }
 
-                            </div>
-                            <div id="entry-level-details1" class="model">
-                                <table class="table">
-                                    <h1>Data Center and High-End Enterprise</h1>
-                                    <p>The Quantum Spark™ Next Generation Firewalls are perfect for data centers and high-end enterprises, offering top-tier threat protection and advanced security features. They handle high traffic volumes and complex networks, ensuring robust data and infrastructure protection. Easy to deploy and manage, these firewalls integrate seamlessly into existing systems, providing reliable and scalable security solutions for uninterrupted service delivery.</p>
-                                </table>
+                        function openModel(evt, modelName) {
+                            var i, tabcontent, tablinks;
 
-                            </div>
-                            <div id="high-end-details" class="model">
-                                <table class="table">
-                                    <tr>
-                                        <th>MODEL</th>
-                                        <th>Threat Prevention Throughput</th>
-                                        <th>DATA SHEET</th>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup5">1800 Appliance</td>
-                                        <td>2,000 Mbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/1600-1800-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup4">1600 Appliance</td>
-                                        <td>1,500 Mbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/1600-1800-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup7">1595 Appliance</td>
-                                        <td>660 Mbps</td>
-                                        <td><a href="https://www.checkfirewalls.com/datasheets/small-business/1500-pro-security-gateway-datasheet-new-2023.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup2">1590 Appliance</td>
-                                        <td>500 Mbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/1500-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup7">1575 Appliance</td>
-                                        <td>500 Mbps</td>
-                                        <td><a href="https://www.checkfirewalls.com/datasheets/small-business/1500-pro-security-gateway-datasheet-new-2023.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup2">1570 Appliance</td>
-                                        <td>500 Mbps</td>
-                                        <td><a href="https://www.checkfirewalls.com/datasheets/1500-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup6">1555 Pro Appliance</td>
-                                        <td>450 Mbps</td>
-                                        <td><a href="https://www.checkfirewalls.com/datasheets/small-business/1500-pro-security-gateway-datasheet-new-2023.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup1">1550 Appliance</td>
-                                        <td>450 Mbps</td>
-                                        <td><a href="https://www.checkfirewalls.com/datasheets/1500-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup6">1535 Pro Appliance</td>
-                                        <td>340  Mbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/1500-pro-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup1">1530 Appliance</td>
-                                        <td>340 Mbps</td>
-                                        <td><a href="https://www.checkfirewalls.com/datasheets/1500-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                        
-                                    </tr>
-                                    <div id="popup1" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/1530-1555.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                      
-                                    <div id="popup2" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/1570-1595.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup3" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/1600-1800.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup4" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/1600.jpg" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup5" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/1800.jpg" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup6" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/1535-1555-pro.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup7" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/1595.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-
-
-                                </table>
-
-                                </table>
-
-                            </div>
-                            <div id="mid-range-details" class="model">
-                                <table class="table">
-                                    <tr>
-                                        <th>MODEL</th>
-                                        <th>THREAT PROTECTION</th>
-                                        <th>DATA SHEET</th>
-                                    </tr>
-
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup13">Quantum 6700 Security Gateway</td>
-                                        <td>5.8 Gbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/6700-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup12">Quantum 6600 Security Gateway</td>
-                                        <td>3.7 Gbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/6600-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup11">Quantum 6400 Security Gateway</td>
-                                        <td>2.5 Gbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/6400-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup10">Quantum 6200 Security Gateway</td>
-                                        <td>1.8 Gbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/6200-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup9">Quantum 3800</td>
-                                        <td>1.5 Gbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/3800-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup8">Quantum 3600</td>
-                                        <td>780 Mbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/3600-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <div id="popup8" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/3600.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup9" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/3800.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup10" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/6200.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup11" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/6400.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup12" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/6600.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup13" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/6700.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-
-                                </table>
-                            </div>
-
-                            <div id="entry-level-details" class="model">
-                                <table class="table">
-                                    <tr>
-                                        <th>MODEL</th>
-                                        <th>THREAT PROTECTION</th>
-                                        <th>DATA SHEET</th>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup19">Quantum 28600 Hyperscale</td>
-                                        <td>30 Gbp</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/28600HS-MHS-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup18">Quantum 28000</td>
-                                        <td>30 Gbp</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/28000-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup17">Quantum 26000</td>
-                                        <td>24 Gbp</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/26000-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup16">Quantum 16200</td>
-                                        <td>15 Gbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/16200-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup15">Quantum 7000 Security Gateway</td>
-                                        <td>9.5 Gbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/7000-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="text1" class="trigger-text" data-popup="popup14">Quantum 6900 Security Gateway</td>
-                                        <td>7.4 Gbps</td>
-                                        <td><a href="https://www.checkpoint.com/downloads/products/6900-security-gateway-datasheet.pdf"
-                                                target="_blank"><img src="images/icon-download.svg" width="25"
-                                                    height="25"> Datasheet</a></td>
-                                    </tr>
-                                    <div id="popup14" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/6900.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup15" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/7000.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup16" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/16200.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup17" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/26000.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup18" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/28000.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-                                    <div id="popup19" class="popup">
-                                        <span class="close">&times;</span>
-                                        <div class="popup-content">
-                                          <p><img src="images/checkproduct/28600.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-                                        </div>
-                                    </div>
-
-                                </table>
-                                
-                            </div>
-                        
-                            <script>
-                                // ฟังก์ชันสำหรับเปิดป๊อปอัพ
-                                function showPopup(popupId) {
-                                    var popup = document.getElementById(popupId);
-                                    popup.style.display = "block";
-                                }
-
-                                // ฟังก์ชันสำหรับปิดป๊อปอัพ
-                                function closePopup(popup) {
-                                    popup.style.display = "none";
-                                }
-
-                                // รับองค์ประกอบต่างๆ
-                                var triggerTexts = document.getElementsByClassName("trigger-text");
-                                var closeButtons = document.getElementsByClassName("close");
-
-                                // เมื่อกดที่ข้อความ ให้เปิดป๊อปอัพที่ถูกต้อง
-                                for (var i = 0; i < triggerTexts.length; i++) {
-                                    triggerTexts[i].onclick = function() {
-                                    var popupId = this.getAttribute("data-popup");
-                                    showPopup(popupId);
-                                    }
-                                }
-
-                                // เมื่อกดที่ปุ่มปิด (x) ให้ปิดป๊อปอัพ
-                                for (var i = 0; i < closeButtons.length; i++) {
-                                    closeButtons[i].onclick = function() {
-                                    var popup = this.closest(".popup");
-                                    closePopup(popup);
-                                    }
-                                }
-
-                                // เมื่อกดที่ใดๆ ที่ไม่ใช่ป๊อปอัพ ให้ปิดป๊อปอัพ
-                                window.onclick = function(event) {
-                                    if (event.target.classList.contains('popup')) {
-                                    closePopup(event.target);
-                                    }
-                                }
-                            </script>
-
-                        <script>
-                            const entryLevelButton = document.getElementById('entry-level');
-                            const midRangeButton = document.getElementById('mid-range');
-                            const highEndButton = document.getElementById('high-end');
-                            const entryLevelDetails = document.getElementById('entry-level-details');
-                            const entryLevelDetails1 = document.getElementById('entry-level-details1');
-                            const midRangeDetails = document.getElementById('mid-range-details');
-                            const midRangeDetails1 = document.getElementById('mid-range-details1');
-                            const highEndDetails = document.getElementById('high-end-details');
-                            const highEndDetails1 = document.getElementById('high-end-details1');
-
-                            // Initially hide all details sections
-                            entryLevelDetails.style.display = "none";
-                            entryLevelDetails1.style.display = "none";
-                            midRangeDetails.style.display = "none";
-                            midRangeDetails1.style.display = "none";
-                            highEndDetails.style.display = "tabel";
-                            highEndDetails1.style.display = "tabel";
-
-                            function changeMode(mode) {
-                                // Reset all displays to none before showing the selected one
-                                entryLevelDetails.style.display = "none";
-                                entryLevelDetails1.style.display = "none";
-                                midRangeDetails.style.display = "none";
-                                midRangeDetails1.style.display = "none";
-                                highEndDetails.style.display = "none";
-                                highEndDetails1.style.display = "none";
-
-                                if (mode === "entry-level") {
-                                    entryLevelDetails.style.display = "block";
-                                } else if (mode === "mid-range") {
-                                    midRangeDetails.style.display = "block";
-                                } else if (mode === "high-end") {
-                                    highEndDetails.style.display = "block";
-                                }
-                                if (mode === "entry-level") {
-                                    entryLevelDetails1.style.display = "block";
-                                } else if (mode === "mid-range") {
-                                    midRangeDetails1.style.display = "block";
-                                } else if (mode === "high-end") {
-                                    highEndDetails1.style.display = "block";
-                                }
+                            // Hide all tab content
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
                             }
 
-                            // Event listeners remain the same
-                            entryLevelButton.addEventListener('click', () => {
-                                changeMode("entry-level");
-                            });
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
 
-                            midRangeButton.addEventListener('click', () => {
-                                changeMode("mid-range");
-                            });
+                            // Show the specific tab content
+                            document.getElementById(modelName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                    </script>
+                </header>
 
-                            highEndButton.addEventListener('click', () => {
-                                changeMode("high-end");
-                            });
-                            
-                        </script>
-                    </section>
 
-                </div>
+
+                <div class="row gtr-150" style="margin-top: 20px;">
+                    <div class="col-4 col-12-medium">
+                        <!-- Sidebar -->
+                        <section id="sidebar">
+                            <section>
+                                <h3>Secure Your Enterprise with Quantum™ Network Security</h3>
+                                <p>Cyber threats are becoming more sophisticated and harder to detect. Check Point
+                                    Quantum Network Security provides ultra-scalable protection against Gen V cyber
+                                    attacks on your network, cloud, data center, IoT and remote users.</p>
+                                <p>Check Point Quantum Next Generation Firewall Security Gateways™ combine SandBlast
+                                    threat prevention, hyper-scale networking, a unified management platform, remote
+                                    access VPN and IOT security to protect you against the most sophisticated cyber
+                                    attacks.</p>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="#" class="button">Learn More</a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                            <hr />
+                            <section>
+                                <a href="#" class="image fit"><img src="images/diagram-gartner-network-firewalls1.png"
+                                        alt="" /></a>
+                                <h3>Check Point a Leader in the 2022 Gartner® Magic Quadrant™ for Network Firewalls</h3>
+
+                                <footer>
+
+                                </footer>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="col-8 col-12-medium imp-medium">
+                        <!-- Content -->
+                        <section id="content">
+
+                            <h3>Overview:</h3>
+                            <p>Why is Quantum Network Security Important?</p>
+
+                            <ul>
+                                <li>Cyber threats are becoming more sophisticated and harder to detect. Check Point
+                                    Quantum Network Security provides ultra-scalable protection against Gen V cyber
+                                    attacks on your network, cloud, data center, IoT and remote users.</li>
+                                <li>Check Point Quantum Next Generation Firewall Security Gateways™ combine SandBlast
+                                    threat prevention, hyper-scale networking, a unified management platform, remote
+                                    access VPN and IOT security to protect you against the most sophisticated cyber
+                                    attacks.</li>
+
+                            </ul>
+                            <center>
+                                <h3>Key Benefits:</h3>
+                            </center>
+                            <div class="box alt">
+                                <div class="row gtr-uniform">
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <center>
+                                            <img src="images/icon-UncompromisingSecurity_1.png" alt=""
+                                                class="custom-icon" />
+
+                                            <h3>Uncompromising Security</h3>
+
+                                            <p>Delivers the highest-caliber threat prevention with award winning
+                                                SandBlast Zero Day protection out of the box </p>
+                                        </center>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <center>
+                                            <img src="images/icon-SecurityatHyperscale_1.png" alt=""
+                                                class="custom-icon1" />
+
+                                            <h3>Security at Hyperscale</h3>
+                                            <p>On-demand hyperscale threat prevention performance providing enterprises
+                                                cloud level expansion and resiliency on premises</p>
+                                        </center>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <center>
+                                            <img src="images/icon-UnifiedSecurity_1.png" alt="" class="custom-icon" />
+
+                                            <h3>Unified Security</h3>
+                                            <p>R81 unified security management control across networks, clouds, and IoT
+                                                increases efficiency cutting security operations up to 80%</p>
+                                        </center>
+                                    </section>
+
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="contain">
+                                <table class="table"
+                                    style="display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
+                                    <tr>
+                                        <td style="margin: 0 10px;">
+                                            <button class="button1" id="high-end"
+                                                style="display: flex; flex-direction: column; align-items: center;">
+                                                <img src="images/checkproduct/category-small.png" alt=""
+                                                    style="max-width: 100%; height: auto; margin-top: 60px;">
+                                                <h3 style="color:black;">Small Business Firewalls</h3>
+
+                                            </button>
+                                        </td>
+                                        <td style="margin: 0 10px;">
+                                            <button class="button1" id="mid-range"
+                                                style="display: flex; flex-direction: column; align-items: center;">
+                                                <img src="images/checkproduct/category-Midsize Enterprise.png" alt=""
+                                                    style="max-width: 100%; height: auto; margin-top: 80px;">
+                                                <h3 style="color:black;">Midsize Enterprise</h3>
+                                            </button>
+                                        </td>
+                                        <td style="margin: 0 10px;">
+                                            <button class="button1" id="entry-level"
+                                                style="display: flex; flex-direction: column; align-items: center;">
+                                                <img src="images/checkproduct/quantum-stacked-security.png" alt=""
+                                                    style="max-width: 60%; height: auto; margin-top: 50px;">
+                                                <h3 style="color:black;">Data Center and High-End Enterprise</h3>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id="high-end-details1" class="model">
+                                    <table class="table">
+                                        <h1>Small Business Firewalls</h1>
+                                        <p>Small and Medium Business Firewall Quantum Spark™
+                                            The Quantum Spark Next Generation Firewalls for small and medium size
+                                            businesses, feature best-in-class threat protection, are easy to deploy and
+                                            manage, and integrate communication and security into an “all in one”
+                                            security gateway solution.<br><br>
+
+                                            Quantum Spark security gateways provide protection for businesses with one
+                                            to 500 employees, and can be easily managed from a web portal and from a
+                                            mobile app.</p>
+                                    </table>
+
+                                </div>
+                                <div id="mid-range-details1" class="model">
+                                    <table class="table">
+                                        <h1>Midsize Enterprise</h1>
+                                        <p>Midsize Enterprise Firewall
+
+                                            The Quantum Spark™ Next Generation Firewalls are designed for midsize
+                                            enterprises, offering best-in-class threat protection. These firewalls are
+                                            easy to deploy and manage, integrating communication and security into an
+                                            "all-in-one" security gateway solution. By leveraging advanced security
+                                            technologies, midsize enterprises can ensure robust protection against cyber
+                                            threats, allowing them to focus on growth and innovation while maintaining a
+                                            secure operational environment.</p>
+                                    </table>
+
+                                </div>
+                                <div id="entry-level-details1" class="model">
+                                    <table class="table">
+                                        <h1>Data Center and High-End Enterprise</h1>
+                                        <p>The Quantum Spark™ Next Generation Firewalls are perfect for data centers and
+                                            high-end enterprises, offering top-tier threat protection and advanced
+                                            security features. They handle high traffic volumes and complex networks,
+                                            ensuring robust data and infrastructure protection. Easy to deploy and
+                                            manage, these firewalls integrate seamlessly into existing systems,
+                                            providing reliable and scalable security solutions for uninterrupted service
+                                            delivery.</p>
+                                    </table>
+
+                                </div>
+                                <div id="high-end-details" class="model">
+                                    <table class="table">
+                                        <tr>
+                                            <th>MODEL</th>
+                                            <th>Threat Prevention Throughput</th>
+                                            <th>DATA SHEET</th>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup5">1800 Appliance</td>
+                                            <td>2,000 Mbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/1600-1800-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup4">1600 Appliance</td>
+                                            <td>1,500 Mbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/1600-1800-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup7">1595 Appliance</td>
+                                            <td>660 Mbps</td>
+                                            <td><a href="https://www.checkfirewalls.com/datasheets/small-business/1500-pro-security-gateway-datasheet-new-2023.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup2">1590 Appliance</td>
+                                            <td>500 Mbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/1500-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup7">1575 Appliance</td>
+                                            <td>500 Mbps</td>
+                                            <td><a href="https://www.checkfirewalls.com/datasheets/small-business/1500-pro-security-gateway-datasheet-new-2023.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup2">1570 Appliance</td>
+                                            <td>500 Mbps</td>
+                                            <td><a href="https://www.checkfirewalls.com/datasheets/1500-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup6">1555 Pro Appliance
+                                            </td>
+                                            <td>450 Mbps</td>
+                                            <td><a href="https://www.checkfirewalls.com/datasheets/small-business/1500-pro-security-gateway-datasheet-new-2023.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup1">1550 Appliance</td>
+                                            <td>450 Mbps</td>
+                                            <td><a href="https://www.checkfirewalls.com/datasheets/1500-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup6">1535 Pro Appliance
+                                            </td>
+                                            <td>340 Mbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/1500-pro-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup1">1530 Appliance</td>
+                                            <td>340 Mbps</td>
+                                            <td><a href="https://www.checkfirewalls.com/datasheets/1500-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+
+                                        </tr>
+                                        <div id="popup1" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/1530-1555.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+
+                                        <div id="popup2" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/1570-1595.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup3" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/1600-1800.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup4" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/1600.jpg" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup5" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/1800.jpg" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup6" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/1535-1555-pro.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup7" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/1595.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+
+
+                                    </table>
+
+                                    </table>
+
+                                </div>
+                                <div id="mid-range-details" class="model">
+                                    <table class="table">
+                                        <tr>
+                                            <th>MODEL</th>
+                                            <th>THREAT PROTECTION</th>
+                                            <th>DATA SHEET</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup13">Quantum 6700
+                                                Security Gateway</td>
+                                            <td>5.8 Gbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/6700-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup12">Quantum 6600
+                                                Security Gateway</td>
+                                            <td>3.7 Gbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/6600-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup11">Quantum 6400
+                                                Security Gateway</td>
+                                            <td>2.5 Gbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/6400-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup10">Quantum 6200
+                                                Security Gateway</td>
+                                            <td>1.8 Gbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/6200-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup9">Quantum 3800</td>
+                                            <td>1.5 Gbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/3800-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup8">Quantum 3600</td>
+                                            <td>780 Mbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/3600-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <div id="popup8" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/3600.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup9" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/3800.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup10" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/6200.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup11" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/6400.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup12" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/6600.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup13" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/6700.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+
+                                    </table>
+                                </div>
+
+                                <div id="entry-level-details" class="model">
+                                    <table class="table">
+                                        <tr>
+                                            <th>MODEL</th>
+                                            <th>THREAT PROTECTION</th>
+                                            <th>DATA SHEET</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup19">Quantum 28600
+                                                Hyperscale</td>
+                                            <td>30 Gbp</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/28600HS-MHS-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup18">Quantum 28000</td>
+                                            <td>30 Gbp</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/28000-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup17">Quantum 26000</td>
+                                            <td>24 Gbp</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/26000-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup16">Quantum 16200</td>
+                                            <td>15 Gbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/16200-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup15">Quantum 7000
+                                                Security Gateway</td>
+                                            <td>9.5 Gbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/7000-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td id="text1" class="trigger-text" data-popup="popup14">Quantum 6900
+                                                Security Gateway</td>
+                                            <td>7.4 Gbps</td>
+                                            <td><a href="https://www.checkpoint.com/downloads/products/6900-security-gateway-datasheet.pdf"
+                                                    target="_blank"><img src="images/icon-download.svg" width="25"
+                                                        height="25"> Datasheet</a></td>
+                                        </tr>
+                                        <div id="popup14" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/6900.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup15" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/7000.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup16" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/16200.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup17" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/26000.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup18" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/28000.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+                                        <div id="popup19" class="popup">
+                                            <span class="close">&times;</span>
+                                            <div class="popup-content">
+                                                <p><img src="images/checkproduct/28600.png" alt=""
+                                                        style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+                                            </div>
+                                        </div>
+
+                                    </table>
+
+                                </div>
+
+                                <script>
+                                    // ฟังก์ชันสำหรับเปิดป๊อปอัพ
+                                    function showPopup(popupId) {
+                                        var popup = document.getElementById(popupId);
+                                        popup.style.display = "block";
+                                    }
+
+                                    // ฟังก์ชันสำหรับปิดป๊อปอัพ
+                                    function closePopup(popup) {
+                                        popup.style.display = "none";
+                                    }
+
+                                    // รับองค์ประกอบต่างๆ
+                                    var triggerTexts = document.getElementsByClassName("trigger-text");
+                                    var closeButtons = document.getElementsByClassName("close");
+
+                                    // เมื่อกดที่ข้อความ ให้เปิดป๊อปอัพที่ถูกต้อง
+                                    for (var i = 0; i < triggerTexts.length; i++) {
+                                        triggerTexts[i].onclick = function () {
+                                            var popupId = this.getAttribute("data-popup");
+                                            showPopup(popupId);
+                                        }
+                                    }
+
+                                    // เมื่อกดที่ปุ่มปิด (x) ให้ปิดป๊อปอัพ
+                                    for (var i = 0; i < closeButtons.length; i++) {
+                                        closeButtons[i].onclick = function () {
+                                            var popup = this.closest(".popup");
+                                            closePopup(popup);
+                                        }
+                                    }
+
+                                    // เมื่อกดที่ใดๆ ที่ไม่ใช่ป๊อปอัพ ให้ปิดป๊อปอัพ
+                                    window.onclick = function (event) {
+                                        if (event.target.classList.contains('popup')) {
+                                            closePopup(event.target);
+                                        }
+                                    }
+                                </script>
+
+                                <script>
+                                    const entryLevelButton = document.getElementById('entry-level');
+                                    const midRangeButton = document.getElementById('mid-range');
+                                    const highEndButton = document.getElementById('high-end');
+                                    const entryLevelDetails = document.getElementById('entry-level-details');
+                                    const entryLevelDetails1 = document.getElementById('entry-level-details1');
+                                    const midRangeDetails = document.getElementById('mid-range-details');
+                                    const midRangeDetails1 = document.getElementById('mid-range-details1');
+                                    const highEndDetails = document.getElementById('high-end-details');
+                                    const highEndDetails1 = document.getElementById('high-end-details1');
+
+                                    // Initially hide all details sections
+                                    entryLevelDetails.style.display = "none";
+                                    entryLevelDetails1.style.display = "none";
+                                    midRangeDetails.style.display = "none";
+                                    midRangeDetails1.style.display = "none";
+                                    highEndDetails.style.display = "tabel";
+                                    highEndDetails1.style.display = "tabel";
+
+                                    function changeMode(mode) {
+                                        // Reset all displays to none before showing the selected one
+                                        entryLevelDetails.style.display = "none";
+                                        entryLevelDetails1.style.display = "none";
+                                        midRangeDetails.style.display = "none";
+                                        midRangeDetails1.style.display = "none";
+                                        highEndDetails.style.display = "none";
+                                        highEndDetails1.style.display = "none";
+
+                                        if (mode === "entry-level") {
+                                            entryLevelDetails.style.display = "block";
+                                        } else if (mode === "mid-range") {
+                                            midRangeDetails.style.display = "block";
+                                        } else if (mode === "high-end") {
+                                            highEndDetails.style.display = "block";
+                                        }
+                                        if (mode === "entry-level") {
+                                            entryLevelDetails1.style.display = "block";
+                                        } else if (mode === "mid-range") {
+                                            midRangeDetails1.style.display = "block";
+                                        } else if (mode === "high-end") {
+                                            highEndDetails1.style.display = "block";
+                                        }
+                                    }
+
+                                    // Event listeners remain the same
+                                    entryLevelButton.addEventListener('click', () => {
+                                        changeMode("entry-level");
+                                    });
+
+                                    midRangeButton.addEventListener('click', () => {
+                                        changeMode("mid-range");
+                                    });
+
+                                    highEndButton.addEventListener('click', () => {
+                                        changeMode("high-end");
+                                    });
+
+                                </script>
+                        </section>
+
+                    </div>
                     </section>
                 </div>
             </div>
         </div>
     </div>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Untitled. All rights reserved.</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </footer>
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
     </div>
 
     <!-- Scripts -->
@@ -795,7 +874,7 @@
             evt.currentTarget.className += " active";
         }
     </script>
-    
+
 </body>
 
 </html>
