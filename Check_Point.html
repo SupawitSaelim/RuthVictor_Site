@@ -41,11 +41,6 @@
         .spaced-paragraph {
             margin-bottom: 20px;
         }
-        .custom-icon {
-            
-            width: 150px; /* กำหนดขนาดความกว้าง */
-            height: auto; /* กำหนดขนาดความสูง */
-        }
     </style>
 </head>
 
@@ -93,86 +88,162 @@
             </nav>
         </header>
 
-    <!-- Main -->
-    <div id="main" class="wrapper style1">
-        <div class="container">
-            <header class="major">
-                <h2>Check Point Firewall</h2>
-                <p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
-                <img src="images/quantum-stacked-security.png" alt="" width="40%" height="40%"/><br><br>
-                <!-- Tab Navigation -->
-            <div class="tab">
-                <button class="tablinks" onclick="navigateTo('Fortinet.html')">Fortinet</button>
-                <button class="tablinks" onclick="navigateTo('Sophos.html')">Sophos</button>
-                <button class="tablinks" onclick="navigateTo('Check_Point.html')">Check Point</button>
-                <button class="tablinks" onclick="openModel(event, 'Model3')">Model 3</button>
-              </div>
-  
-              <!-- Tab Content -->
-              <div id="Fortinet" class="tabcontent">
-              </div>
-  
-              <div id="Sophos" class="tabcontent">
-                
-              </div>
-  
-              <div id="Check_Point" class="tabcontent" >
-               
-              </div>
-              <script>
-                  function navigateTo(url) {
-                      window.location.href = url;
-                  }
-          
-                  function openModel(evt, modelName) {
-                      var i, tabcontent, tablinks;
-          
-                      // Hide all tab content
-                      tabcontent = document.getElementsByClassName("tabcontent");
-                      for (i = 0; i < tabcontent.length; i++) {
-                          tabcontent[i].style.display = "none";
-                      }
-          
-                      // Remove the background color of all tablinks/buttons
-                      tablinks = document.getElementsByClassName("tablinks");
-                      for (i = 0; i < tablinks.length; i++) {
-                          tablinks[i].className = tablinks[i].className.replace(" active", "");
-                      }
-          
-                      // Show the specific tab content
-                      document.getElementById(modelName).style.display = "block";
-                      evt.currentTarget.className += " active";
-                  }
-              </script>
-            </header>
-            
-            
-            
-            <div class="row gtr-150"style="margin-top: 20px;">
-                <div class="col-4 col-12-medium">
-                    <!-- Sidebar -->
-                    <section id="sidebar">
-                        <section>
-                            <h3>Secure Your Enterprise with Quantum™ Network Security</h3>
-                            <p>Cyber threats are becoming more sophisticated and harder to detect. Check Point Quantum Network Security provides ultra-scalable protection against Gen V cyber attacks on your network, cloud, data center, IoT and remote users.</p>
-                            <p>Check Point Quantum Next Generation Firewall Security Gateways™ combine SandBlast threat prevention, hyper-scale networking, a unified management platform, remote access VPN and IOT security to protect you against the most sophisticated cyber attacks.</p>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">Learn More</a></li>
-                                </ul>
-                            </footer>
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Check Point Firewall</h2>
+                    <p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+                    <img src="images/quantum-stacked-security.png" alt="" width="40%" height="40%" /><br><br>
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('Fortinet.html')"
+                            style="color: white;">Fortinet</button>
+                        <button class="tablinks" onclick="navigateTo('Sophos.html')"
+                            style="color: white;">Sophos</button>
+                        <button class="tablinks" onclick="navigateTo('Check_Point.html')"
+                            style="color: white;">Checkpoint</button>
+                        <button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
+                            style="color: white;">Cisco</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="Fortinet" class="tabcontent">
+                    </div>
+
+                    <div id="Sophos" class="tabcontent">
+                    </div>
+
+                    <div id="Check_Point" class="tabcontent">
+                    </div>
+
+                    <div id="cisco_firewall" class="tabcontent">
+                    </div>
+                    <script>
+                        function navigateTo(url) {
+                            window.location.href = url;
+                        }
+
+                        function openModel(evt, modelName) {
+                            var i, tabcontent, tablinks;
+
+                            // Hide all tab content
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(modelName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                    </script>
+                </header>
+
+
+
+                <div class="row gtr-150" style="margin-top: 20px;">
+                    <div class="col-4 col-12-medium">
+                        <!-- Sidebar -->
+                        <section id="sidebar">
+                            <section>
+                                <h3>Secure Your Enterprise with Quantum™ Network Security</h3>
+                                <p>Cyber threats are becoming more sophisticated and harder to detect. Check Point
+                                    Quantum Network Security provides ultra-scalable protection against Gen V cyber
+                                    attacks on your network, cloud, data center, IoT and remote users.</p>
+                                <p>Check Point Quantum Next Generation Firewall Security Gateways™ combine SandBlast
+                                    threat prevention, hyper-scale networking, a unified management platform, remote
+                                    access VPN and IOT security to protect you against the most sophisticated cyber
+                                    attacks.</p>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="#" class="button">Learn More</a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                            <hr />
+                            <section>
+                                <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+                                <h3>Amet Lorem Tempus</h3>
+                                <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a
+                                    ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit
+                                    ullamcorper sed blandit lorem ipsum dolore.</p>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="#" class="button">Learn More</a></li>
+                                    </ul>
+                                </footer>
+                            </section>
                         </section>
-                        <hr />
-                        <section>
-                            <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-                            <h3>Amet Lorem Tempus</h3>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">Learn More</a></li>
-                                </ul>
-                            </footer>
+                    </div>
+                    <div class="col-8 col-12-medium imp-medium">
+                        <!-- Content -->
+                        <section id="content">
+
+                            <h3>Overview:</h3>
+                            <p>Why is Quantum Network Security Important?</p>
+                            <ul>
+                                <li>Cyber threats are becoming more sophisticated and harder to detect. Check Point
+                                    Quantum Network Security provides ultra-scalable protection against Gen V cyber
+                                    attacks on your network, cloud, data center, IoT and remote users.</li>
+                                <li>Check Point Quantum Next Generation Firewall Security Gateways™ combine SandBlast
+                                    threat prevention, hyper-scale networking, a unified management platform, remote
+                                    access VPN and IOT security to protect you against the most sophisticated cyber
+                                    attacks.</li>
+
+                            </ul>
+                            <center>
+                                <h3>Key Benefits:</h3>
+                            </center>
+                            <div class="box alt">
+                                <div class="row gtr-uniform">
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <span class="icon solid alt major fa-toolbox" style="margin-left: 60px;"></span>
+                                        <center>
+                                            <h3>Uncompromising Security</h3>
+
+                                            <p>Delivers the highest-caliber threat prevention with award winning
+                                                SandBlast Zero Day protection out of the box </p>
+                                        </center>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <span class="icon solid alt major fa-cogs" style="margin-left: 60px;"></span>
+                                        <center>
+                                            <h3>Security at Hyperscale</h3>
+                                            <p>On-demand hyperscale threat prevention performance providing enterprises
+                                                cloud level expansion and resiliency on premises</p>
+                                        </center>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <span class="icon solid alt major fa-users" style="margin-left: 60px;"></span>
+                                        <center>
+                                            <h3>Unified Security</h3>
+                                            <p>R81 unified security management control across networks, clouds, and IoT
+                                                increases efficiency cutting security operations up to 80%</p>
+                                        </center>
+                                    </section>
+
+                                </div>
+                            </div>
+                            <hr />
+                            <p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt
+                                pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque
+                                ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna.
+                                Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique.</p>
+                            <h3>Sed Magna Ornare</h3>
+                            <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus.
+                                Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit
+                                in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum
+                                metus.</p>
+
                         </section>
+
                     </section>
                 </div>
                 <div class="col-8 col-12-medium imp-medium">
@@ -225,10 +296,11 @@
                         <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
                         
                     </section>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
 
         <!-- Footer -->
         <footer id="footer">
