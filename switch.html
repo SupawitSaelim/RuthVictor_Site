@@ -97,11 +97,6 @@
         <!-- Main -->
         <div id="main" class="wrapper style1">
             <div class="container">
-                <header class="major">
-                    <h2>Switch</h2>
-                    <p>LAN switches are integral to modern networking, providing the foundation for connecting devices
-                        within a network.</p>
-                </header>
 
                 <!-- Tab Navigation -->
                 <div class="tab">
@@ -143,11 +138,12 @@
                     }
                 </script>
                 <!-- Banner -->
-                <section id="banner" style="background-image: url(images/router_1.png);">
+                <section id="banner" style="background-image: url(images/juniper_switch_1.avif);">
                     <div class="content">
                         <header>
-                            <h2>What is a Router?</h2><br>
-                            <p>A router is a device that connects two or more IP networks or subnetworks.</p>
+                            <h2>Switches</h2>
+                            <p>Switches are essential networking devices that connect multiple devices within a network
+                                and enable them to communicate with one another.</p>
                     </div>
                     <a href="#one" class="goto-next scrolly">Next</a>
                 </section>
@@ -156,28 +152,25 @@
                 <section id="one">
                     <div class="content">
                         <header><br><br>
-                            <img src="images/router_2.png" width="70%"
+                            <img src="images/juniper_switch_2.png" width="70%"
                                 style="margin-left: 10em;background-color: transparent;" alt="">
                             <br><br>
-                            <p>A router is a device that connects two or more packet-switched networks or subnetworks.
-                                It performs two primary functions: managing traffic between these networks by directing
-                                data packets to their intended IP addresses and allowing multiple devices to share the
-                                same Internet connection.
-
-                                There are various types of routers, but most commonly, they facilitate data transfer
-                                between LANs (local area networks) and WANs (wide area networks). A LAN consists of
-                                interconnected devices within a confined geographic area and typically requires only one
-                                router.
-
-                                Conversely, a WAN covers a vast geographic area, often encompassing multiple locations.
-                                Large organizations and companies with multiple sites across the country, for example,
-                                need individual LANs for each location, which are interconnected to form a WAN. Due to
-                                its extensive reach, a WAN usually requires multiple routers and switches*. </p>
-
-                            <blockquote>*A network switch forwards data packets among devices within the same network,
-                                while a
-                                router directs data between different networks.</blockquote>
+                            <h2>What is a network switch?</h2>
                         </header>
+                        <p>A network switch is a device that enables two or more IT devices, like computers, to
+                            communicate with each other, forming a communications network. By connecting multiple IT
+                            devices, various resources such as computing power, printing, servers, file storage, and
+                            internet access can be shared across the network.
+
+                            Devices in a network communicate by exchanging data packets. Basic switches facilitate
+                            the transfer of packets between devices, while more complex tasks, like determining if a
+                            packet should reach its intended destination, are typically handled by other network
+                            devices.
+
+                            Switches can exist as standalone appliances or as components within other equipment like
+                            network routers and wireless access points (APs), which process data packets. Basic
+                            switching technology has been a cornerstone of IT networks for decades, serving as a
+                            fundamental element in modern networks, including the Internet.</p>
                     </div>
                 </section>
 
@@ -185,19 +178,28 @@
                 <section id="two">
                     <div class="content">
                         <header><br><br>
-                            <h2>How does a router work?</h2>
+                            <h2>What problems do switches solve?</h2>
                         </header>
-                        <p>Think of a router as an air traffic controller and data packets as aircraft headed to
-                            different airports (or networks). Just as each plane has a unique destination and
-                            follows a specific route, each packet needs to be directed to its destination as
-                            efficiently as possible. Similar to how an air traffic controller ensures planes reach
-                            their destinations without getting lost or experiencing major disruptions, a router
-                            directs data packets to their destination IP addresses.
+                        <p>A network switch facilitates communication among users, applications, and equipment within a
+                            network, enabling resource sharing. Basic switches connect devices within a single
+                            local-area network (LAN), while advanced switches extend connectivity across multiple LANs
+                            and may include basic security features.<br><br>
 
-                            To guide packets effectively, a router uses an internal routing table—a list of paths to
-                            various network destinations. The router reads a packet's header to determine its
-                            destination, then consults the routing table to find the most efficient path. It then
-                            forwards the packet to the next network in the path.</p>
+                            Advanced switches, though capable of more than simple LAN interconnection, primarily serve
+                            to connect devices in IT networks. They can create virtual networks, allowing network
+                            administrators to isolate groups of systems for security purposes. Virtual network types
+                            like virtual private networks (VPNs), virtual LANs (VLANs), and Ethernet VPN-virtual
+                            eXtensible LANs (EVPN-VXLANs) are commonly used in midsize and large networks, with
+                            EVPN-VXLAN becoming increasingly prevalent in modern enterprise setups.<br><br>
+
+                            Network switches vary in speed, capabilities, and sizes, supporting anywhere from a few to
+                            thousands of devices. Multiple switches can be interconnected, forming different network
+                            topologies. A modern "spine-leaf" topology, for example, utilizes high-speed switches with
+                            high port density to connect tens of thousands of devices in a single network. In spine-leaf
+                            data center networks, leaf switches aggregate traffic from servers and connect to spine
+                            switches, which interconnect all leaf switches. Such networks often employ EVPN-VXLAN for
+                            segmentation, making them suitable for multitenant data centers, government, and large
+                            enterprise use.</p>
                     </div>
                 </section>
 
@@ -205,37 +207,63 @@
                 <section id="three">
                     <div class="content">
                         <header><br><br>
-                            <h2>What is the difference between a router and a modem?</h2>
+                            <h2>How does a switch work?</h2>
                         </header>
-                        <p>Although some Internet service providers (ISPs) combine a router and a modem within a
-                            single device, they are distinct and serve different, yet equally important, roles in
-                            network connectivity.
+                        <p>A network switch facilitates inter-device communication by adhering to standard communication
+                            protocols established and maintained by international standards organizations like the IEEE
+                            and the IETF.
 
-                            A router creates networks and manages the flow of data within and between them, while a
-                            modem connects these networks to the Internet. Modems establish an Internet connection
-                            by converting signals from an ISP into a digital format that connected devices can
-                            interpret. A single device can connect to the Internet through a modem; alternatively, a
-                            router can distribute this signal to multiple devices within a network, allowing them
-                            all to access the Internet simultaneously.
+                            Devices connect to a network using radio (Wi-Fi), electrical (RJ-45 Ethernet), or
+                            light-based optics (fiber-optic cabling). Each connection method employs a distinct physical
+                            interconnection—RF spectrum, copper cabling, or fiber-optic cabling—over which devices
+                            communicate by exchanging streams of 1s and 0s.
 
-                            Consider this analogy: If Bob has a router but no modem, he can create a LAN and
-                            transfer data between devices on that network but cannot connect to the Internet. Alice,
-                            on the other hand, has a modem but no router. She can connect a single device, like her
-                            work laptop, to the Internet but cannot share that connection with multiple devices,
-                            such as her laptop and smartphone. Carol, however, has both a router and a modem. With
-                            these devices, she can create a LAN with her desktop computer, tablet, and smartphone,
-                            and connect them all to the Internet simultaneously.</p>
+                            Network standards ensure these streams are interpreted into packets, consisting of headers
+                            and payloads. Packet headers contain source and destination addresses, while payloads carry
+                            the exchanged data. Each device on a network has one or more addresses to which packets can
+                            be directed.
+
+                            Packets exchanged between addresses form "data flows," akin to conversations among networked
+                            devices. Switches read addresses from packet headers and forward packets toward their
+                            destinations based on lookup tables (LUTs). LUTs maintain lists of addresses reachable via
+                            specific switch ports. Additionally, routers can be configured with "routes," directing
+                            switches to send packets with certain destinations to intermediary devices.
+
+                            For instance, a smartphone accessing a web page via a home Wi-Fi network connects to an
+                            access point (AP), which contains a built-in RJ-45/Ethernet switch linked to an Internet
+                            router.</p>
                     </div>
+                    <img src="images/juniper_switch_3.avif" alt=""><br><br>
+                    <blockquote>Devices such as smartphones access web servers and other remote resources through a
+                        series of interconnected switches and routers communicating with each other, hop by hop, from
+                        source to destination and back. This communication occurs using standard communications
+                        protocols and addressing schemes.</blockquote>
+                    <p>As a packet of data leaves the smartphone's radio, it's received by the access point (AP). Upon
+                        inspection, if the AP doesn't recognize the destination address in the packet header, it
+                        forwards a copy of the packet to the Internet router as per its configuration.
+
+                        The data packet then embarks on its journey across the Internet, traversing routers and an
+                        unknown number of switches in between until it reaches the web server. Upon receiving the
+                        packet, the web server responds by sending data packets back along the same path, eventually
+                        reaching the original source Internet router, the AP-embedded switch, and finally, the
+                        smartphone.
+
+                        This packet exchange establishes a data flow between the smartphone and the web server,
+                        facilitated by numerous hardware devices and associated software. Throughout this process,
+                        adherence to long-standing standards ensures seamless communication between the source and
+                        destination.</p>
                 </section>
 
                 <!-- four -->
                 <section id="four">
                     <div class="content">
                         <header><br><br>
-                            <h2>What are the different types of routers?</h2>
+                            <h2>Choosing the right switches for your small business</h2>
                         </header>
-                        <p>To connect a LAN to the Internet, a router must first communicate with a modem. This can be
-                            achieved in two primary ways
+                        <p>Understanding the varieties of network switches is essential for finding the suitable
+                            solution to adapt to your evolving business needs. Consider different switch categories and
+                            their specific advantages as you explore available options.</p><br><br>
+                        <h2>Types of Switches</h2>
 
                         <ol>
                             <li>Wireless router: A wireless router connects to a modem via an Ethernet cable. It
