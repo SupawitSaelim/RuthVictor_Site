@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Juniper | Ruth Victor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Styles for Tabs */
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="Firewall.html">FireWalls</a>
+        <a href="right-sidebar.html">Right Sidebar</a>
+        <a href="no-sidebar.html">No Sidebar</a>
+        <a href="elements.html">Elements</a>
+        <a href="signup.html" class="button primary">Sign Up</a>
+    </div>
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="#">Switche</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('cisco_router.html')"
+                            style="color: white;">Cisco</button>
+                        <button class="tablinks" onclick="navigateTo('juniper_router.html')"
+                            style="color: white;">Juniper</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="cisco_router" class="tabcontent">
+                    </div>
+                    <div id="juniper_router" class="tabcontent">
+                    </div>
+                </header>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h2>Juniper Routers</h2>
+                            <p>Empower your business with the latest in networking technology</p>
+                            <img src="images/juniper_router_1.png" width="80%" style="margin-left: 10em;" alt="">
+                        </header>
+                    </div>
+                </section>
+
+                <!-- Main -->
+                <div id="main" class="wrapper style1">
+                    <div class="container">
+                        <header class="major">
+                            <p>Significantly enhance network operations with the industry's most scalable, programmable,
+                                and resilient routers. Juniper's extensive portfolio of top-tier routers delivers
+                                unmatched capacity, flexibility, and operational consistency, along with the end-to-end
+                                automation needed for service-aware networks in today's hyperconnected world.</p>
+                        </header>
+                        <div class="row gtr-150">
+                            <div class="col-8 col-12-medium">
+
+                                <!-- Content -->
+                                <section id="content">
+                                    <a href="juniper_router.html" class="image fit"><img
+                                            src="images/juniper_router_2.png" alt="" /></a>
+                                    <h3>Don’t sweat your network</h3>
+                                    <p>Is your network causing you headaches? Simplify operations and enhance user
+                                        experiences with industry-leading AI. Switch to the 2024 Gartner® Magic
+                                        Quadrant™ Leader for Enterprise Wired and Wireless LAN Infrastructure and Indoor
+                                        Location Services.</p><br>
+                                    <h2>Experience the Juniper difference</h2>
+                                    <h3>Every enterprise network should be this good</h3><br>
+                                    <h4>AI-Native enterprise</h4>
+                                    <p>Solve problems faster, even prevent them from happening entirely. Learn how to
+                                        make happy end-users and happy operators alike.</p>
+                                    <a href="https://www.juniper.net/content/dam/www/assets/infographics/us/en/the-many-many-benefits-of-juniper-mist-ai.pdf"
+                                        target="_blank" class="button">Learn More</a><br><br><br>
+
+                                    <h4>Wired and wireless</h4>
+                                    <p>Elevate your network beyond basic functionality. Discover why Juniper has been
+                                        consistently recognized as a Leader in the Gartner Magic Quadrant for Enterprise
+                                        Wired and Wireless LAN Infrastructure for four consecutive years.</p>
+                                    <a href="https://www.juniper.net/content/dam/www/assets/infographics/us/en/five-reasons-to-select-juniper-for-your-wired-and-wireless-network.pdf"
+                                        target="_blank" class="button">Learn More</a><br><br>
+
+                                    <h4>See demos of our AI-Native Networking Platform capabilities</h4>
+                                    <p>Join Juniper engineers as they demonstrate the capabilities of our top solutions,
+                                        revealing how we harness AIOps to integrate AI, automation, and streamlined
+                                        operations across your entire network. Tune in live or watch on-demand at your
+                                        convenience.</p>
+                                    <a href="https://www.juniper.net/us/en/dm/demo-wednesday.html" target="_blank"
+                                        class="button primary">Explore Juniper demos</a><br><br>
+                                </section>
+
+                            </div>
+                            <div class="col-4 col-12-medium">
+
+                                <!-- Sidebar -->
+                                <section id="sidebar">
+                                    <section>
+                                        <h3>MX Series Universal Routing Platforms</h3>
+                                        <p>The MX Series boasts a robust portfolio of SDN-enabled routers, offering
+                                            industry-leading system capacity, density, security, and performance,
+                                            coupled with unmatched longevity.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.juniper.net/us/en/products/routers/mx-series.html"
+                                                        class="button primary">Learn More</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    <hr />
+                                    <section>
+                                        <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+                                        <h3>PTX Series Routers</h3>
+                                        <p>At the core of routing architectures, PTX Packet Transport Routers serve as
+                                            the foundation, offering ultrahigh power efficiency, scale, and performance
+                                            for 100G, 400G, and 800G architectures. Engineered for resilience and
+                                            tailored for WAN core and data center scenarios, the PTX Series routers
+                                            feature forward-looking designs crafted to withstand future demands.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.juniper.net/us/en/products/routers/ptx-series.html" class="button">Learn More</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <ul class="icons">
+                        <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                        <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                                class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                        <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                        <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                        <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+                    </ul>
+                </footer>
+
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.scrolly.min.js"></script>
+                <script src="assets/js/jquery.dropotron.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+                <script>
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Get all elements with class="tabcontent" and hide them
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Get all elements with class="tablinks" and remove the class "active"
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the current tab, and add an "active" class to the button that opened the tab
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+</body>
+
+</html>
