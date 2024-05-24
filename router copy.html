@@ -1,0 +1,464 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>FireWall Solution</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Styles for Tabs */
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="Firewall.html">FireWalls</a>
+        <a href="right-sidebar.html">Right Sidebar</a>
+        <a href="no-sidebar.html">No Sidebar</a>
+        <a href="elements.html">Elements</a>
+        <a href="signup.html" class="button primary">Sign Up</a>
+    </div>
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Router</h2>
+                    <p>Increasing the efficiency of your network</p>
+                </header>
+
+                <!-- Tab Navigation -->
+                <div class="tab">
+                    <button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
+                        style="color: white;">Cisco</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="cisco_firewall" class="tabcontent">
+                </div>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner" style="background-image: url(images/router_1.png);">
+                    <div class="content">
+                        <header>
+                            <h2>What is a Router?</h2><br>
+                            <p>A router is a device that connects two or more IP networks or subnetworks.</p>
+                    </div>
+                    <a href="#one" class="goto-next scrolly">Next</a>
+                </section>
+
+                <!-- One -->
+                <section id="one">
+                    <div class="content">
+                        <header><br><br>
+                            <img src="images/router_2.png" width="70%"
+                                style="margin-left: 10em;background-color: transparent;" alt="">
+                            <br><br>
+                            <p>A router is a device that connects two or more packet-switched networks or subnetworks.
+                                It performs two primary functions: managing traffic between these networks by directing
+                                data packets to their intended IP addresses and allowing multiple devices to share the
+                                same Internet connection.
+
+                                There are various types of routers, but most commonly, they facilitate data transfer
+                                between LANs (local area networks) and WANs (wide area networks). A LAN consists of
+                                interconnected devices within a confined geographic area and typically requires only one
+                                router.
+
+                                Conversely, a WAN covers a vast geographic area, often encompassing multiple locations.
+                                Large organizations and companies with multiple sites across the country, for example,
+                                need individual LANs for each location, which are interconnected to form a WAN. Due to
+                                its extensive reach, a WAN usually requires multiple routers and switches*. </p>
+
+                            <blockquote>*A network switch forwards data packets among devices within the same network,
+                                while a
+                                router directs data between different networks.</blockquote>
+                        </header>
+                    </div>
+                </section>
+
+                <!-- two -->
+                <section id="two">
+                    <div class="content">
+                        <header><br><br>
+                            <h2>How does a router work?</h2>
+                        </header>
+                        <p>Think of a router as an air traffic controller and data packets as aircraft headed to
+                            different airports (or networks). Just as each plane has a unique destination and
+                            follows a specific route, each packet needs to be directed to its destination as
+                            efficiently as possible. Similar to how an air traffic controller ensures planes reach
+                            their destinations without getting lost or experiencing major disruptions, a router
+                            directs data packets to their destination IP addresses.
+
+                            To guide packets effectively, a router uses an internal routing table—a list of paths to
+                            various network destinations. The router reads a packet's header to determine its
+                            destination, then consults the routing table to find the most efficient path. It then
+                            forwards the packet to the next network in the path.</p>
+                    </div>
+                </section>
+
+                <!-- three -->
+                <section id="three">
+                    <div class="content">
+                        <header><br><br>
+                            <h2>What is the difference between a router and a modem?</h2>
+                        </header>
+                        <p>Although some Internet service providers (ISPs) combine a router and a modem within a
+                            single device, they are distinct and serve different, yet equally important, roles in
+                            network connectivity.
+
+                            A router creates networks and manages the flow of data within and between them, while a
+                            modem connects these networks to the Internet. Modems establish an Internet connection
+                            by converting signals from an ISP into a digital format that connected devices can
+                            interpret. A single device can connect to the Internet through a modem; alternatively, a
+                            router can distribute this signal to multiple devices within a network, allowing them
+                            all to access the Internet simultaneously.
+
+                            Consider this analogy: If Bob has a router but no modem, he can create a LAN and
+                            transfer data between devices on that network but cannot connect to the Internet. Alice,
+                            on the other hand, has a modem but no router. She can connect a single device, like her
+                            work laptop, to the Internet but cannot share that connection with multiple devices,
+                            such as her laptop and smartphone. Carol, however, has both a router and a modem. With
+                            these devices, she can create a LAN with her desktop computer, tablet, and smartphone,
+                            and connect them all to the Internet simultaneously.</p>
+                    </div>
+                </section>
+
+                <!-- four -->
+                <section id="four">
+                    <div class="content">
+                        <header><br><br>
+                            <h2>What are the different types of routers?</h2>
+                        </header>
+                        <p>To connect a LAN to the Internet, a router must first communicate with a modem. This can be
+                            achieved in two primary ways
+
+                        <ol>
+                            <li>Wireless router: A wireless router connects to a modem via an Ethernet cable. It
+                                distributes data by converting packets from binary code into radio signals, which are
+                                then broadcast wirelessly using antennas. Instead of creating LANs, wireless routers
+                                establish WLANs (wireless local area networks), allowing multiple devices to connect
+                                wirelessly.
+                            </li>
+                            <li>
+                                Wired router: Similarly, a wired router connects to a modem using an Ethernet cable. It
+                                then uses additional cables to connect to one or more devices within the network,
+                                creating a LAN and linking those devices to the Internet.
+                            </li>
+                        </ol>
+                        Beyond wireless and wired routers for small LANs, there are several specialized types of routers
+                        designed for specific functions
+                        <ul><br><br>
+                            <li>
+                                Core router: Core routers are used by large corporations and businesses to manage a high
+                                volume of data packets within their internal networks. Operating at the "core" of a
+                                network, these routers do not communicate with external networks.
+                            </li>
+                            <li>
+                                Edge router: Unlike core routers, edge routers handle communication with both core
+                                routers and external networks. Positioned at the "edge" of a network, edge routers use
+                                the BGP (Border Gateway Protocol) to exchange data with other LANs and WANs.
+                            </li>
+                            <li>
+                                Virtual router: A virtual router is a software-based router that performs the same
+                                functions as a physical router. It can use the Virtual Router Redundancy Protocol (VRRP)
+                                to establish primary and backup virtual routers, ensuring continued operation if one
+                                fails.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </section>
+                <hr><br><br>
+
+
+                <div class="row gtr-150" style="margin-top: 20px;">
+                    <div class="col-4 col-12-medium">
+                        <!-- Sidebar -->
+                        <section id="sidebar">
+                            <section>
+                                <h2>How to choose small business routers</h2>
+                                <ul>
+                                    <li>
+                                        <h3>Connectivity</h3>
+                                    </li>
+                                </ul>
+                                <p>Ensure you pay attention to the numbers and types of ports available, including
+                                    phone, Ethernet, cable, and USB ports, to ensure you can connect all necessary
+                                    devices. Having unused ports is beneficial as it provides flexibility for expanding
+                                    the network as needed in the future.</p>
+                            </section>
+                            <hr />
+                            <section>
+                                <a href="router.html" class="image fit"><img src="images/router_3.jpg" alt="" /></a>
+                                <ul>
+                                    <li>
+                                        <h3>Flexibility</h3>
+                                    </li>
+                                </ul>
+                                <p>A virtual firewall is commonly installed as a virtual appliance within either a
+                                    private cloud environment (such as VMware ESXi,
+                                    Microsoft Hyper-V, or KVM) or a public cloud infrastructure (like Amazon Web
+                                    Services, Microsoft Azure, Google Cloud Platform,
+                                    or Oracle Cloud Infrastructure). Its primary function is to oversee and safeguard
+                                    network traffic traversing both physical and virtual networks. Furthermore, a
+                                    virtual firewall frequently serves as a vital element within software-defined
+                                    networks (SDN).</p>
+                                <ul>
+                                    <li>
+                                        <h3>Automatic updates</h3>
+                                    </li>
+                                </ul>
+                                <p>Routers feature software that requires periodic updates to ensure optimal performance
+                                    and security. Ideally, manufacturers should automate these updates, as they occur
+                                    seamlessly in the background without requiring any action from users.</p>
+                                <ul>
+                                    <li>
+                                        <h3>Mesh networks</h3>
+                                    </li>
+                                </ul>
+                                <p>
+
+                                    A more effective solution is a mesh network, which enables you to deploy multiple
+                                    Wi-Fi transmitters throughout your office while maintaining a single unified
+                                    network. Unlike extenders, which can be used with any wireless router, mesh networks
+                                    require a router with built-in mesh capability for optimal performance and seamless
+                                    integration.</p>
+                                <!-- <footer>
+                                    <ul class="actions">
+                                        <li><a href="#" class="button">Learn More</a></li>
+                                    </ul>
+                                </footer> -->
+                            </section>
+                        </section>
+                    </div>
+                    <div class="col-8 col-12-medium imp-medium">
+                        <!-- Content -->
+                        <section id="content">
+                            <a href="router.html" class="image fit"><img src="images/router_4.jpg" alt="" /></a><br>
+                            <ul>
+                                <li>
+                                    <h3>Bandwidth</h3>
+                                </li>
+                            </ul>
+                            <p>Adequate bandwidth is crucial for ensuring a positive user experience. It guarantees
+                                optimal performance for multiple users: as the number of users increases, so does the
+                                demand for bandwidth. To expand your business's network, you can incorporate additional
+                                routers or hubs as needed. However, any inadequacy in bandwidth within the network can
+                                lead to bottlenecks and degrade overall performance.</p>
+                            <ul>
+                                <li>
+                                    <h3>Wireless capability</h3>
+                                </li>
+                            </ul>
+                            <p>While Wi-Fi is essential, it's important to note that there are various standards
+                                available. The newest standard, Wi-Fi 6 (802.11ax), offers significantly higher
+                                transmission speeds, particularly when multiple access points, like devices or
+                                additional routers, are connected simultaneously. Additionally, Wi-Fi 6 routers are
+                                backward-compatible with older Wi-Fi standards, ensuring seamless integration with
+                                existing devices and networks.</p>
+                            <ul>
+                                <li>
+                                    <h3>Simplified setup and management</h3>
+                                </li>
+                            </ul>
+                            <p>While most routers offer a browser-based interface for setup and administration, many
+                                manufacturers now offer mobile apps tailored to their devices. These apps provide more
+                                intuitive interfaces and streamline the setup process.</p>
+                            <ul>
+                                <li>
+                                    <h3>Simplified setup and management</h3>
+                                </li>
+                            </ul>
+                            <p>Your router should provide at least WPA or WPA2 password protection for securing your
+                                network. Additionally, some routers come equipped with firewall software that monitors
+                                incoming data for malware and viruses. MAC (Media Access Control) address filtering is
+                                another valuable tool, which uses device-specific IDs to screen users and create a
+                                whitelist or blacklist for network access.</p>
+                            <ul>
+                                <li>
+                                    <h3>User changeable configurations</h3>
+                                </li>
+                            </ul>
+                            <p>This functionality enables you to oversee network traffic, guest networks, parental
+                                controls, and security settings. Managing these aspects becomes more convenient when the
+                                router's configuration can be handled through a dedicated mobile app rather than a
+                                browser interface.</p>
+                            <ul>
+                                <li>
+                                    <h3>Guest networks</h3>
+                                </li>
+                            </ul>
+                            <p>Guest networks serve as an essential layer of additional security, particularly when
+                                visitors require Wi-Fi access within a business premises. By implementing a guest
+                                network, access to the business's devices and files is restricted, while still providing
+                                connectivity to visitors. This segregation helps safeguard sensitive information and
+                                resources from unauthorized access.</p>
+                            <ul>
+                                <li>
+                                    <h3>Quality of service (QoS) controls</h3>
+                                </li>
+                            </ul>
+                            <p>
+                                Coupled with tools for monitoring usage across all users, this feature empowers you to
+                                regulate network usage by controlling both up- and downstream transmissions, managing
+                                specific types of activities (such as video streaming), and allocating bandwidth for
+                                individual users. By offering such capabilities, this feature not only enhances security
+                                but also facilitates comprehensive network monitoring and management.
+                            </p>
+                            <!-- <ul>
+                                <li>Faucibus orci lobortis ac adipiscing integer.</li>
+                                <li>Col accumsan arcu mi aliquet placerat.</li>
+                                <li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
+                                <li>Blandit massa non blandit tempor interdum.</li>
+                                <li>Lacinia mattis arcu nascetur lobortis.</li>
+                            </ul> -->
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                        class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function openModel(evt, modelName) {
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(modelName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
