@@ -38,8 +38,6 @@
             ;
         }
 
-
-
         .spaced-paragraph {
             margin-bottom: 20px;
         }
@@ -94,17 +92,18 @@
         <div id="main" class="wrapper style1">
             <div class="container">
                 <header class="major">
-                    <h2>FireWall</h2>
-                    <p>Immprove your security with our our FireWall solutions</p>
-                </header>
+                    <h2>Cisco Secure Firewall</h2>
+                    <p>Find the ideal firewall for your business</p>
 
                 <!-- Tab Navigation -->
                 <div class="tab">
                     <button class="tablinks" onclick="navigateTo('Fortinet.html')"
                         style="color: white;">Fortinet</button>
                     <button class="tablinks" onclick="navigateTo('Sophos.html')" style="color: white;">Sophos</button>
-                    <button class="tablinks" onclick="openModel(event, 'Model3')"
+                    <button class="tablinks" onclick="navigateTo('Check_Point.html')"
                         style="color: white;">Checkpoint</button>
+                    <button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
+                        style="color: white;">Cisco</button>
                 </div>
 
                 <!-- Tab Content -->
@@ -114,8 +113,12 @@
                 <div id="Sophos" class="tabcontent">
                 </div>
 
-                <div id="Model3" class="tabcontent">
+                <div id="Check_Point" class="tabcontent">
                 </div>
+
+                <div id="cisco_firewall" class="tabcontent">
+                </div>
+                </header>
                 <script>
                     function navigateTo(url) {
                         window.location.href = url;
