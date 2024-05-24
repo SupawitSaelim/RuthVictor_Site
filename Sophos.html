@@ -5,479 +5,573 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Sophos Solution FireWall</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-			<style>
-				/* Styles for Tabs */
-				.tab {
-				  overflow: hidden;
-				  background-color: #f1f1f1;
-				  border-bottom: 1px solid #ccc;
-				}
-		
-				.tab button {
-				  background-color: inherit;
-				  float: left;
-				  border: none;
-				  outline: none;
-				  cursor: pointer;
-				  padding: 14px 16px;
-				  transition: 0.3s;
-				  font-size: 17px;
-				}
-		
-				.tab button:hover {
-				  background-color: #d16666;
-				}
-		
-				.tab button.active {
-				  background-color: #f1f1f1;
-				}
-				.vertical-line {
-					width: 1px;
-					height: 500px;
-					background-color: black;
-					transform: rotate(180deg);
-					margin: 0px;
-        		}
-				h2 {
-				  line-height: 0; /* ลดระยะห่างระหว่างบรรทัดในหัวข้อ */
-				}
-			</style>
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
-					<nav id="nav">
+<head>
+	<title>Sophos Solution FireWall</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		/* Styles for Tabs */
+		.tab {
+			overflow: hidden;
+			background-color: rgb(140, 40, 60);
+			;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+			font-size: 17px;
+		}
+
+		.tab button:hover {
+			background-color: rgb(120, 0, 20);
+		}
+
+		.tab button.active {
+			background-color: rgb(140, 40, 60);
+			;
+		}
+
+		.spaced-paragraph {
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="index.html">Landed</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="#">Products</a>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="Firewall.html">FireWall</a></li>
+							<li><a href="right-sidebar.html">Right Sidebar</a></li>
+							<li><a href="no-sidebar.html">No Sidebar</a></li>
 							<li>
-								<a href="#">Products</a>
+								<a href="#">Submenu</a>
 								<ul>
-									<li><a href="Firewall.html">FireWall</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
+									<li><a href="#">Option 1</a></li>
+									<li><a href="#">Option 2</a></li>
+									<li><a href="#">Option 3</a></li>
+									<li><a href="#">Option 4</a></li>
 								</ul>
 							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="solutions.html">Solutions</a></li>
-							<li><a href="contacts.html">Contacts</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
 						</ul>
-					</nav>
+					</li>
+					<li><a href="elements.html">Elements</a></li>
+					<li><a href="solutions.html">Solutions</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="#" class="button primary">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main" class="wrapper style1">
+			<div class="container">
+				<header class="major">
+					<h2>Sophos Solution FireWall</h2>
+					<h3>Sophos Firewall</h3>
+					<p>Much More Than a Firewall</p>
+					<img src="images/Sophos-firewall-title.png" alt=""><br>
+					<!-- Tab Navigation -->
+					<div class="tab">
+						<button class="tablinks" onclick="navigateTo('Fortinet.html')"
+							style="color: white;">Fortinet</button>
+						<button class="tablinks" onclick="navigateTo('Sophos.html')"
+							style="color: white;">Sophos</button>
+						<button class="tablinks" onclick="navigateTo('Check_Point.html')"
+							style="color: white;">Checkpoint</button>
+						<button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
+							style="color: white;">Cisco</button>
+					</div>
+
+					<!-- Tab Content -->
+					<div id="Fortinet" class="tabcontent">
+					</div>
+
+					<div id="Sophos" class="tabcontent">
+					</div>
+
+					<div id="Check_Point" class="tabcontent">
+					</div>
+
+					<div id="cisco_firewall" class="tabcontent">
+					</div>
+					<script>
+						function navigateTo(url) {
+							window.location.href = url;
+						}
+
+						function openModel(evt, modelName) {
+							var i, tabcontent, tablinks;
+
+							// Hide all tab content
+							tabcontent = document.getElementsByClassName("tabcontent");
+							for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+							}
+
+							// Remove the background color of all tablinks/buttons
+							tablinks = document.getElementsByClassName("tablinks");
+							for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+							}
+
+							// Show the specific tab content
+							document.getElementById(modelName).style.display = "block";
+							evt.currentTarget.className += " active";
+						}
+					</script>
 				</header>
 
-			<!-- Main -->
-				<div id="main" class="wrapper style1">
-					<div class="container">
-						<header class="major">
-							<h2>Sophos Solution FireWall</h2>
-							<h3>Sophos Firewall</h3>
-							<p>Much More Than a Firewall</p>
-							<img src="images/Sophos-firewall-title.png" alt="" ><br>
-							<div class="tab">
-								<button class="tablinks" onclick="navigateTo('Fortinet.html')">Fortinet</button>
-								<button class="tablinks" onclick="navigateTo('Sophos.html')">Sophos</button>
-								<button class="tablinks" onclick="navigateTo('Check_Point.html')">Check Point</button>
-								<button class="tablinks" onclick="openModel(event, 'Mode')">Model</button>
-							  </div>
-				  
-							  <!-- Tab Content -->
-							  <div id="Fortinet" class="tabcontent">
-							  </div>
-				  
-							  <div id="Sophos" class="tabcontent">
-								
-							  </div>
-				  
-							  <div id="Check_Point" class="tabcontent" >
-							   
-							  </div>
-							  <script>
-								  function navigateTo(url) {
-									  window.location.href = url;
-								  }
-						  
-								  function openModel(evt, modelName) {
-									  var i, tabcontent, tablinks;
-						  
-									  // Hide all tab content
-									  tabcontent = document.getElementsByClassName("tabcontent");
-									  for (i = 0; i < tabcontent.length; i++) {
-										  tabcontent[i].style.display = "none";
-									  }
-						  
-									  // Remove the background color of all tablinks/buttons
-									  tablinks = document.getElementsByClassName("tablinks");
-									  for (i = 0; i < tablinks.length; i++) {
-										  tablinks[i].className = tablinks[i].className.replace(" active", "");
-									  }
-						  
-									  // Show the specific tab content
-									  document.getElementById(modelName).style.display = "block";
-									  evt.currentTarget.className += " active";
-								  }
-							  </script>
-						</header>
-						
-						
-						<div class="row gtr-150">
-							<div class="col-8 col-12-medium">
 
-								<!-- Content -->
-									<section id="content">
-										<h3 style="text-align: center;">Consolidate your network protection with our integrated and extensible platform to secure your hybrid networked world. </h3>
-										<p style="text-align: center;"> What you get:</p>
-										<img src="images/Sophos-detail.png" alt="" width="800"/>
-										<hr />
-										<h3 style="text-align: center;">Consolidate Your Cybersecurity</h3>
-										<p style="text-align: center;"class="vertical-line1">Sophos Firewall is much more than a firewall — it's the heart of the world's best network security platform.<br> Consolidate and simplify your cybersecurity with a single vendor, cloud management console, and agent.</p>
-										<img src="images/firewall-graphics.jpg" alt="" width="900" height="300"/></a>
-										<ul>
-											<li>Full next-gen firewall optimized for the modern encrypted internet, offering industry-leading protection and performance</li><br>
-											<li>Integration with Sophos MDR and Sophos XDR for automated threat response and synchronized security to stop threats before they cause a serious problem</li><br>
-											<li>Comprehensive SD-WAN capabilities that let you easily and securely orchestrate and interconnect your various offices and locations</li><br>
-											<li>Integration with our cloud-delivered network security solutions, including Sophos Zero-Trust Network Access (ZTNA), DNS Protection, Zero-Day Threat Protection, and more</li><br>
-											<li>Built-in ZTNA for secure and easy remote worker access</li><br>
-											<li>Cloud management and reporting from Sophos Central for managing operations across all your firewalls, wireless networks, switches, ZTNA, endpoints, mobile devices, servers, email protection, and more</li>
-											
-										</ul>
-										<hr/>
-										
-										<center>
-										<img src="images/Sophos-firewall.png" alt="" />
-										</center>
-										<br>
-										<h2>Unrivaled Performance</h2>
-										<h3>The XGS Series of next-gen firewall appliances delivers Sophos Xstream-accelerated performance at every price point to power the protection you need for today’s diverse, distributed, and encrypted networks.</h3>
-										<h1>Powered by Xstream</h1>
-										<ul>
-											<li>Accelerate and offload your important SaaS, SD-WAN, and cloud traffic at the hardware level while adding Transport Layer Security (TLS) and deep packet inspection using Sophos integrated Xstream Flow Processors.</li>
+				<div class="row gtr-150">
+					<div class="col-8 col-12-medium">
 
-										</ul>
-										<h1>High-Speed Connectivity</h1>
-										<ul>
-											<li>Customize your firewall’s already versatile networking options with an extensive range of add-on modules for high-speed copper, fiber, Power over Ethernet (PoE), 4G/5G, and Wi-Fi connectivity.</li>
+						<!-- Content -->
+						<section id="content">
+							<h3 style="text-align: center;">Consolidate your network protection with our integrated and
+								extensible platform to secure your hybrid networked world. </h3>
+							<p style="text-align: center;"> What you get:</p>
+							<img src="images/Sophos-detail.png" alt="" width="800" />
+							<hr />
+							<h3 style="text-align: center;">Consolidate Your Cybersecurity</h3>
+							<p style="text-align: center;" class="vertical-line1">Sophos Firewall is much more than a
+								firewall — it's the heart of the world's best network security platform.<br> Consolidate
+								and simplify your cybersecurity with a single vendor, cloud management console, and
+								agent.</p>
+							<img src="images/firewall-graphics.jpg" alt="" width="900" height="300" /></a>
+							<ul>
+								<li>Full next-gen firewall optimized for the modern encrypted internet, offering
+									industry-leading protection and performance</li><br>
+								<li>Integration with Sophos MDR and Sophos XDR for automated threat response and
+									synchronized security to stop threats before they cause a serious problem</li><br>
+								<li>Comprehensive SD-WAN capabilities that let you easily and securely orchestrate and
+									interconnect your various offices and locations</li><br>
+								<li>Integration with our cloud-delivered network security solutions, including Sophos
+									Zero-Trust Network Access (ZTNA), DNS Protection, Zero-Day Threat Protection, and
+									more</li><br>
+								<li>Built-in ZTNA for secure and easy remote worker access</li><br>
+								<li>Cloud management and reporting from Sophos Central for managing operations across
+									all your firewalls, wireless networks, switches, ZTNA, endpoints, mobile devices,
+									servers, email protection, and more</li>
 
-										</ul>
-										<h1>Performance by Design</h1>
-										<ul>
-											<li>From the smallest entry-level device to our enterprise and campus edge models, every Sophos Firewall is purpose-built to handle the most demanding workloads with a dual-processor architecture, generous memory provisioning, and high-performance, solid-state storage.</li>
+							</ul>
+							<hr />
 
-										</ul>
-										<hr/>
-										<div class="contain">
-											<table class="table" style="display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
-												<tr>
-												  <td style="margin: 0 10px;">
-													<button class="button1" id="high-end" style="display: flex; flex-direction: column; align-items: center;">
-													  <img src="images/Sophos-firewall-XGS-destop-Photoroom.png-Photoroom.png" alt="" style="max-width: 100%; height: auto; margin-top: -9px;">
-													  <h3 style="color:black;">SMB and Branch Office: Desktop Models</h3>
-													  
-													</button>
-												  </td>
-												  <td style="margin: 0 10px;">
-													<button class="button1" id="mid-range" style="display: flex; flex-direction: column; align-items: center;">
-													  <img src="images/Sophos-firewall-XGS-1u-models-Photoroom.png-Photoroom.png" alt="" style="max-width: 100%; height: auto; margin-top: 30px;">
-													  <h3 style="color:black;">Distributed Edge: <br>1U Models</h3>
-													</button>
-												  </td>
-												  <td style="margin: 0 10px;">
-													<button class="button1" id="entry-level" style="display: flex; flex-direction: column; align-items: center;">
-													  <img src="images/Sophos-firewall-XGS-2u-models-Photoroom.png-Photoroom.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;">
-													  <h3 style="color:black;">Enterprise and Campus Edge: 2U Models</h3>
-													</button>
-												  </td>
-												</tr>
-											  </table>
-											<div id="high-end-details1" class="model">
-												<table class="table">
-													<h1>SMB and Branch Office: Desktop Models</h1>
-													<p>Customers looking for an all-in-one network security solution will appreciate the seamless connectivity options available for our desktop appliances. With the modularity that smaller businesses, retail outlets, and branch offices need to grow and adapt to changing circumstances, they offer the perfect balance between price and performance. All desktop models are optionally available with built-in Wi-Fi.<br><br>
+							<center>
+								<img src="images/Sophos-firewall.png" alt="" />
+							</center>
+							<br>
+							<h2>Unrivaled Performance</h2>
+							<h3>The XGS Series of next-gen firewall appliances delivers Sophos Xstream-accelerated
+								performance at every price point to power the protection you need for today’s diverse,
+								distributed, and encrypted networks.</h3>
+							<h1>Powered by Xstream</h1>
+							<ul>
+								<li>Accelerate and offload your important SaaS, SD-WAN, and cloud traffic at the
+									hardware level while adding Transport Layer Security (TLS) and deep packet
+									inspection using Sophos integrated Xstream Flow Processors.</li>
 
-														All models are powered by a high-speed CPU plus a dedicated Xstream Flow Processor for hardware acceleration.</p>
-												</table>
-											  
-											</div>
-											<div id="mid-range-details1" class="model">
-												<table class="table">
-													<h1>Distributed Edge: 1U Models</h1>
-													<p>Mid-sized and distributed organizations in need of a versatile solution to power and protect their networks will be well-served with our 1U models. These rackmount firewalls offer excellent performance, a diverse range of high-speed built-in interfaces, and a choice of add-on connectivity modules. Whether your priority is ensuring maximum uptime for your SD-WAN links, securely connecting your remote users, or protecting the network in a growing organization, you can tailor them to your dynamic environment.<br><br>
+							</ul>
+							<h1>High-Speed Connectivity</h1>
+							<ul>
+								<li>Customize your firewall’s already versatile networking options with an extensive
+									range of add-on modules for high-speed copper, fiber, Power over Ethernet (PoE),
+									4G/5G, and Wi-Fi connectivity.</li>
 
-														All models are powered by a high-speed CPU plus a dedicated Xstream Flow Processor for hardware acceleration.</p>
-												</table>
-											  
-											</div>
-											<div id="entry-level-details1" class="model">
-												<table class="table">
-													<h1>Enterprise and Campus Edge: 2U Models</h1>
-													<p>Distributed and growing enterprises in need of maximum throughput for the most complex networks get the ultimate in protection, performance, and business continuity with these next-gen firewalls. Xstream Flow Processors provide dedicated hardware acceleration to easily handle full-on protection for today’s encrypted, cloud-hosted applications and traffic. These models strike the perfect balance between port density and modularity, with a range of high-speed, built-in ports, plus additional high-density Flexi Port modules available to extend connectivity even further.<br><br>
+							</ul>
+							<h1>Performance by Design</h1>
+							<ul>
+								<li>From the smallest entry-level device to our enterprise and campus edge models, every
+									Sophos Firewall is purpose-built to handle the most demanding workloads with a
+									dual-processor architecture, generous memory provisioning, and high-performance,
+									solid-state storage.</li>
 
-														All models are powered by a high-speed CPU plus a dedicated Xstream Flow Processor for hardware acceleration.</p>
-												</table>
-											  
-											</div>
-											<div id="high-end-details" class="model">
-												<table class="table">
-													<tr>
-													  <th>MODEL</th>
-													  <th>THREAT PROTECTION</th>
-													  <th>DATA SHEET</th>
-													</tr>
-													<tr>
-													  <td>XGS 136/136w</td>
-													  <td>1,000 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 126/126w</td>
-													  <td>900 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 116 / 116w</td>
-													  <td>720 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 107 / 107w</td>
-													  <td>370 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 87 / 87w</td>
-													  <td>280 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													
-											  
-												  </table>
-											  
-											</table>
-										
-											</div>
-											<div id="mid-range-details" class="model">
-												<table class="table">
-													<tr>
-													  <th>MODEL</th>
-													  <th>THREAT PROTECTION</th>
-													  <th>DATA SHEET</th>
-													</tr>
-													
-													<tr>
-													  <td>XGS 4500</td>
-													  <td>8,650 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 4300</td>
-													  <td>6,500 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdff"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 3300</td>
-													  <td>3,000 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 3100</td>
-													  <td>2,000 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 2300</td>
-													  <td>1,500 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-													<tr>
-													  <td>XGS 2100</td>
-													  <td>1,250 Mbps</td>
-													  <td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-													</tr>
-											  
-												  </table>
-											</div>
-										
-											<div id="entry-level-details" class="model">
-											<table class="table">
-											  <tr>
-												<th>MODEL</th>
-												<th>THREAT PROTECTION</th>
-												<th>DATA SHEET</th>
-											  </tr>
-								
-											  <tr>
-												<td>XGS 8500</td>
-												<td>34,000 Mbps</td>
-												<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-											  </tr>
-											  <tr>
-												<td>XGS 7500</td>
-												<td>26,000 Mbps</td>
-												<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-											  </tr>
-											  <tr>
-												<td>XGS 6500</td>
-												<td>17,850 Mbps</td>
-												<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-											  </tr>
-											  <tr>
-												<td>XGS 5500</td>
-												<td>14,000 Mbps</td>
-												<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"target="_blank"><img src="images/icon-download.svg" width="25" height="25"> Datasheet</a></td>
-											  </tr>
-										
-											</table>
-											</div>
-										  </div>
-										
-										  <script>
-											const entryLevelButton = document.getElementById('entry-level');
-											const midRangeButton = document.getElementById('mid-range');
-											const highEndButton = document.getElementById('high-end');
-											const entryLevelDetails = document.getElementById('entry-level-details');
-											const entryLevelDetails1 = document.getElementById('entry-level-details1');
-											const midRangeDetails = document.getElementById('mid-range-details');
-											const midRangeDetails1 = document.getElementById('mid-range-details1');
-											const highEndDetails = document.getElementById('high-end-details');
-											const highEndDetails1 = document.getElementById('high-end-details1');
-		
-											// Initially hide all details sections
-											entryLevelDetails.style.display = "none";
-											entryLevelDetails1.style.display = "none";
-											midRangeDetails.style.display = "none";
-											midRangeDetails1.style.display = "none";
-											highEndDetails.style.display = "tabel";
-											highEndDetails1.style.display = "tabel";
-		
-											function changeMode(mode) {
-											// Reset all displays to none before showing the selected one
-											entryLevelDetails.style.display = "none";
-											entryLevelDetails1.style.display = "none";
-											midRangeDetails.style.display = "none";
-											midRangeDetails1.style.display = "none";
-											highEndDetails.style.display = "none";
-											highEndDetails1.style.display = "none";
-		
-											if (mode === "entry-level") {
-											  entryLevelDetails.style.display = "block";
-											} else if (mode === "mid-range") {
-											  midRangeDetails.style.display = "block";
-											} else if (mode === "high-end") {
-											  highEndDetails.style.display = "block";
-											}
-											if (mode === "entry-level") {
-											  entryLevelDetails1.style.display = "block";
-											} else if (mode === "mid-range") {
-											  midRangeDetails1.style.display = "block";
-											} else if (mode === "high-end") {
-											  highEndDetails1.style.display = "block";
-											}
-											}
-		
-											// Event listeners remain the same
-											entryLevelButton.addEventListener('click', () => {
-											changeMode("entry-level");
-											});
-		
-											midRangeButton.addEventListener('click', () => {
-											changeMode("mid-range");
-											});
-		
-											highEndButton.addEventListener('click', () => {
-											changeMode("high-end");
-											});
-										  </script>
-									</section>
+							</ul>
+							<hr />
+							<div class="contain">
+								<table class="table"
+									style="display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
+									<tr>
+										<td style="margin: 0 10px;">
+											<button class="button1" id="high-end"
+												style="display: flex; flex-direction: column; align-items: center;">
+												<img src="images/Sophos-firewall-XGS-destop-Photoroom.png-Photoroom.png"
+													alt="" style="max-width: 100%; height: auto; margin-top: -9px;">
+												<h3 style="color:black;">SMB and Branch Office: Desktop Models</h3>
 
+											</button>
+										</td>
+										<td style="margin: 0 10px;">
+											<button class="button1" id="mid-range"
+												style="display: flex; flex-direction: column; align-items: center;">
+												<img src="images/Sophos-firewall-XGS-1u-models-Photoroom.png-Photoroom.png"
+													alt="" style="max-width: 100%; height: auto; margin-top: 30px;">
+												<h3 style="color:black;">Distributed Edge: <br>1U Models</h3>
+											</button>
+										</td>
+										<td style="margin: 0 10px;">
+											<button class="button1" id="entry-level"
+												style="display: flex; flex-direction: column; align-items: center;">
+												<img src="images/Sophos-firewall-XGS-2u-models-Photoroom.png-Photoroom.png"
+													alt="" style="max-width: 100%; height: auto; margin-top: 5px;">
+												<h3 style="color:black;">Enterprise and Campus Edge: 2U Models</h3>
+											</button>
+										</td>
+									</tr>
+								</table>
+								<div id="high-end-details1" class="model">
+									<table class="table">
+										<h1>SMB and Branch Office: Desktop Models</h1>
+										<p>Customers looking for an all-in-one network security solution will appreciate
+											the seamless connectivity options available for our desktop appliances. With
+											the modularity that smaller businesses, retail outlets, and branch offices
+											need to grow and adapt to changing circumstances, they offer the perfect
+											balance between price and performance. All desktop models are optionally
+											available with built-in Wi-Fi.<br><br>
+
+											All models are powered by a high-speed CPU plus a dedicated Xstream Flow
+											Processor for hardware acceleration.</p>
+									</table>
+
+								</div>
+								<div id="mid-range-details1" class="model">
+									<table class="table">
+										<h1>Distributed Edge: 1U Models</h1>
+										<p>Mid-sized and distributed organizations in need of a versatile solution to
+											power and protect their networks will be well-served with our 1U models.
+											These rackmount firewalls offer excellent performance, a diverse range of
+											high-speed built-in interfaces, and a choice of add-on connectivity modules.
+											Whether your priority is ensuring maximum uptime for your SD-WAN links,
+											securely connecting your remote users, or protecting the network in a
+											growing organization, you can tailor them to your dynamic
+											environment.<br><br>
+
+											All models are powered by a high-speed CPU plus a dedicated Xstream Flow
+											Processor for hardware acceleration.</p>
+									</table>
+
+								</div>
+								<div id="entry-level-details1" class="model">
+									<table class="table">
+										<h1>Enterprise and Campus Edge: 2U Models</h1>
+										<p>Distributed and growing enterprises in need of maximum throughput for the
+											most complex networks get the ultimate in protection, performance, and
+											business continuity with these next-gen firewalls. Xstream Flow Processors
+											provide dedicated hardware acceleration to easily handle full-on protection
+											for today’s encrypted, cloud-hosted applications and traffic. These models
+											strike the perfect balance between port density and modularity, with a range
+											of high-speed, built-in ports, plus additional high-density Flexi Port
+											modules available to extend connectivity even further.<br><br>
+
+											All models are powered by a high-speed CPU plus a dedicated Xstream Flow
+											Processor for hardware acceleration.</p>
+									</table>
+
+								</div>
+								<div id="high-end-details" class="model">
+									<table class="table">
+										<tr>
+											<th>MODEL</th>
+											<th>THREAT PROTECTION</th>
+											<th>DATA SHEET</th>
+										</tr>
+										<tr>
+											<td>XGS 136/136w</td>
+											<td>1,000 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 126/126w</td>
+											<td>900 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 116 / 116w</td>
+											<td>720 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 107 / 107w</td>
+											<td>370 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 87 / 87w</td>
+											<td>280 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+
+
+									</table>
+
+									</table>
+
+								</div>
+								<div id="mid-range-details" class="model">
+									<table class="table">
+										<tr>
+											<th>MODEL</th>
+											<th>THREAT PROTECTION</th>
+											<th>DATA SHEET</th>
+										</tr>
+
+										<tr>
+											<td>XGS 4500</td>
+											<td>8,650 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 4300</td>
+											<td>6,500 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdff"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 3300</td>
+											<td>3,000 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 3100</td>
+											<td>2,000 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 2300</td>
+											<td>1,500 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 2100</td>
+											<td>1,250 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+
+									</table>
+								</div>
+
+								<div id="entry-level-details" class="model">
+									<table class="table">
+										<tr>
+											<th>MODEL</th>
+											<th>THREAT PROTECTION</th>
+											<th>DATA SHEET</th>
+										</tr>
+
+										<tr>
+											<td>XGS 8500</td>
+											<td>34,000 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 7500</td>
+											<td>26,000 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 6500</td>
+											<td>17,850 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+										<tr>
+											<td>XGS 5500</td>
+											<td>14,000 Mbps</td>
+											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
+													target="_blank"><img src="images/icon-download.svg" width="25"
+														height="25"> Datasheet</a></td>
+										</tr>
+
+									</table>
+								</div>
 							</div>
-							<div class="col-4 col-12-medium">
 
-								<!-- Sidebar -->
-									<section id="sidebar">
-										<section>
-											<img src="images/sophos-firewall-g2-reviews-testimonials.jpg" alt="" width="450" height="300"/></a>
-											<img src="images/g2-leader-winter-2024.svg" alt="" />
-											<h3>Recognized as the #1 <br>Firewall Solution by G2 Users</h3>
-											
-											<footer>
-												<ul class="actions">
-													<li><br><a href="https://www.g2.com/reports/grid-report-for-firewall-software-winter-2024.embed?featured=sophos-firewall&secure%5Bgated_consumer%5D=efa2abf8-85db-4a54-a21a-0160edc287b6&secure%5Btoken%5D=04c91d96b598d55117e0e831e576bafc098e6a882b49fe5b5717793851e65baf&utm_campaign=gate-1944592" class="button" target="_blank">Learn More</a></li>
-												</ul>
-											</footer>
-										</section>
-										<hr/>
-										<section>
-											
-										</section>
-										<section>
-											<br>
-											
-											<img src="images/automated-threat-response.jpg" alt="" width="500" height="500"/>
-											
-											
-											<h3>Automated Threat Detection and Response</h3>
-											<h1>Automated Threat Detection and Response</h1>
-											<p>Whether you use Sophos Endpoints or Sophos XDR to manage your own cybersecurity or opt to have Sophos do it for you with Sophos MDR, your Sophos Firewalls reduce response time from minutes to seconds. Stopping threats before they can spread, Sophos Firewalls:</p>
-											<ul>
-												<li>Automatically identify and block active threats</li>
-												<li>Prevent the lateral movement of attacks</li>
-												<li>Deliver immediate insights into compromised devices, users, and applications</li>
-												
-											</ul>
-											<footer>
-												
-											</footer>
-										</section>
-									</section>
+							<script>
+								const entryLevelButton = document.getElementById('entry-level');
+								const midRangeButton = document.getElementById('mid-range');
+								const highEndButton = document.getElementById('high-end');
+								const entryLevelDetails = document.getElementById('entry-level-details');
+								const entryLevelDetails1 = document.getElementById('entry-level-details1');
+								const midRangeDetails = document.getElementById('mid-range-details');
+								const midRangeDetails1 = document.getElementById('mid-range-details1');
+								const highEndDetails = document.getElementById('high-end-details');
+								const highEndDetails1 = document.getElementById('high-end-details1');
 
-							</div>
-						</div>
+								// Initially hide all details sections
+								entryLevelDetails.style.display = "none";
+								entryLevelDetails1.style.display = "none";
+								midRangeDetails.style.display = "none";
+								midRangeDetails1.style.display = "none";
+								highEndDetails.style.display = "tabel";
+								highEndDetails1.style.display = "tabel";
+
+								function changeMode(mode) {
+									// Reset all displays to none before showing the selected one
+									entryLevelDetails.style.display = "none";
+									entryLevelDetails1.style.display = "none";
+									midRangeDetails.style.display = "none";
+									midRangeDetails1.style.display = "none";
+									highEndDetails.style.display = "none";
+									highEndDetails1.style.display = "none";
+
+									if (mode === "entry-level") {
+										entryLevelDetails.style.display = "block";
+									} else if (mode === "mid-range") {
+										midRangeDetails.style.display = "block";
+									} else if (mode === "high-end") {
+										highEndDetails.style.display = "block";
+									}
+									if (mode === "entry-level") {
+										entryLevelDetails1.style.display = "block";
+									} else if (mode === "mid-range") {
+										midRangeDetails1.style.display = "block";
+									} else if (mode === "high-end") {
+										highEndDetails1.style.display = "block";
+									}
+								}
+
+								// Event listeners remain the same
+								entryLevelButton.addEventListener('click', () => {
+									changeMode("entry-level");
+								});
+
+								midRangeButton.addEventListener('click', () => {
+									changeMode("mid-range");
+								});
+
+								highEndButton.addEventListener('click', () => {
+									changeMode("high-end");
+								});
+							</script>
+						</section>
+
+					</div>
+					<div class="col-4 col-12-medium">
+
+						<!-- Sidebar -->
+						<section id="sidebar">
+							<section>
+								<img src="images/sophos-firewall-g2-reviews-testimonials.jpg" alt="" width="450"
+									height="300" /></a>
+								<img src="images/g2-leader-winter-2024.svg" alt="" />
+								<h3>Recognized as the #1 <br>Firewall Solution by G2 Users</h3>
+
+								<footer>
+									<ul class="actions">
+										<li><br><a
+												href="https://www.g2.com/reports/grid-report-for-firewall-software-winter-2024.embed?featured=sophos-firewall&secure%5Bgated_consumer%5D=efa2abf8-85db-4a54-a21a-0160edc287b6&secure%5Btoken%5D=04c91d96b598d55117e0e831e576bafc098e6a882b49fe5b5717793851e65baf&utm_campaign=gate-1944592"
+												class="button" target="_blank">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+							<hr />
+							<section>
+
+							</section>
+							<section>
+								<br>
+
+								<img src="images/automated-threat-response.jpg" alt="" width="500" height="500" />
+
+
+								<h3>Automated Threat Detection and Response</h3>
+								<h1>Automated Threat Detection and Response</h1>
+								<p>Whether you use Sophos Endpoints or Sophos XDR to manage your own cybersecurity or
+									opt to have Sophos do it for you with Sophos MDR, your Sophos Firewalls reduce
+									response time from minutes to seconds. Stopping threats before they can spread,
+									Sophos Firewalls:</p>
+								<ul>
+									<li>Automatically identify and block active threats</li>
+									<li>Prevent the lateral movement of attacks</li>
+									<li>Deliver immediate insights into compromised devices, users, and applications
+									</li>
+
+								</ul>
+								<footer>
+
+								</footer>
+							</section>
+						</section>
+
 					</div>
 				</div>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
-
+			</div>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
 
-	</body>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
