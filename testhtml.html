@@ -1,13 +1,97 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ใช้ไอคอน Font Awesome</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Popup</title>
+  <style>
+    /* ปรับสไตล์สำหรับป๊อปอัพ */
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .popup-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .trigger-text {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <!-- ไอคอนโล่ที่มีโลกครอบ -->
-    <i class="fas fa-shield-alt"></i>
+
+<!-- ข้อความที่กดได้ -->
+<p id="myText" class="trigger-text">Click here to see the popup</p>
+
+<!-- ป๊อปอัพ -->
+<div id="myPopup" class="popup">
+  <span class="close">&times;</span>
+  <div class="popup-content">
+    <p><img src="images/Sophos-firewall-XGS-2u-models-Photoroom.png-Photoroom.png"
+        alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+  </div>
+</div>
+
+<script>
+  // รับองค์ประกอบต่างๆ
+  var popup = document.getElementById("myPopup");
+  var text = document.getElementById("myText");
+  var span = document.getElementsByClassName("close")[0];
+
+  // เมื่อกดที่ข้อความ ให้เปิดป๊อปอัพ
+  text.onclick = function() {
+    popup.style.display = "block";
+  }
+
+  // เมื่อกดที่ปุ่มปิด (x) ให้ปิดป๊อปอัพ
+  span.onclick = function() {
+    popup.style.display = "none";
+  }
+
+  // เมื่อกดที่ใดๆ ที่ไม่ใช่ป๊อปอัพ ให้ปิดป๊อปอัพ
+  window.onclick = function(event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  }
+</script>
+
 </body>
 </html>
