@@ -22,7 +22,9 @@
 
     .popup-content {
       margin: auto;
-      display: block;
+      display: flex; /* เพิ่มคุณสมบัติ flexbox */
+      justify-content: center; /* จัดแสดงตามศูนย์กลางแนวนอน */
+      align-items: center; /* จัดแสดงตามศูนย์กลางแนวตั้ง */
       width: 80%;
       max-width: 700px;
       background: #fff;
@@ -53,15 +55,23 @@
       text-decoration: underline;
       cursor: pointer;
     }
+
+    .popup-content p {
+      margin: 0; /* กำหนดค่าขอบล่างเป็น 0 เพื่อลบระยะห่าง */
+    }
+
+    .popup-content img {
+      max-width: 50%; /* กำหนดขนาดภาพให้มีขนาดครึ่งหนึ่งของพื้นที่ป๊อปอัพ */
+      height: auto; /* รักษาอัตราส่วน */
+      margin: 5px; /* เพิ่มระยะห่างรอบภาพ */
+    }
   </style>
 </head>
 <body>
 
 <table border="1">
   <tr>
-    <td id="text1" class="trigger-text" data-popup="popup1">Click here to see the first popup1</td>
-    <td id="text1-1" class="trigger-text" data-popup="popup1">Click here to see the first popup1.1</td>
-    <td id="text2" class="trigger-text" data-popup="popup2">Click here to see the second popup</td>
+    <td id="text1" class="trigger-text" data-popup="popup1">Click here to see the popup with two images</td>
   </tr>
 </table>
 
@@ -69,14 +79,8 @@
 <div id="popup1" class="popup">
   <span class="close">&times;</span>
   <div class="popup-content">
-    <p><img src="images/checkproduct/1530-1555.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
-  </div>
-</div>
-
-<div id="popup2" class="popup">
-  <span class="close">&times;</span>
-  <div class="popup-content">
-    <p><img src="images/image2.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+    <p><img src="images/router_1.png" alt=""></p>
+    <p><img src="images/router_2.png" alt=""></p>
   </div>
 </div>
 

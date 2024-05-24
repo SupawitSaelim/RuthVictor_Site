@@ -41,6 +41,64 @@
 		.spaced-paragraph {
 			margin-bottom: 20px;
 		}
+		.popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 270px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .popup-content {
+            margin: auto;
+			display: flex; /* เพิ่มคุณสมบัติ flexbox */
+			justify-content: center; /* จัดแสดงตามศูนย์กลางแนวนอน */
+			align-items: center; /* จัดแสดงตามศูนย์กลางแนวตั้ง */
+			width: 80%;
+			max-width: 700px;
+			background: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			text-align: center;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .trigger-text {
+            color: rgb(231, 10, 120);
+            
+            cursor: pointer;
+        }
+		.popup-content p {
+			margin: 0; /* กำหนดค่าขอบล่างเป็น 0 เพื่อลบระยะห่าง */
+		}
+
+		.popup-content img {
+			max-width: 50%; /* กำหนดขนาดภาพให้มีขนาดครึ่งหนึ่งของพื้นที่ป๊อปอัพ */
+			height: auto; /* รักษาอัตราส่วน */
+			margin: 5px; /* เพิ่มระยะห่างรอบภาพ */
+		}
 	</style>
 </head>
 
@@ -296,40 +354,71 @@
 											<th>DATA SHEET</th>
 										</tr>
 										<tr>
-											<td>XGS 136/136w</td>
+											<td id="text1" class="trigger-text" data-popup="popup5">XGS 136/136w</td>
 											<td>1,000 Mbps</td>
 											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
 													target="_blank"><img src="images/icon-download.svg" width="25"
 														height="25"> Datasheet</a></td>
 										</tr>
 										<tr>
-											<td>XGS 126/126w</td>
+											<td id="text1" class="trigger-text" data-popup="popup4">XGS 126/126w</td>
 											<td>900 Mbps</td>
 											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
 													target="_blank"><img src="images/icon-download.svg" width="25"
 														height="25"> Datasheet</a></td>
 										</tr>
 										<tr>
-											<td>XGS 116 / 116w</td>
+											<td id="text1" class="trigger-text" data-popup="popup3">XGS 116 / 116w</td>
 											<td>720 Mbps</td>
 											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
 													target="_blank"><img src="images/icon-download.svg" width="25"
 														height="25"> Datasheet</a></td>
 										</tr>
 										<tr>
-											<td>XGS 107 / 107w</td>
+											<td id="text1" class="trigger-text" data-popup="popup2">XGS 107 / 107w</td>
 											<td>370 Mbps</td>
 											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
 													target="_blank"><img src="images/icon-download.svg" width="25"
 														height="25"> Datasheet</a></td>
 										</tr>
 										<tr>
-											<td>XGS 87 / 87w</td>
+											<td id="text1" class="trigger-text" data-popup="popup1">XGS 87 / 87w</td>
 											<td>280 Mbps</td>
 											<td><a href="https://assets.sophos.com/X24WTUEQ/at/7wf85vbnnqf939bbhtxgfk/sophos-firewall-br.pdf"
 													target="_blank"><img src="images/icon-download.svg" width="25"
 														height="25"> Datasheet</a></td>
 										</tr>
+										<div id="popup1" class="popup">
+											<span class="close">&times;</span>
+											<div class="popup-content">
+											  <p><img src="images/sophosproduct/thumb-xgs-87.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+											  <p><img src="images/sophosproduct/large-xgs-87w-back.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+											</div>
+										</div>
+										<div id="popup2" class="popup">
+											<span class="close">&times;</span>
+											<div class="popup-content">
+											  <p><img src="images/sophosproduct/thumb-xgs-107.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+											</div>
+										</div>
+										<div id="popup3" class="popup">
+											<span class="close">&times;</span>
+											<div class="popup-content">
+											  <p><img src="images/sophosproduct/thumb-xgs-116.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+											</div>
+										</div>
+										<div id="popup4" class="popup">
+											<span class="close">&times;</span>
+											<div class="popup-content">
+											  <p><img src="images/sophosproduct/thumb-xgs-126.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+											</div>
+										</div>
+										<div id="popup5" class="popup">
+											<span class="close">&times;</span>
+											<div class="popup-content">
+											  <p><img src="images/sophosproduct/thumb-xgs-136.png" alt="" style="max-width: 100%; height: auto; margin-top: 5px;"></p>
+											</div>
+										</div>
 
 
 									</table>
@@ -431,6 +520,45 @@
 									</table>
 								</div>
 							</div>
+							<script>
+                                // ฟังก์ชันสำหรับเปิดป๊อปอัพ
+                                function showPopup(popupId) {
+                                    var popup = document.getElementById(popupId);
+                                    popup.style.display = "block";
+                                }
+
+                                // ฟังก์ชันสำหรับปิดป๊อปอัพ
+                                function closePopup(popup) {
+                                    popup.style.display = "none";
+                                }
+
+                                // รับองค์ประกอบต่างๆ
+                                var triggerTexts = document.getElementsByClassName("trigger-text");
+                                var closeButtons = document.getElementsByClassName("close");
+
+                                // เมื่อกดที่ข้อความ ให้เปิดป๊อปอัพที่ถูกต้อง
+                                for (var i = 0; i < triggerTexts.length; i++) {
+                                    triggerTexts[i].onclick = function() {
+                                    var popupId = this.getAttribute("data-popup");
+                                    showPopup(popupId);
+                                    }
+                                }
+
+                                // เมื่อกดที่ปุ่มปิด (x) ให้ปิดป๊อปอัพ
+                                for (var i = 0; i < closeButtons.length; i++) {
+                                    closeButtons[i].onclick = function() {
+                                    var popup = this.closest(".popup");
+                                    closePopup(popup);
+                                    }
+                                }
+
+                                // เมื่อกดที่ใดๆ ที่ไม่ใช่ป๊อปอัพ ให้ปิดป๊อปอัพ
+                                window.onclick = function(event) {
+                                    if (event.target.classList.contains('popup')) {
+                                    closePopup(event.target);
+                                    }
+                                }
+                            </script>
 
 							<script>
 								const entryLevelButton = document.getElementById('entry-level');
