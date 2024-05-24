@@ -1,236 +1,338 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <title>FireWall Solution</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
     <style>
-        
-
         /* Styles for Tabs */
         .tab {
-          overflow: hidden;
-          background-color: #f1f1f1;
-          border-bottom: 1px solid #ccc;
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
         }
 
         .tab button {
-          background-color: inherit;
-          float: left;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          padding: 14px 16px;
-          transition: 0.3s;
-          font-size: 17px;
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
         }
 
         .tab button:hover {
-          background-color: #d16666;
+            background-color: rgb(120, 0, 20);
         }
 
         .tab button.active {
-          background-color: #f1f1f1;
+            background-color: rgb(140, 40, 60);
+            ;
         }
 
-        
 
-		.spaced-paragraph {
+
+        .spaced-paragraph {
             margin-bottom: 20px;
         }
     </style>
 </head>
+
 <body class="is-preload">
 
-<!-- Navigation Bar -->
-<div class="navbar">
-    <a href="index.html" class="active">Home</a>
-    <a href="Firewall.html">FireWalls</a>
-    <a href="right-sidebar.html">Right Sidebar</a>
-    <a href="no-sidebar.html">No Sidebar</a>
-    <a href="elements.html">Elements</a>
-    <a href="signup.html" class="button primary">Sign Up</a>
-</div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="Firewall.html">FireWalls</a>
+        <a href="right-sidebar.html">Right Sidebar</a>
+        <a href="no-sidebar.html">No Sidebar</a>
+        <a href="elements.html">Elements</a>
+        <a href="signup.html" class="button primary">Sign Up</a>
+    </div>
 
-<div id="page-wrapper">
+    <div id="page-wrapper">
 
-    <!-- Header -->
-    <header id="header">
-        <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html">  Ruth Victor</a></h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="#">Products</a>
-                    <ul>
-                        <li><a href="Firewall.html">FireWall</a></li>
-                        <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                        <li><a href="no-sidebar.html">No Sidebar</a></li>
-                        <li>
-                            <a href="#">Submenu</a>
-                            <ul>
-                                <li><a href="#">Option 1</a></li>
-                                <li><a href="#">Option 2</a></li>
-                                <li><a href="#">Option 3</a></li>
-                                <li><a href="#">Option 4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="elements.html">Elements</a></li>
-                <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="contacts.html" class="button primary">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main -->
-    <div id="main" class="wrapper style1">
-        <div class="container">
-            <header class="major">
-                <h2>FireWall Solution</h2>
-                <p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
-            </header>
-            
-            <!-- Tab Navigation -->
-            <div class="tab">
-			  <button class="tablinks" onclick="navigateTo('Fortinet.html')">Fortinet</button>
-              <button class="tablinks" onclick="navigateTo('Sophos.html')">Sophos</button>
-              <button class="tablinks" onclick="openModel(event, 'Model3')">Model 3</button>
-            </div>
-
-            <!-- Tab Content -->
-            <div id="Fortinet" class="tabcontent">
-            </div>
-
-            <div id="Sophos" class="tabcontent">
-              
-            </div>
-
-            <div id="Model3" class="tabcontent" >
-             
-            </div>
-			<script>
-				function navigateTo(url) {
-					window.location.href = url;
-				}
-		
-				function openModel(evt, modelName) {
-					var i, tabcontent, tablinks;
-		
-					// Hide all tab content
-					tabcontent = document.getElementsByClassName("tabcontent");
-					for (i = 0; i < tabcontent.length; i++) {
-						tabcontent[i].style.display = "none";
-					}
-		
-					// Remove the background color of all tablinks/buttons
-					tablinks = document.getElementsByClassName("tablinks");
-					for (i = 0; i < tablinks.length; i++) {
-						tablinks[i].className = tablinks[i].className.replace(" active", "");
-					}
-		
-					// Show the specific tab content
-					document.getElementById(modelName).style.display = "block";
-					evt.currentTarget.className += " active";
-				}
-			</script>
-            
-            <div class="row gtr-150"style="margin-top: 20px;">
-                <div class="col-4 col-12-medium">
-                    <!-- Sidebar -->
-                    <section id="sidebar">
-                        <section>
-                            <h3>Magna Feugiat</h3>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">Learn More</a></li>
-                                </ul>
-                            </footer>
-                        </section>
-                        <hr />
-                        <section>
-                            <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-                            <h3>Amet Lorem Tempus</h3>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">Learn More</a></li>
-                                </ul>
-                            </footer>
-                        </section>
-                    </section>
-                </div>
-                <div class="col-8 col-12-medium imp-medium">
-                    <!-- Content -->
-                    <section id="content">
-                        <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-                        <h3>Dolore Amet Consequat</h3>
-                        <p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-                        <p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique.</p>
-                        <h3>Sed Magna Ornare</h3>
-                        <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
                         <ul>
-                            <li>Faucibus orci lobortis ac adipiscing integer.</li>
-                            <li>Col accumsan arcu mi aliquet placerat.</li>
-                            <li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-                            <li>Blandit massa non blandit tempor interdum.</li>
-                            <li>Lacinia mattis arcu nascetur lobortis.</li>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </section>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>FireWall</h2>
+                    <p>Immprove your security with our our FireWall solutions</p>
+                </header>
+
+                <!-- Tab Navigation -->
+                <div class="tab">
+                    <button class="tablinks" onclick="navigateTo('Fortinet.html')"
+                        style="color: white;">Fortinet</button>
+                    <button class="tablinks" onclick="navigateTo('Sophos.html')" style="color: white;">Sophos</button>
+                    <button class="tablinks" onclick="openModel(event, 'Model3')"
+                        style="color: white;">Checkpoint</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="Fortinet" class="tabcontent">
+                </div>
+
+                <div id="Sophos" class="tabcontent">
+                </div>
+
+                <div id="Model3" class="tabcontent">
+                </div>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h2>What is a FireWall?</h2>
+                            <p>A firewall is a network security system that monitors and controls incoming and outgoing
+                                network traffic based on predetermined security rules. A firewall typically establishes
+                                a
+                                barrier between a trusted internal network and untrusted external network, such as the
+                                Internet.</p>
+                        </header>
+                    </div>
+                    <a href="#one" class="goto-next scrolly">Next</a>
+                </section>
+
+                <!-- One -->
+                <section id="one">
+                    <div class="content">
+                        <header><br><br>
+                            <img src="images/diagram-cloud.png" width="80%"
+                                style="margin-left: 10em;background-color: whitesmoke;" alt="">
+                            <br><br>
+                            <h2>Why do you need a FireWall?</h2>
+                            <p>Firewalls are a key part of keeping networked computers safe and secure. All data packets
+                                are inspected as they pass through the firewall, and the firewall uses a set of rules to
+                                determine whether a packet is allowed to pass through or not. A firewall can be
+                                hardware,
+                                software, or both.</p>
+
+                        </header>
+                    </div>
+                </section>
+
+                <!-- two -->
+                <section id="two">
+                    <div class="content">
+                        <header><br><br>
+                            <h2>What Firewalls Do?</h2>
+                            <p>Firewalls provide protection against outside cyber attackers by shielding your computer
+                                or network from malicious or unnecessary network traffic. Firewalls can also prevent
+                                malicious software from accessing a computer or network via the internet.</p>
+                        </header>
+                    </div>
+                </section>
+
+                <!-- two -->
+                <section id="three">
+                    <div class="content">
+                        <header><br><br>
+                            <h2>Type of Firewalls</h2>
+                            <p>There are several types of firewalls that have been developed over the years, each with
+                                its own advantages and disadvantages. Some of the most common types of firewalls include
+                                packet filtering firewalls, stateful inspection firewalls, proxy firewalls, and next-gen
+                                firewalls.</p>
+
+                        </header>
+                    </div>
+                </section>
+                <hr><br><br>
+
+
+                <div class="row gtr-150" style="margin-top: 20px;">
+                    <div class="col-4 col-12-medium">
+                        <!-- Sidebar -->
+                        <section id="sidebar">
+                            <section>
+                                <h2>Network Layer vs. Application Layer Inspection</h2>
+                                <p>Network layer or packet filters scrutinize packets at a lower tier of the TCP/IP
+                                    protocol stack, restricting passage through the firewall unless they adhere to
+                                    predefined rules centered on Internet Protocol (IP) addresses and ports. Firewalls
+                                    employing network layer inspection exhibit superior performance compared to
+                                    counterparts employing application layer inspection. However, a drawback is that
+                                    undesired applications or malware may traverse permitted ports, such as outbound
+                                    Internet traffic using web protocols HTTP and HTTPS on ports 80 and 443,
+                                    respectively.</p>
+                            </section>
+                            <hr />
+                            <section>
+                                <a href="#" class="image fit"><img src="images/picture-firewall-1.png" alt="" /></a>
+                                <h3>Virtual firewall</h3>
+                                <p>A virtual firewall is commonly installed as a virtual appliance within either a
+                                    private cloud environment (such as VMware ESXi,
+                                    Microsoft Hyper-V, or KVM) or a public cloud infrastructure (like Amazon Web
+                                    Services, Microsoft Azure, Google Cloud Platform,
+                                    or Oracle Cloud Infrastructure). Its primary function is to oversee and safeguard
+                                    network traffic traversing both physical and virtual networks. Furthermore, a
+                                    virtual firewall frequently serves as a vital element within software-defined
+                                    networks (SDN).</p>
+                                <!-- <footer>
+                                    <ul class="actions">
+                                        <li><a href="#" class="button">Learn More</a></li>
+                                    </ul>
+                                </footer> -->
+                            </section>
+                        </section>
+                    </div>
+                    <div class="col-8 col-12-medium imp-medium">
+                        <!-- Content -->
+                        <section id="content">
+                            <a href="#" class="image fit"><img src="images/picture_firewal_2.jpg" alt="" /></a><br>
+                            <h3>The Importance of NAT and VPN</h3>
+                            <p>Firewalls also undertake fundamental network-level tasks like Network Address Translation
+                                (NAT) and Virtual Private Network (VPN) operations.
+                                Network Address Translation conceals or converts internal client or server IP addresses,
+                                typically falling within a "private address range" according to RFC 1918, into a public
+                                IP address.
+                                This concealment of protected device addresses helps conserve the limited pool of IPv4
+                                addresses
+                                and serves as a defense mechanism against network reconnaissance by hiding the IP
+                                addresses from the Internet.</p>
+                            <p>Similarly, a virtual private network (VPN) establishes a secure connection over a public
+                                network
+                                by encapsulating data within an encrypted tunnel. This safeguards the contents of
+                                packets while
+                                they traverse the Internet, allowing users to transmit and receive data securely across
+                                shared or
+                                public networks.</p>
+                            <h3>Next Generation Firewalls and Beyond</h3>
+                            <p>Next Generation Firewalls analyze packets at the application layer of the TCP/IP stack,
+                                enabling them to
+                                recognize specific applications like Skype or Facebook, and enforce security policies
+                                based on the
+                                application type.
+                                Today, Unified Threat Management (UTM) devices and Next Generation Firewalls also
+                                integrate advanced
+                                threat prevention technologies such as intrusion prevention systems (IPS) or antivirus
+                                software to identify and block malware and threats. Additionally, these devices may
+                                incorporate sandboxing technologies to identify threats within files.
+                                As the cyber security landscape evolves and attacks become increasingly sophisticated,
+                                Next Generation Firewalls will remain a crucial component of any organization's security
+                                strategy,
+                                whether deployed in the data center, network, or cloud environment.</p>
+                            <!-- <ul>
+                                <li>Faucibus orci lobortis ac adipiscing integer.</li>
+                                <li>Col accumsan arcu mi aliquet placerat.</li>
+                                <li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
+                                <li>Blandit massa non blandit tempor interdum.</li>
+                                <li>Lacinia mattis arcu nascetur lobortis.</li>
+                            </ul> -->
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                        class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+            </ul>
+        </footer>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="icons">
-            <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-            <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-            <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </footer>
-</div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function openModel(evt, modelName) {
+            var i, tabcontent, tablinks;
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script>
-function openModel(evt, modelName) {
-  var i, tabcontent, tablinks;
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(modelName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(modelName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
+
 </html>
