@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cisco | Ruth Victor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Styles for Tabs */
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="switch.html">Switch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('cisco_router.html')"
+                            style="color: white;">Cisco</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="cisco_router" class="tabcontent">
+                    </div>
+                </header>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h2>Cisco Switch</h2>
+                            <p>Switch on the power of your network</p>
+                            <img src="images/cisco_switch_1.png.avif" width="80%" style="margin-left: 15em;" alt="">
+                        </header>
+                    </div>
+                </section>
+
+                <!-- Main -->
+                <div id="main" class="wrapper style1">
+                    <div class="container">
+                        <div class="row gtr-150">
+                            <div class="col-8 col-12-medium">
+
+                                <!-- Content -->
+                                <section id="content">
+                                    <a target="_blank"
+                                        href="https://www.cisco.com/site/us/en/products/networking/switches/index.html#accordion-e454b3d231-item-54cfa9a96b"
+                                        class="image fit"><img src="images/cisco_switch_2.png.avif" alt="" /></a>
+                                    <h2>Master the demands of secure, sustainable hybrid work.</h2>
+                                    <p>Deliver exceptional experiences. Attract top talent and foster innovation. Stay
+                                        ahead of the competition with our switches—both new and existing—enabling you to
+                                        achieve it all.</p><br>
+                                    <div class="row">
+                                        <div class="column">
+                                            <h3>Choose what works for you</h3>
+                                            <p>Complete tasks efficiently, intelligently, and securely with the switch
+                                                that
+                                                suits your needs.</p><br>
+                                            <h3>Evolve your network with intent</h3>
+                                            <p>Bridge the divide between your business requirements and your network
+                                                capabilities.</p>
+                                        </div>
+                                        <div class="column">
+                                            <h3>Protect with insight</h3>
+                                            <p>Stay ahead of evolving threats with built-in security features and
+                                                proactive operational strategies.</p>
+                                            <h3>Be ready for what's next</h3>
+                                            <p>Prepare for whatever the future holds with adaptable solutions spanning
+                                                from ASIC to OS. Benefit from model-driven programmability across the
+                                                entire stack.</p>
+                                        </div>
+                                    </div><br><br>
+
+                                    <h2>Switches for every network</h1>
+                                        <h2>Access</h2>
+                                        <p>Access switches play a critical role in network infrastructure by offering
+                                            the essential ports and functionalities to meet the connectivity needs of
+                                            end-user devices. Typically equipped with multiple Ethernet ports, ranging
+                                            from 8 to 48 ports, these switches facilitate connections for a variety of
+                                            devices.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/networking/switches/campus-lan-access/index.html"
+                                            target="_blank" class="button small">Learn More</a><br><br><br>
+
+                                        <h2>Core and distribution</h2>
+                                        <p>Core and distribution switches are the backbone of the network, providing
+                                            high-speed connectivity between access switches and routing to the
+                                            distribution layer. These switches are designed to handle large volumes of
+                                            traffic and ensure reliable, high-performance connectivity.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/networking/switches/campus-lan-core-distribution/index.html"
+                                            target="_blank" class="button small">Learn More</a><br><br><br>
+
+                                        <h2>Data center and cloud</h2>
+                                        <p>Data center and cloud switches are optimized for high-density, high-speed
+                                            connectivity in data center environments. These switches are designed to
+                                            support the high-performance requirements of modern data centers and cloud
+                                            environments, providing the scalability, reliability, and flexibility needed
+                                            to meet the demands of today's applications.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/networking/cloud-networking-switches/index.html"
+                                            target="_blank" class="button small">Learn More</a><br><br><br>
+
+                                        <h2>Industrial Ethernet</h2>
+                                        <p>Industrial Ethernet switches are designed to operate in harsh industrial
+                                            environments, providing reliable, high-performance connectivity for
+                                            industrial automation, manufacturing, transportation, and other industrial
+                                            applications. These switches are built to withstand extreme temperatures,
+                                            humidity, vibration, and electromagnetic interference, making them ideal for
+                                            use in industrial settings.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/networking/industrial-switches/index.html?ccid=cc002430&oid=powit024547&dtid=odicdc000509"
+                                            target="_blank" class="button small">Learn More</a><br><br><br>
+
+                                        <h2>Small business and LAN compact</h2>
+                                        <p>Small business and LAN compact switches are designed to provide reliable,
+                                            high-performance connectivity for small and medium-sized businesses. These
+                                            switches offer essential features and functionalities to support the
+                                            networking needs of small business environments, including plug-and-play
+                                            setup, easy management, and robust security features.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/networking/switches/campus-lan-compact/index.html"
+                                            target="_blank" class="button small">Learn More</a><br><br><br>
+
+                                        <h2>Network management
+                                        </h2>
+                                        <p>With Cisco Catalyst Center and Cisco Meraki dashboard you can manage your
+                                            network from anywhere, at any time. These platforms provide a centralized
+                                            view of your network, allowing you to monitor and manage your switches,
+                                            routers, and access points from a single interface.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/networking/dna-center-platform/index.html"
+                                            target="_blank">Explore Cisco Catalyst Center</a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="https://meraki.cisco.com/products/meraki-dashboard/"
+                                            target="_blank">Try Cisco Meraki dashboard</a>
+
+                                </section>
+                            </div>
+                            <div class="col-4 col-12-medium">
+
+                                <!-- Sidebar -->
+                                <section id="sidebar">
+                                    <section>
+                                        <h3>Ace the demands of secure, sustainable hybrid work</h3>
+                                        <p>Build a network that gives you peace of mind.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <iframe
+                                                    src='//players.brightcove.net/1384193102001/NJgI8K0ie_default/index.html?videoId=6291828810001'
+                                                    allowfullscreen frameborder=0></iframe>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    <hr />
+                                    <section>
+                                        <h3>Explore better-together switching solutions</h3>
+                                        <p>Enhance network security. Do it all with our broad range of switching
+                                            solutions.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.cisco.com/c/en/us/products/switches/solution-listing.html"
+                                                        class="button primary">Find your solution</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    <hr>
+                                    <section><br>
+                                        <a href="https://www.cisco.com/site/us/en/products/networking/switches/index.html#accordion-e454b3d231-item-54cfa9a96b"
+                                            target="_blank" class="image fit"><img src="images/cisco_switch_3.png.avif"
+                                                alt="" /></a>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.cisco.com/c/en/us/products/switches/product-listing.html"
+                                                        class="button primary">See all switches</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    <hr>
+                                    <section>
+                                        <h3>Cisco Software-Defined Access</h3>
+                                        <p>Enhance management and security of IoT device and user network access through
+                                            zero-trust workplace capabilities.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.cisco.com/c/en/us/solutions/enterprise-networks/software-defined-access/index.html"
+                                                        class="button primary">Explore Cisco Software-Defined Access</a>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    <hr>
+                                    <section>
+                                        <h3>Cisco smart building solutions</h3>
+                                        <p>Infuse intelligence into your buildings to elevate health, safety, and
+                                            operational efficiencies.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.cisco.com/site/us/en/solutions/smart-building/index.html"
+                                                        target="_blank" class="button primary">Explore Cisco smart
+                                                        building solutions</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    <hr>
+                                    <section>
+                                        <h3>Cisco wireless and mobility solutions</h3>
+                                        <p>Join the Wi-Fi movement for wireless experience in hybrid work environments.
+                                        </p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.cisco.com/c/en/us/solutions/enterprise-networks/802-11ax-solution/index.html"
+                                                        target="_blank" class="button primary">Explore Cisco wireless
+                                                        and mobility solutions</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    <hr>
+                                    <section>
+                                        <h3>Cisco ThousandEyes solutions</h3>
+                                        <p>Rapidly pinpoint factors impacting user experiences across any domain, even
+                                            those beyond your ownership or control.
+                                        </p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.cisco.com/c/en/us/products/cloud-systems-management/internet-cloud-intelligence/index.html"
+                                                        target="_blank" class="button primary">Explore Cisco
+                                                        ThousandEyes solutions</a></li>
+                                            </ul>
+                                            <iframe
+                                                src='//players.brightcove.net/1384193102001/NJgI8K0ie_default/index.html?videoId=6238680064001'
+                                                allowfullscreen frameborder=0></iframe>
+                                        </footer>
+                                    </section>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <section id="five" class="wrapper style2 special fade">
+                    <div class="container">
+                        <header>
+                            <div class="row">
+                                <div class="column">
+                                    <h2>Your networking <br>journey, your way</h2>
+                                </div>
+                                <div class="column">
+                                    <p>Introducing streamlined, intuitive experiences with cloud management for Cisco
+                                        Catalyst. Discover additional avenues to enhance efficiency, simplify
+                                        operations, cut costs, and expedite your cloud migration journey.</p>
+                                    <a href="https://engage2demand.cisco.com/LP=30069"
+                                        target="_blank" class="button small">Register now</a><br>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <ul class="icons">
+                        <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                        <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                                class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                        <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                        <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                        <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+                    </ul>
+                </footer>
+
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.scrolly.min.js"></script>
+                <script src="assets/js/jquery.dropotron.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+                <script>
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Get all elements with class="tabcontent" and hide them
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Get all elements with class="tablinks" and remove the class "active"
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the current tab, and add an "active" class to the button that opened the tab
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+</body>
+
+</html>
