@@ -45,6 +45,29 @@
         .spaced-paragraph {
             margin-bottom: 20px;
         }
+        
+        
+        
+    
+        .box .row.gtr-uniform {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box .row .section {
+            flex: 1 1 calc(25% - 10px); /* Adjusting for spacing */
+            box-sizing: border-box;
+            margin: 5px;
+        }
+        .custom-icon,
+        .custom-icon1 {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        center {
+            text-align: center;
+        }
 
         </style>
 	</head>
@@ -171,10 +194,50 @@
 
 								<hr />
 
-								<header>
-									<h3>Heading with a Subtitle</h3>
-									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-								</header>
+								<body>
+                                    <header>
+                                        <h3>Heading with a Subtitle</h3>
+                                        <div class="box alt">
+                                            <div class="row gtr-uniform">
+                                                <section class="section">
+                                                    <center>
+                                                        <img src="images/paloaltoproduct/secure-your-enterprise.svg" alt=""
+                                                            class="custom-icon" />
+                                                        <h3>Uncompromising Security</h3>
+                                                        <p>Delivers the highest-caliber threat prevention with award winning
+                                                            SandBlast Zero Day protection out of the box </p>
+                                                    </center>
+                                                </section>
+                                                <section class="section">
+                                                    <center>
+                                                        <img src="images/paloaltoproduct/ml-powered.svg" alt=""
+                                                            class="custom-icon1" />
+                                                        <h3>Security at Hyperscale</h3>
+                                                        <p>On-demand hyperscale threat prevention performance providing enterprises
+                                                            cloud level expansion and resiliency on premises</p>
+                                                    </center>
+                                                </section>
+                                                <section class="section">
+                                                    <center>
+                                                        <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
+                                                        <h3>Unified Security</h3>
+                                                        <p>R81 unified security management control across networks, clouds, and IoT
+                                                            increases efficiency cutting security operations up to 80%</p>
+                                                    </center>
+                                                </section>
+                                                <section class="section">
+                                                    <center>
+                                                        <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
+                                                        <h3>Unified Security</h3>
+                                                        <p>R81 unified security management control across networks, clouds, and IoT
+                                                            increases efficiency cutting security operations up to 80%</p>
+                                                    </center>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                    </header>
+                                </body>
 								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 								<header>
 									<h4>Heading with a Subtitle</h4>

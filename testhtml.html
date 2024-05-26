@@ -1,128 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Popup in Table</title>
-  <style>
-    /* ปรับสไตล์สำหรับป๊อปอัพ */
-    .popup {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 60px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0,0.9);
-    }
-
-    .popup-content {
-      margin: auto;
-      display: flex; /* เพิ่มคุณสมบัติ flexbox */
-      justify-content: center; /* จัดแสดงตามศูนย์กลางแนวนอน */
-      align-items: center; /* จัดแสดงตามศูนย์กลางแนวตั้ง */
-      width: 80%;
-      max-width: 700px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #bbb;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .trigger-text {
-      color: blue;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    .popup-content p {
-      margin: 0; /* กำหนดค่าขอบล่างเป็น 0 เพื่อลบระยะห่าง */
-    }
-
-    .popup-content img {
-      max-width: 50%; /* กำหนดขนาดภาพให้มีขนาดครึ่งหนึ่งของพื้นที่ป๊อปอัพ */
-      height: auto; /* รักษาอัตราส่วน */
-      margin: 5px; /* เพิ่มระยะห่างรอบภาพ */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        .box.alt {
+            background-color: white;
+        }
+        .box .row.gtr-uniform {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box .row .section {
+            flex: 1 1 calc(25% - 10px); /* Adjusting for spacing */
+            box-sizing: border-box;
+            margin: 5px;
+        }
+        .custom-icon,
+        .custom-icon1 {
+            max-width: 100%;
+            height: auto;
+            filter: invert(1) brightness(2); /* Invert colors to white and adjust brightness */
+        }
+        h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        center {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-
-<table border="1">
-  <tr>
-    <td id="text1" class="trigger-text" data-popup="popup1">Click here to see the popup with two images</td>
-  </tr>
-</table>
-
-<!-- ป๊อปอัพ -->
-<div id="popup1" class="popup">
-  <span class="close">&times;</span>
-  <div class="popup-content">
-    <p><img src="images/router_1.png" alt=""></p>
-    <p><img src="images/router_2.png" alt=""></p>
-  </div>
-</div>
-
-<script>
-  // ฟังก์ชันสำหรับเปิดป๊อปอัพ
-  function showPopup(popupId) {
-    var popup = document.getElementById(popupId);
-    popup.style.display = "block";
-  }
-
-  // ฟังก์ชันสำหรับปิดป๊อปอัพ
-  function closePopup(popup) {
-    popup.style.display = "none";
-  }
-
-  // รับองค์ประกอบต่างๆ
-  var triggerTexts = document.getElementsByClassName("trigger-text");
-  var closeButtons = document.getElementsByClassName("close");
-
-  // เมื่อกดที่ข้อความ ให้เปิดป๊อปอัพที่ถูกต้อง
-  for (var i = 0; i < triggerTexts.length; i++) {
-    triggerTexts[i].onclick = function() {
-      var popupId = this.getAttribute("data-popup");
-      showPopup(popupId);
-    }
-  }
-
-  // เมื่อกดที่ปุ่มปิด (x) ให้ปิดป๊อปอัพ
-  for (var i = 0; i < closeButtons.length; i++) {
-    closeButtons[i].onclick = function() {
-      var popup = this.closest(".popup");
-      closePopup(popup);
-    }
-  }
-
-  // เมื่อกดที่ใดๆ ที่ไม่ใช่ป๊อปอัพ ให้ปิดป๊อปอัพ
-  window.onclick = function(event) {
-    if (event.target.classList.contains('popup')) {
-      closePopup(event.target);
-    }
-  }
-</script>
-
+    <header>
+        <h3>Heading with a Subtitle</h3>
+        <div class="box alt">
+            <div class="row gtr-uniform">
+                <section class="section">
+                    <center>
+                        <img src="images/paloaltoproduct/secure-your-enterprise.svg" alt=""
+                            class="custom-icon" />
+                        <h3>Uncompromising Security</h3>
+                        <p>Delivers the highest-caliber threat prevention with award winning
+                            SandBlast Zero Day protection out of the box </p>
+                    </center>
+                </section>
+                <section class="section">
+                    <center>
+                        <img src="images/paloaltoproduct/ml-powered.svg" alt=""
+                            class="custom-icon1" />
+                        <h3>Security at Hyperscale</h3>
+                        <p>On-demand hyperscale threat prevention performance providing enterprises
+                            cloud level expansion and resiliency on premises</p>
+                    </center>
+                </section>
+                <section class="section">
+                    <center>
+                        <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
+                        <h3>Unified Security</h3>
+                        <p>R81 unified security management control across networks, clouds, and IoT
+                            increases efficiency cutting security operations up to 80%</p>
+                    </center>
+                </section>
+                <section class="section">
+                    <center>
+                        <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
+                        <h3>Unified Security</h3>
+                        <p>R81 unified security management control across networks, clouds, and IoT
+                            increases efficiency cutting security operations up to 80%</p>
+                    </center>
+                </section>
+            </div>
+        </div>
+        <hr />
+    </header>
 </body>
 </html>
