@@ -8,12 +8,45 @@
 -->
 <html>
 	<head>
-		<title>Elements - Landed by HTML5 UP</title>
+		<title>paloalto_firewall</title>
 		<link rel="icon" href="images/only_logo.png" type="image/x-icon">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+
+        </style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -58,16 +91,83 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>Elements</h2>
+							<h2>Paloalto</h2>
 							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+                            <img src="images/paloaltoproduct/paloalto-firewall.png" alt="" width="40%" height="40%" />
+                            <div class="tab">
+                                <button class="tablinks" onclick="navigateTo('Fortinet.html')"
+                                    style="color: white;">Fortinet</button>
+                                <button class="tablinks" onclick="navigateTo('Sophos.html')"
+                                    style="color: white;">Sophos</button>
+                                <button class="tablinks" onclick="navigateTo('Check_Point.html')"
+                                    style="color: white;">Checkpoint</button>
+                                <button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
+                                    style="color: white;">Cisco</button>
+                                <button class="tablinks" onclick="navigateTo('paloalto_firewall.html')"
+                                    style="color: white;">Paloalto</button>
+                            </div>
+        
+                            <!-- Tab Content -->
+                            <div id="Fortinet" class="tabcontent">
+                            </div>
+        
+                            <div id="Sophos" class="tabcontent">
+                            </div>
+        
+                            <div id="Check_Point" class="tabcontent">
+                            </div>
+        
+                            <div id="cisco_firewall" class="tabcontent">
+                            </div>
+                            <div id="paloalto_firewall" class="tabcontent">
+                            </div>
+                            <script>
+                                function navigateTo(url) {
+                                    window.location.href = url;
+                                }
+        
+                                function openModel(evt, modelName) {
+                                    var i, tabcontent, tablinks;
+        
+                                    // Hide all tab content
+                                    tabcontent = document.getElementsByClassName("tabcontent");
+                                    for (i = 0; i < tabcontent.length; i++) {
+                                        tabcontent[i].style.display = "none";
+                                    }
+        
+                                    // Remove the background color of all tablinks/buttons
+                                    tablinks = document.getElementsByClassName("tablinks");
+                                    for (i = 0; i < tablinks.length; i++) {
+                                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                    }
+        
+                                    // Show the specific tab content
+                                    document.getElementById(modelName).style.display = "block";
+                                    evt.currentTarget.className += " active";
+                                }
+                            </script>
 						</header>
 
 						<!-- Text -->
 							<section>
-								<h3>Text</h3>
-								<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-								This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-								This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+                                <center>
+								<h3>Stay ahead of the most complex threats with ML-powered, cloud-based network security</h3>
+                                
+								<p>Leverage inline deep learning to stop unknown zero-day attacks. Our latest innovations go beyond <br>signature-based detection to find the most evasive threats and stop them.
+
+                                </p>
+                                </center>
+                                
+                                
+                                <center>
+									
+								<a
+									href="https://start.paloaltonetworks.com/preventing-evasive-threats.html"
+									class="button" target="_blank">Learn More</a>
+									
+                                </center>
+								
+                                
 
 								<hr />
 
