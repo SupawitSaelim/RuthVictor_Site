@@ -3,81 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Widget Layout</title>
     <style>
         body {
-            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
         }
-        .box.alt {
-            background-color: white;
-        }
-        .box .row.gtr-uniform {
+        .container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            gap: 20px;
+            justify-content: center;
         }
-        .box .row .section {
-            flex: 1 1 calc(25% - 10px); /* Adjusting for spacing */
-            box-sizing: border-box;
-            margin: 5px;
-        }
-        .custom-icon,
-        .custom-icon1 {
-            max-width: 100%;
-            height: auto;
-            filter: invert(1) brightness(2); /* Invert colors to white and adjust brightness */
-        }
-        h3, p {
-            margin: 0;
-            padding: 0;
-        }
-        center {
+        .widget {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             text-align: center;
+            flex: 1 1 calc(33.333% - 40px); /* Three widgets in a row */
+        }
+        .widget.large {
+            flex: 1 1 calc(50% - 40px); /* Two widgets in a row */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .widget {
+                flex: 1 1 calc(50% - 40px);
+            }
+            .widget.large {
+                flex: 1 1 calc(100% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .widget {
+                flex: 1 1 calc(100% - 40px);
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h3>Heading with a Subtitle</h3>
-        <div class="box alt">
-            <div class="row gtr-uniform">
-                <section class="section">
-                    <center>
-                        <img src="images/paloaltoproduct/secure-your-enterprise.svg" alt=""
-                            class="custom-icon" />
-                        <h3>Uncompromising Security</h3>
-                        <p>Delivers the highest-caliber threat prevention with award winning
-                            SandBlast Zero Day protection out of the box </p>
-                    </center>
-                </section>
-                <section class="section">
-                    <center>
-                        <img src="images/paloaltoproduct/ml-powered.svg" alt=""
-                            class="custom-icon1" />
-                        <h3>Security at Hyperscale</h3>
-                        <p>On-demand hyperscale threat prevention performance providing enterprises
-                            cloud level expansion and resiliency on premises</p>
-                    </center>
-                </section>
-                <section class="section">
-                    <center>
-                        <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
-                        <h3>Unified Security</h3>
-                        <p>R81 unified security management control across networks, clouds, and IoT
-                            increases efficiency cutting security operations up to 80%</p>
-                    </center>
-                </section>
-                <section class="section">
-                    <center>
-                        <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
-                        <h3>Unified Security</h3>
-                        <p>R81 unified security management control across networks, clouds, and IoT
-                            increases efficiency cutting security operations up to 80%</p>
-                    </center>
-                </section>
-            </div>
+    <div class="container">
+        <div class="widget">
+            <h3>1000 Series</h3>
+            <p>Best for smaller businesses and branch offices.</p><br><br>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-1000-series/index.html" target="_blank" class="button">Learn More</a>
         </div>
-        <hr />
-    </header>
+        <div class="widget">
+            <h3>3100 Series</h3>
+            <p>Enhanced for medium-sized enterprises, with the flexibility to grow in the future.</p><br>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/secure-firewall-3100-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+        <div class="widget">
+            <h3>4100 Series</h3>
+            <p>Partner with us to fortify your digital defenses and safeguard your organization against cyber threats.</p>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-4100-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+        <div class="widget large">
+            <h3>4200 Series</h3>
+            <p>Experience faster threat detection with enhanced visibility and the agility to protect large enterprise data centers and campus networks.</p>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/secure-firewall-4200-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+        <div class="widget large">
+            <h3>9300 Series</h3>
+            <p>Optimized for service providers and high-performance data centers.</p><br><br>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-9300-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+    </div>
 </body>
 </html>

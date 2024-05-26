@@ -58,6 +58,7 @@
             flex: 1 1 calc(25% - 10px); /* Adjusting for spacing */
             box-sizing: border-box;
             margin: 5px;
+			
         }
         .custom-icon,
         .custom-icon1 {
@@ -68,8 +69,68 @@
         center {
             text-align: center;
         }
+		.box.alt1 {
+            background-color: rgba(140, 40, 60);
+        }
+		.row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6 {
+            flex: 1;
+        }
+        ul.alt, ol {
+            list-style: none; /* เอาเครื่องหมาย bullet หรือหมายเลขออก */
+            padding: 0;
+            position: relative;
+        }
+        ul.alt1 li, ol li {
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-right: 0px; /* ให้มีพื้นที่เพียงพอสำหรับรูปภาพ */
+        }
+        .image {
+            width: 500px; /* ขนาดของรูปภาพ */
+            margin-left: 0px; /* ระยะห่างระหว่างรูปภาพกับรายการ */
+            position: absolute; /* ทำให้รูปภาพวางตำแหน่งสัมพัทธ์ */
+            right: 50px; /* ขยับรูปภาพไปทางขวา */
+			
+        }
+		.widget {
+				background-color: rgba(140, 40, 60);
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				padding: 20px;
+				text-align: center;
+				flex: 1 1 calc(33.333% - 40px); /* Three widgets in a row */
+			}
+			.widget.large {
+				flex: 1 1 calc(50% - 40px); /* Two widgets in a row */
+			}
+			.widget:hover {
+				background-color: rgb(120, 0, 20);
+				color: #fff;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        	}
+			
+			@media (max-width: 768px) {
+				.widget {
+					flex: 1 1 calc(50% - 40px);
+				}
+				.widget.large {
+					flex: 1 1 calc(100% - 40px);
+				}
+			}
+			@media (max-width: 480px) {
+				.widget {
+					flex: 1 1 calc(100% - 40px);
+				}
+			}
 
         </style>
+		
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -196,14 +257,14 @@
 
 								<body>
                                     <header>
-                                        <h3>Heading with a Subtitle</h3>
-                                        <div class="box alt">
+                                        
+                                        <div class="box alt1">
                                             <div class="row gtr-uniform">
                                                 <section class="section">
                                                     <center>
                                                         <img src="images/paloaltoproduct/secure-your-enterprise.svg" alt=""
                                                             class="custom-icon" />
-                                                        <h3>Uncompromising Security</h3>
+                                                        <h3>Deep learning stops the most evasive threats</h3>
                                                         <p>Delivers the highest-caliber threat prevention with award winning
                                                             SandBlast Zero Day protection out of the box </p>
                                                     </center>
@@ -212,7 +273,7 @@
                                                     <center>
                                                         <img src="images/paloaltoproduct/ml-powered.svg" alt=""
                                                             class="custom-icon1" />
-                                                        <h3>Security at Hyperscale</h3>
+                                                        <h3>Zero-delay signatures provide updates in seconds</h3>
                                                         <p>On-demand hyperscale threat prevention performance providing enterprises
                                                             cloud level expansion and resiliency on premises</p>
                                                     </center>
@@ -220,360 +281,179 @@
                                                 <section class="section">
                                                     <center>
                                                         <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
-                                                        <h3>Unified Security</h3>
+                                                        <h3>ML-powered visibility across IoT and other connected devices</h3>
                                                         <p>R81 unified security management control across networks, clouds, and IoT
                                                             increases efficiency cutting security operations up to 80%</p>
                                                     </center>
                                                 </section>
                                                 <section class="section">
                                                     <center>
-                                                        <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
-                                                        <h3>Unified Security</h3>
+                                                        <img src="images/paloaltoproduct/automated.svg" alt="" class="custom-icon" />
+                                                        <h3>Maximize security and minimize downtime</h3>
                                                         <p>R81 unified security management control across networks, clouds, and IoT
                                                             increases efficiency cutting security operations up to 80%</p>
                                                     </center>
                                                 </section>
                                             </div>
                                         </div>
-                                        <hr />
+                                        <hr /><br><br>
                                     </header>
+
                                 </body>
-								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-								<header>
-									<h4>Heading with a Subtitle</h4>
-									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-
-								<hr />
-
-								<h2>Heading Level 2</h2>
-								<h3>Heading Level 3</h3>
-								<h4>Heading Level 4</h4>
-								<h5>Heading Level 5</h5>
-								<h6>Heading Level 6</h6>
-
-								<hr />
-
-								<h4>Blockquote</h4>
-								<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-
-								<h4>Preformatted</h4>
-								<pre><code>i = 0;
-
-	while (!deck.isInOrder()) {
-	    print 'Iteration ' + i;
-	    deck.shuffle();
-	    i++;
-	}
-
-	print 'It took ' + i + ' iterations to sort the deck.';
-	</code></pre>
-							</section>
-
-						<!-- Lists -->
-							<section>
-								<h3>Lists</h3>
-								<div class="row">
-									<div class="col-6 col-12-xsmall">
-
-										<h4>Unordered</h4>
-										<ul>
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Sagittis adipiscing lorem eleifend.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
-										</ul>
-
-										<h4>Alternate</h4>
-										<ul class="alt">
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Sagittis adipiscing lorem eleifend.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
-											<li>Lobortis adipiscing condimentum lorem.</li>
-											<li>Integer eleifend erat sed accumsan.</li>
-										</ul>
-
-									</div>
-									<div class="col-6 col-12-xsmall">
-
-										<h4>Ordered</h4>
-										<ol>
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Etiam vel felis at lorem sed viverra.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Etiam vel felis at lorem sed viverra.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
-										</ol>
-
-										<h4>Icons</h4>
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-										</ul>
-										<ul class="icons">
-											<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
-											<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands alt fa-tumblr"><span class="label">Tumblr</span></a></li>
-										</ul>
-
-									</div>
-								</div>
-
-								<h4>Actions</h4>
-								<ul class="actions">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions small">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-								<div class="row">
-									<div class="col-3 col-6-medium col-12-xsmall">
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-										</ul>
-									</div>
-									<div class="col-3 col-6-medium col-12-xsmall">
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-										</ul>
-									</div>
-									<div class="col-3 col-6-medium col-12-xsmall">
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary fit">Default</a></li>
-											<li><a href="#" class="button fit">Default</a></li>
-										</ul>
-									</div>
-									<div class="col-3 col-6-medium col-12-xsmall">
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary small fit">Small</a></li>
-											<li><a href="#" class="button small fit">Small</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
-
-						<!-- Table -->
-							<section>
-								<h3>Table</h3>
-								<h4>Default</h4>
-								<div class="table-wrapper">
-									<table>
-										<thead>
-											<tr>
-												<th>Name</th>
-												<th>Description</th>
-												<th>Price</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Item 1</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 2</td>
-												<td>Vis ac commodo adipiscing arcu aliquet.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 3</td>
-												<td> Morbi faucibus arcu accumsan lorem.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 4</td>
-												<td>Vitae integer tempus condimentum.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 5</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="2"></td>
-												<td>100.00</td>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-								<h4>Alternate</h4>
-								<div class="table-wrapper">
-									<table class="alt">
-										<thead>
-											<tr>
-												<th>Name</th>
-												<th>Description</th>
-												<th>Price</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Item 1</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 2</td>
-												<td>Vis ac commodo adipiscing arcu aliquet.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 3</td>
-												<td> Morbi faucibus arcu accumsan lorem.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 4</td>
-												<td>Vitae integer tempus condimentum.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 5</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="2"></td>
-												<td>100.00</td>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-							</section>
-
-						<!-- Buttons -->
-							<section>
-								<h3>Buttons</h3>
-								<ul class="actions">
-									<li><a href="#" class="button primary">Primary</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions">
-									<li><a href="#" class="button primary large">Large</a></li>
-									<li><a href="#" class="button">Default</a></li>
-									<li><a href="#" class="button small">Default</a></li>
-								</ul>
-								<div class="row">
-									<div class="col-6 col-12-xsmall">
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-										</ul>
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-										</ul>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-									<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-								</ul>
-								<ul class="actions">
-									<li><span class="button primary disabled">Primary</span></li>
-									<li><span class="button disabled">Default</span></li>
-								</ul>
-							</section>
-
-						<!-- Form -->
-							<section>
-								<h3>Form</h3>
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
+								
+								<section>
+									<h3>11-time industry leader</h3>
+									<div class="row">
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="name" id="name" value="" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<input type="email" name="email" id="email" value="" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<select name="category" id="category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-										<div class="col-4 col-12-medium">
-											<input type="radio" id="priority-low" name="priority" checked>
-											<label for="priority-low">Low Priority</label>
-										</div>
-										<div class="col-4 col-12-medium">
-											<input type="radio" id="priority-normal" name="priority">
-											<label for="priority-normal">Normal Priority</label>
-										</div>
-										<div class="col-4 col-12-medium">
-											<input type="radio" id="priority-high" name="priority">
-											<label for="priority-high">High Priority</label>
-										</div>
-										<div class="col-6 col-12-medium">
-											<input type="checkbox" id="copy" name="copy">
-											<label for="copy">Email me a copy of this message</label>
-										</div>
-										<div class="col-6 col-12-medium">
-											<input type="checkbox" id="human" name="human" checked>
-											<label for="human">I am a human and not a robot</label>
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
-												<li><input type="reset" value="Reset" /></li>
+	
+											
+	
+											<h4>Our continued innovations consistently outperform <br>the competition, establishing our products as best-in-class <br>for the 11th consecutive time.</h4>
+											<ul class="alt1">
+												<li data-img="images/paloaltoproduct/11-time-industry-leader.png">11-time Leader in the Gartner Magic Quadrant for Network Firewalls <a href="https://start.paloaltonetworks.com/gartner-mq-for-firewalls.html" target="_blank">&nbsp;Read the report </a>
+													 </li>
+												<br>
+												<li data-img="images/paloaltoproduct/cq5dam.web.1280.1280.png">Named a Leader in the Forrester Wave™: Enterprise Firewalls, Q4 2022 report <a href="https://start.paloaltonetworks.com/leader-in-forrester-wave.html" target="_blank">&nbsp;Read the report </a></li>
+												
 											</ul>
+											<br><br><br><br><br><br>
+	
 										</div>
+									
+										
 									</div>
-								</form>
-							</section>
+									<hr/>
+									
+	
+									
+									
+								</section>
+								<script>
+									let previousImage = null;
+							
+									document.querySelectorAll('li').forEach(function(item) {
+										item.addEventListener('click', function() {
+											var imgSrc = item.getAttribute('data-img');
+											var existingImg = item.querySelector('.image');
+							
+											// If clicking the same item, toggle the image
+											if (existingImg) {
+												existingImg.remove();
+												previousImage = null;
+												return;
+											}
+							
+											// Remove the previous image if it exists
+											if (previousImage) {
+												previousImage.remove();
+											}
+							
+											// Create new image element
+											var img = document.createElement('img');
+											img.src = imgSrc;
+											img.className = 'image';
+							
+											// Insert image next to the clicked list item
+											item.appendChild(img);
+							
+											// Store the new image as the previous image
+											previousImage = img;
+										});
+									});
+								</script>
+								<header>
+									<center>
+									<h2>Don’t just react. Think ahead.</h2>
+									<p>
+										Reactive security can’t keep up with today’s threats – or prepare you for tomorrow’s. We’ve changed the game by making network security intelligent and proactive. Driven by innovation, our award-winning security features the world’s first ML-Powered NGFW and empowers you to stay ahead.</p>
+										<img src="images/paloaltoproduct/palo.png" alt=""  />
+									</center>
+								</header>
+								
 
-						<!-- Image -->
-							<section>
-								<h3>Image</h3>
-								<h4>Fit</h4>
+								<hr />
+								<center>
+								<h6>USE CASES</h6>
+								<h2>Securing your network requires the right <br>protection in the right place</h2>
+								<p>Our NGFW platform protects your entire business, no matter the size or complexity. With a unified network security architecture and the ability to leverage deep learning in real time, our firewalls can help you see and secure everything.</p>
+								
+								</center>
+								<div class="container">
+									<div class="widget">
+										<img src="images/paloaltoproduct/01-branch-icon.svg"  alt="">
+										<h3>Branch</h3>
+										<p>Enable Zero Trust Network Security with simplified security for thousands of branch offices.</p>
+										
+									</div>
+									<div class="widget">
+										<img src="images/paloaltoproduct/02-campus-icon.svg"  alt="">
+										<h3>Campus</h3>
+										<p>Integrated capabilities protect your internal assets and the outside world, so your users can connect to data and applications anywhere.</p>
+										
+									</div>
+									<div class="widget">
+										<img src="images/paloaltoproduct/03-data-center-icon.svg"  alt="">
+										<h3>Data Center</h3>
+										<p>Get deep visibility and consistent, best-in-class security controls across physical, virtualized, containerized and cloud environments.</p>
+										
+									</div>
+									<div class="widget large">
+										<img src="images/paloaltoproduct/04-public-cloud-icon-min.svg"  alt="">
+										<h3>Public Cloud</h3>
+										<p>Secure multiple public cloud environments with the same level of protection as on-premises data centers.</p>
+										
+									</div>
+									<div class="widget large">
+										<img src="images/paloaltoproduct/05-5g-icon.svg"  alt="">
+										<h3>5G Security</h3>
+										<p>Leverage a simplified solution to protect all facets of your unique mobile network.</p>
+										
+									</div>
+								</div>
+								<hr />
 								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/pic07.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="row gtr-uniform">
+										<section class="col-4 col-6-medium col-12-xsmall">
+											<img src="images/paloaltoproduct/pa-5450.png"  style="max-width: 100%;" alt="">
+											<center>
+											<h3>PA-5450 Series</h3>
+											<h1>Defend high-speed data centers and large campuses</h1>
+											<p>Stop known and zero-day attacks hiding in all network traffic, even encrypted traffic.</p><br>
+											
+											<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-5450-series"
+												target="_blank" class="button">Learn More</a>
+											</center>
+										</section>
+										<section class="col-4 col-6-medium col-12-xsmall">
+											<img src="images/paloaltoproduct/06-PA_1410.png"  style="max-width: 100%;"  alt="">
+											<center>
+											<h3>PA-1400 Series</h3>
+											<h1>Protect large branch locations and small enterprise campuses</h1>
+											<p>Protect large branch locations and small enterprise campuses with support for Power over Ethernet (PoE) fiber ports.</p>
+											<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-1400-series"
+												target="_blank" class="button">Learn More</a>
+											</center>
+										</section>
+										<section class="col-4 col-6-medium col-12-xsmall">
+											<img src="images/paloaltoproduct/pa-400-series.png" style="max-width: 100%;"  alt=""><br><br><br>
+											<center>
+											<h3>PA-400 Series</h3>
+											<h1>Secure the distributed enterprise</h1>
+											<p>Get proactive threat prevention for your distributed enterprise with simplified security for thousands of branch offices.</p>
+											<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-400-series"
+												target="_blank" class="button">Learn More</a>
+											</center>
+										</section>
+										
+										
 									</div>
 								</div>
 
-								<h4>Left &amp; Right</h4>
-								<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.</p>
-								<p><span class="image right"><img src="images/pic08.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.</p>
-							</section>
+								
+						
+							
+
+						
 
 					</div>
 				</div>
