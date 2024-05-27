@@ -190,271 +190,52 @@
                         <center>
                             <img src="images/waf.png" width="60%" alt="">
                         </center>
-                        <h2>What is a log file?</h2>
-                        <p>Log files are computer-generated data files that serve as a primary data source for
-                            information related to the activities, operations, and usage patterns of applications,
-                            servers, operating systems, and other devices. Logs are crucial for identifying and
-                            analyzing situations when applications, systems, and networks encounter operational
-                            bottlenecks or performance issues. They provide a detailed record of every action, offering
-                            insights that help identify the root cause of problems or anomalies.
-
-                            Log file management involves aggregating data from multiple log sources. The following are
-                            the most common log types</p>
+                        <hr/>
+                        <br>
+                        <h2>What is the difference between blocklist and allowlist WAFs?</h2>
+                        <p>A WAF that operates based on a blocklist (negative security model) protects against known attacks. It can be likened to a club bouncer who denies entry to guests who don’t meet the dress code. Conversely, a WAF based on an allowlist (positive security model) only admits traffic that has been pre-approved, similar to a bouncer at an exclusive party who only admits people on the guest list. Both blocklists and allowlists have their advantages and drawbacks, which is why many WAFs use a hybrid security model, implementing both approaches for enhanced protection.</p><br>
                             
-                        
+                        <h2>What are network-based, host-based, and cloud-based WAFs?</h2>
+                        <p>A WAF can be implemented in one of three different ways, each with its own benefits and shortcomings:</p>
                         <ul>
-                            <li><b>Application Logs</b> : These logs are generated when an event occurs within an
-                                application. Code developers use application logs to understand and measure how
-                                applications behave during the development cycle and prior to release.</li>
-                            <li><b>System Logs</b> : These logs record events generated within the operating system,
-                                such as
-                                driver errors during startup, sign-in and sign-out events, and other system activities.
+                            <li><b>Network-based WAFs</b> : These are typically hardware appliances installed within the network. They offer high performance and low latency since they are deployed close to the web servers. However, they can be expensive and complex to maintain.</li>
+                            <li><b>Host-based WAFs</b> : These are software solutions installed directly on the web server. They are highly customizable and can be integrated with other host-based security tools. However, they can consume significant server resources and may require more maintenance and updates.
                             </li>
-                            <li><b>Security Logs</b> : These logs provide a detailed record of security events that
-                                occur
-                                on a computer. They collect various types of events, such as unsuccessful login
-                                attempts, failed authentication requests, password changes, or file deletions.
-                                Administrators can usually configure which events they want to record and track in the
-                                security log.</li><br><br>
-                            <h2>How to collect and organize logs</h2>
-                            <p>Organizations should collect, store, and organize data in a unified manner to make
-                                sifting through massive log data easy and quick. Implementing an out-of-the-box log
-                                management solution with an intuitive interface and smart capabilities helps businesses
-                                get a complete overview of the IT environment and ensure rapid issue identification and
-                                troubleshooting. The key steps in the log management process are listed below</p>
+                            <li><b>Cloud-based WAFs</b> : These are managed services provided by third-party vendors. They are easy to deploy and scale, with minimal upfront costs. However, they can introduce additional latency due to traffic routing and may depend on the reliability of the third-party provider.</li><br>
+                            <p>Each method offers distinct advantages and limitations, and the choice of implementation depends on the specific needs and resources of the organization.</p>
+                            <h2>How does a WAF work?</h2>
+                            <p>A WAF works by inspecting HTTP requests and applying predefined rules to identify malicious traffic. It can be implemented as software, an appliance, or a service. The WAF analyzes the following key parts of HTTP conversations:</p>
+                            <li><b>HTTP Headers</b> : These contain metadata about the request or response, such as the source and destination addresses, cookies, and content types. Malicious actors often manipulate headers to execute attacks.</li>
+                            <li><b>HTTP Body</b> : This is the main content of the request or response, which can include user input, form submissions, and data exchange. The body is scrutinized for malicious payloads like SQL injection or cross-site scripting (XSS) attempts.</li>
+                            <li><b>URL Parameters</b> : These are key-value pairs added to the URL to pass data between the client and the server. Attackers may exploit these parameters to inject malicious code.</li>
+                            <li><b>Cookies</b> : These are small pieces of data stored on the client side and sent with each request to the server. WAFs examine cookies for signs of tampering or malicious intent.</li>
+                            <p>By analyzing these components, a WAF can effectively detect and block various types of web attacks.</p>
                             <div class="row">
                                 <div class="column">
-                                    <h3>Centralized Log Aggregation and Standardization</h3>
-                                    <p>Aggregating logs from multiple sources in one place is imperative. Leveraging
-                                        automated log management systems helps overcome the challenges of manual log
-                                        collection and aggregation, reducing the probability of errors and improving the
-                                        speed of operations. It also facilitates remote log management, simplifies the
-                                        overall process, and minimizes the cost and effort of managing massive log
-                                        volumes. Since logs from multiple sources may come in different formats, log
-                                        management solutions ensure data parsing to transform logs into a standard
-                                        format for easy analysis.</p>
-                                    <h3>Event Correlation</h3>
-                                    <p>Intelligent log management systems improve log monitoring by leveraging machine
-                                        learning or rules-based algorithms to correlate events across systems. Drawing
-                                        connections between related events helps in capturing a bigger picture and
-                                        deriving actionable insights for better troubleshooting.</p>
+                                    <h3>Why is WAF security important?</h3>
+                                    <p>WAFs are crucial for the security of online businesses. They protect sensitive data, prevent leaks, block malicious code from being injected into servers, and help meet compliance requirements like the Payment Card Industry Data Security Standard (PCI DSS). As organizations increasingly use more web applications and IoT devices, attackers target their vulnerabilities. Integrating a WAF with other security tools, such as two-factor authentication (2FA) and malware protection, creates a robust defense strategy.</p>
+                                    <h3>What is the difference between WAF and other tools?</h3>
+                                    <p>While network firewalls handle lower layers, WAFs focus on higher layers where web applications are more vulnerable. WAFs are vital for robust application security.</p>
                                 </div>
                                 <div class="column">
-                                    <h3>Log Search and Analysis</h3>
-                                    <p>With smart log management solutions, enterprises can easily filter log data via
-                                        intuitive search capability. An in-built powerful search engine helps refine log
-                                        data and quickly finds log entries, saving time and effort. Businesses can also
-                                        employ intelligent log analysis tools to identify the root cause before an issue
-                                        escalates.</p>
-                                    <h3>Log Reporting and Visualization</h3>
-                                    <p>Sophisticated log management solutions offer automated reports and customizable
-                                        dashboards to visualize log data in real-time. As a result, enterprises can
-                                        track performance metrics, keep a check on operational thresholds, and
-                                        demonstrate adherence to compliance or security requirements easily.</p>
-                                    <img src="images/log_2.png" width="60%" style="margin-left: 5em;" alt="">
+                                    <h3>How does WAF contribute to web app security?</h3>
+                                    <p>Many applications today are created using a combination of home-grown, third-party, and open-source code. WAFs add an extra layer of security to inadequately built or legacy applications and help enhance secure design practices by blocking common attack vectors and preventing malicious traffic from reaching the application. Below are significant advantages specific to WAFs:</p>
+
+                                    <li><b>Block Malicious Traffic</b>: WAFs prevent data breaches and other attacks by blocking malicious traffic before it reaches a web application.</li>
+                                    <li><b>Protect Sensitive Data</b>: WAFs safeguard sensitive information, such as credit card numbers and Personally Identifiable Information (PII), from unauthorized access.</li>
+                                    <li><b>Compliance</b>: WAFs help meet compliance requirements, such as PCI DSS, by blocking traffic that violates these standards.</li>
+                                    <li><b>Layered Defense</b>: WAFs can work alongside other security tools, like intrusion detection systems (IDS), intrusion prevention systems (IPS), and firewalls, to create a more effective layered defense against attacks.</li>
+                                    
+                                    
                                 </div>
                             </div>
-                            <hr>
+                            
 
                             <!-- SIEM -->
-                            <h2>What is security information and event management (SIEM)?</h2>
-                            <p>Security information and event management (SIEM) is a security solution that helps
-                                organizations recognize and address potential security threats and vulnerabilities
-                                before they can disrupt business operations. SIEM systems enable enterprise security
-                                teams to detect user behavior anomalies and utilize artificial intelligence (AI) to
-                                automate many of the manual processes associated with threat detection and incident
-                                response.</p>
-                            <p>The original SIEM platforms began as log management tools, combining security information
-                                management (SIM) and security event management (SEM) functions. These platforms enabled
-                                real-time monitoring and analysis of security-related events and facilitated tracking
-                                and logging of security data for compliance or auditing purposes. Gartner coined the
-                                term SIEM for the combination of SIM and SEM technologies in 2005.
-
-                                Over the years, SIEM software has evolved to incorporate user and entity behavior
-                                analytics (UEBA), advanced security analytics, AI, and machine learning capabilities for
-                                identifying anomalous behaviors and indicators of advanced threats. Today, SIEM has
-                                become a staple in modern security operation centers (SOCs) for security monitoring and
-                                compliance management use cases.</p>
-                            <h2>How does SIEM work?</h2>
-                            <p>At the most basic level, all SIEM solutions perform data aggregation, consolidation, and
-                                sorting functions to identify threats and adhere to data compliance requirements. While
-                                some solutions vary in capability, most offer the same core set of functions:</p>
-                            <ul>
-                                <li><b>
-                                        <h3>Log management</h3>
-                                    </b>SIEM ingests event data from a wide range of sources across
-                                    an organization’s entire IT infrastructure, including on-premises and cloud
-                                    environments.
-
-                                    Event log data from users, endpoints, applications, data sources, cloud workloads,
-                                    and networks, as well as from security hardware and software like firewalls or
-                                    antivirus programs, is collected, correlated, and analyzed in real time.
-
-                                    Some SIEM solutions also integrate with third-party threat intelligence feeds to
-                                    correlate internal security data against known threat signatures and profiles.
-                                    Integration with real-time threat feeds enables teams to block or detect new types
-                                    of attack signatures.</li><br>
-                                <li><b>
-                                        <h3>Event correlation and analytics</h3>
-                                    </b>Event correlation is a crucial component of any SIEM solution. Using advanced
-                                    analytics to identify and understand complex data patterns, event correlation
-                                    provides insights to quickly locate and mitigate potential threats to business
-                                    security.
-
-                                    SIEM solutions significantly improve mean time to detect (MTTD) and mean time to
-                                    respond (MTTR) for IT security teams by automating the manual workflows associated
-                                    with the in-depth analysis of security events.</li><br>
-                                <li><b>
-                                        <h3>Incident monitoring and security alerts</h3>
-                                    </b>SIEM consolidates its analysis into a single, central dashboard where security
-                                    teams monitor activity, triage alerts, identify threats, and initiate response or
-                                    remediation.
-
-                                    Most SIEM dashboards also include real-time data visualizations that help security
-                                    analysts spot spikes or trends in suspicious activity. Using customizable,
-                                    predefined correlation rules, administrators can be alerted immediately and take
-                                    appropriate actions to mitigate threats before they materialize into more
-                                    significant security issues.</li><br><br>
-
-                                <h2>What differentiates SIEM and Log Management?</h2>
-                                <p>SIEM encompasses log management functionalities but extends beyond it to provide
-                                    real-time monitoring, advanced threat detection, correlation, incident response, and
-                                    compliance reporting capabilities.</p>
-                                <img src="images/log_3.png" style="width: 50%;margin-left: 15em;" alt="">
-                                <hr>
-
-                                <!-- SOAR -->
-                                <h2>What Is SOAR?</h2>
-                                <p>Security orchestration, automation, and response (SOAR) technology streamline and
-                                    automate security operations by coordinating tasks across people and tools within a
-                                    unified platform. This enables organizations to rapidly respond to cybersecurity
-                                    threats while also gaining insights to prevent future incidents, ultimately
-                                    enhancing their overall security posture.</p>
-                                <p>A comprehensive SOAR product, as defined by Gartner, operates under three primary
-                                    software capabilities: threat and vulnerability management, security incident
-                                    response, and security operations automation.
-
-                                    Threat and vulnerability management (orchestration) encompass technologies that
-                                    address cyberthreats, while security operations automation (automation) pertains to
-                                    technologies enabling automation and orchestration within operations.</p>
-                                <img src="images/log_4.png" width="50%" style="margin-left: 15em;" alt="">
-                                <p>SOAR platforms ingest alert data, which then initiates playbooks automating response
-                                    workflows or tasks. Leveraging a blend of human expertise and machine learning,
-                                    organizations can analyze this varied data to understand and prioritize automated
-                                    incident response actions for future threats, thereby enhancing cybersecurity
-                                    practices and refining security operations.</p><br>
-                                <h2>SOAR vs. SIEM</h2>
-                                <p>Many consider SOAR and SIEM as akin products because both identify security issues
-                                    and gather data about the nature of the problem. They also handle notifications that
-                                    security personnel can use to address concerns. However, significant differences
-                                    exist between them.</p>
-                                <p>SOAR, like SIEM, gathers data and notifies security teams via a centralized platform.
-                                    However, while SIEM solely delivers alerts to security analysts, SOAR integrates
-                                    automation and response into the investigation process through automated playbooks
-                                    or workflows and artificial intelligence (AI) for pattern behavior learning. This
-                                    capability enables SOAR to anticipate similar threats before they occur.
-                                    Additionally, SOAR platforms like Cortex XSOAR often ingest alerts from sources not
-                                    covered by SIEMs, such as vulnerability scan findings, cloud security alerts, and
-                                    IoT device alerts. This integration facilitates alert deduplication, a common use
-                                    case for SOAR and SIEM integration, which reduces the time required for manual alert
-                                    handling. Consequently, IT security personnel can more efficiently detect and
-                                    address threats.</p><br><br>
-                                <img src="images/Log_5.png" width="60%" style="margin-left: 15em;"
-                                    alt=""><br><br><br><br><br>
-                                <h2>Why Is SOAR Important?</h2>
-                                <p>In today's rapidly evolving digital landscape, organizations face myriad
-                                    cybersecurity challenges. As threats become more complex and malicious, companies
-                                    must develop efficient strategies to safeguard their operations effectively. SOAR is
-                                    at the forefront of transforming security operations by revolutionizing how teams
-                                    manage, analyze, and respond to alerts and threats.
-
-                                    Presently, security operations teams grapple with the daunting task of manually
-                                    handling thousands of alerts daily. This manual approach not only leads to errors
-                                    and operational inefficiencies but also highlights the limitations of outdated and
-                                    siloed security tools. Moreover, the shortage of skilled cybersecurity professionals
-                                    exacerbates these challenges.
-
-                                    Many security teams struggle to correlate data from disparate systems, resulting in
-                                    numerous error-prone manual processes. Coupled with the scarcity of qualified
-                                    talent, this situation leaves analysts overwhelmed and at risk of missing genuine
-                                    threats amidst the noise.
-
-                                    Given the escalating volume of threats and alerts and the resource constraints to
-                                    address them, analysts must prioritize which alerts to address, often risking
-                                    oversight of critical threats. This overburdening leads to a surge in errors as
-                                    analysts endeavor to respond promptly to threats and malicious actors.</p>
-                                <p>Given these challenges, it's imperative for organizations to implement systems like a
-                                    SOAR platform to systematically orchestrate and automate their alert and response
-                                    processes. By automating routine tasks that consume significant time, energy, and
-                                    resources, security operations teams can enhance their efficiency and effectiveness
-                                    in handling and investigating incidents, thus significantly improving the
-                                    organization's overall security posture.</p>
+                            
                     </div>
                 </div>
-                <section id="nine" class="wrapper style1 special fade-up">
-                    <div class="container">
-                        <header class="major">
-                            <h2>SOAR empowers organizations to</h2>
-                        </header>
-                        <div class="box alt">
-                            <div class="row gtr-uniform">
-                                <section class="col-4 col-6-medium col-12-xsmall">
-                                    <span class="icon solid alt major fa-project-diagram"></span>
-                                    <h3>Integrate security, IT operations and threat intelligence tools.</h3>
-                                    <p>Consolidate diverse security solutions, even those from different vendors, for
-                                        enhanced data collection and analysis, eliminating the need for security teams
-                                        to manage multiple consoles and tools.</p>
-                                </section>
-                                <section class="col-4 col-6-medium col-12-xsmall">
-                                    <span class="icon solid alt major fa-cogs"></span>
-                                    <h3>View everything in one place</h3>
-                                    <p>Security teams benefit from a centralized console, streamlining access to all
-                                        necessary information for incident investigation and remediation.</p>
-                                </section>
-                                <section class="col-4 col-6-medium col-12-xsmall">
-                                    <span class="icon solid alt major fa-chart-line"></span>
-                                    <h3>Speed incident response</h3>
-                                    <p>SOAR platforms have demonstrated reductions in both the mean time to detect
-                                        (MTTD) and the mean time to respond (MTTR). By automating numerous actions, a
-                                        significant portion of incidents can be promptly and automatically addressed.
-                                    </p>
-                                </section>
-                                <section class="col-4 col-6-medium col-12-xsmall">
-                                    <span class="icon solid alt major fa-robot"></span>
-                                    <h3>Prevent time-consuming actions</h3>
-                                    <p>SOAR significantly diminishes false positives, repetitive tasks, and manual
-                                        processes, freeing up valuable time for security analysts. This allows them to
-                                        focus on more critical tasks, such as threat hunting and incident response.</p>
-                                    </p>
-                                </section>
-                                <section class="col-4 col-6-medium col-12-xsmall">
-                                    <span class="icon solid alt major fa-chart-bar"></span>
-                                    <h3>Access better intelligence</h3>
-                                    <p>SOAR solutions consolidate and validate data from various sources such as threat
-                                        intelligence platforms, firewalls, intrusion detection systems, SIEMs, and more,
-                                        providing your security team with enhanced insight and context. This facilitates
-                                        issue resolution and enables improved practices, empowering analysts to conduct
-                                        more comprehensive investigations when addressing problems.
-                                    </p>
-                                </section>
-                                <section class="col-4 col-6-medium col-12-xsmall">
-                                    <span class="icon solid alt major fa-comments"></span>
-                                    <h3>Improve reporting and communication</h3>
-                                    <p>By aggregating all security operations activities into a single platform and
-                                        presenting them through intuitive dashboards, stakeholders gain access to
-                                        comprehensive information. This includes clear metrics that assist in
-                                        identifying areas for workflow improvements and reducing response times.</p>
-                                </section>
-                            </div>
-                        </div>
-                    </div><br>
-                    <p>Finding the best SOAR solution for any security operations requires alignment of the vendor’s
-                        offerings and the SOC organization’s need to improve efficiency and efficacy. The right SOAR
-                        solution should not only complement and be compatible with the products, playbooks and processes
-                        that are already set in place, it should also optimize collaboration, offer flexibility in both
-                        deployment and hosting capabilities, and have a pricing model that aligns to the needs of the
-                        organization.</p>
-                </section>
+                
                 </div> 
                 <section id="five" class="wrapper style2 special fade">
 					<div class="container">
@@ -466,16 +247,14 @@
 							<div style="display: flex; justify-content: center; align-items: center;">
 								<!-- <div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div> -->
 								<!-- <div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div> -->
-								<a href="https://www.cloudflare.com/en-gb/soc-as-a-service/" target="_blank" style="text-decoration: none;"><img src="images/log_cloudflare.svg.png" width="100em" alt=""></a><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-								<img src="images/log_ibm.svg.png" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-								<img src="images/log_netevid.png" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <img src="images/log_splunk.svg.png" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <img src="images/log_sentinel_1.png" width="50em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <img src="images/log_solarwind.png" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <img src="images/log_sran.png" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <img src="images/log_softnix.png" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <img src="images/log_securenix.png" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 								
+								<img src="images/cdnetworks-logo-svg.svg" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+								<img src="images/akamai-logo1.svg" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <img src="images/imperva-a-thales-company-light.svg" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <img src="images/f5-logo.svg" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <img src="images/akamai-logo1.svg" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <img src="images/log_cloudflare.svg.png" width="100em"alt=""><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 							</div>
 						</form>
 						<p>And more enterprise-grade solutions to protect your digital assets.</p>
