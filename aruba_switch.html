@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Aruba | Ruth Victor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Styles for Tabs */
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="Firewall.html">FireWalls</a>
+        <a href="right-sidebar.html">Right Sidebar</a>
+        <a href="no-sidebar.html">No Sidebar</a>
+        <a href="elements.html">Elements</a>
+        <a href="signup.html" class="button primary">Sign Up</a>
+    </div>
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="switch.html">Switch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logmgmt.html">Logs Management</a></li>
+                            <li><a href="waf.html">Web Application Firewall</a></li>
+                            <li><a href="threat.html">Threat Intelligence</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('cisco_switch.html')"
+                            style="color: white;">Cisco</button>
+                        <button class="tablinks" onclick="navigateTo('juniper_switch.html')"
+                            style="color: white;">Juniper</button>
+                        <button class="tablinks" onclick="navigateTo('aruba_switch.html')"
+                            style="color: white;">Aruba</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="cisco_switch" class="tabcontent">
+                    </div>
+                    <div id="juniper_switch" class="tabcontent">
+                    </div>
+                    <div id="aruba_switch" class="tabcontent">
+                    </div>
+                </header>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <img src="images/aruba_switch_1.png" width="600em" style="margin-left: 20em;"
+                                alt=""><br><br>
+                            <h2>Network switches for enterprise</h2>
+                            <p>Discover a switching portfolio purpose-built for cloud, mobile, and IoT.</p>
+                        </header>
+                    </div>
+                </section>
+
+                <!-- Main -->
+                <div id="main" class="wrapper style1">
+                    <div class="container">
+                        <div class="row gtr-150">
+                            <div class="col-4 col-12-medium">
+
+                                <!-- Sidebar -->
+                                <section id="sidebar">
+                                    <section>
+                                        <h3>The difference in HPE Aruba Networking enterprise network switches</h3>
+                                        <p>Engage with your firewall more effectively with the assistance of the Cisco
+                                            AI Assistant for Security. It can help identify and report on policy issues,
+                                            enhance troubleshooting efforts, and streamline the management of your
+                                            firewall rules, ultimately optimizing your security posture.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.cisco.com/site/us/en/products/security/firewalls/index.html?socialshare=video-watch-overview"
+                                                        target="_blank" class="button">Learn More</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    <hr />
+                                    <section>
+                                        <a href="#" class="image fit"><img src="images/cisco_firewall_2.jpg"
+                                                alt="" /></a>
+                                        <h3>Achieve superior visibility</h3>
+                                        <p>Regain oversight and control of your encrypted traffic and application
+                                            environments. Enhance detection capabilities with Cisco Talos, and utilize
+                                            billions of signals across your infrastructure to strengthen security
+                                            resilience.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.cisco.com/site/us/en/products/security/firewalls/index.html?socialshare=video-watch-overview"
+                                                        target="_blank" class="button">Learn More</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </section>
+
+                            </div>
+                            <div class="col-8 col-12-medium imp-medium">
+                                <!-- Content -->
+                                <section id="content">
+                                    <a href="#" class="image fit"><img src="images/cisco_firewall_3.jpg.avif"
+                                            alt="" /></a>
+                                    <h3>Drive efficiency at scale</h3>
+                                    <p>Secure Firewall supports advanced clustering, high availability, and
+                                        multi-instance capabilities, providing scalability, reliability, and enhanced
+                                        productivity for your teams and hybrid network environments.</p>
+                                    <h3>Make zero trust practical</h3>
+                                    <p>Secure Firewall enables a zero-trust posture that is both achievable and
+                                        cost-effective by integrating network, microsegmentation, and application
+                                        security. It automates access control and anticipates future threats.</p>
+                                    <h3>Experience Firewall Management Center in action</h3>
+                                    <p>Discover how you can centralize and streamline your firewall administration and
+                                        intrusion prevention. With comprehensive visibility across dynamic global
+                                        networks, you can effectively manage modern applications and respond to malware
+                                        outbreaks in real time.</p>
+                                    <ul>
+                                        <li>Gain visibility and control over your network traffic</li>
+                                        <li>Automate security policy management</li>
+                                        <li>Enhance threat detection and response</li>
+                                        <li>Optimize your security posture</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="five" class="wrapper style2 special fade">
+                <div class="container">
+                    <header>
+                        <h2>Get three vital protections in a single step</h2>
+                    </header>
+                    <p>You don't have to compromise security for productivity. The Cisco Security Step-Up promotion
+                        offers three robust lines of defense that are simple, secure, and resilient for your business.
+                        Protect every critical attack vector—email, web traffic, and user credentials—in one
+                        straightforward step.</p>
+                    <a href="https://www.cisco.com/c/en/us/products/security/security-step-up.html?ccid=cc004000&oid=podsc031124&dtid=odicdc000509"
+                        target="_blank" class="button">Get Started Now</a>
+                </div>
+            </section>
+
+            <div id="main" class="wrapper style1">
+                <div class="container">
+                    <section id="four" class="wrapper style1 special fade-up">
+                        <div class="container">
+                            <header class="major">
+                                <h2>Find the ideal firewall for your business</h2>
+                            </header>
+                            <div class="box alt">
+                                <div class="row gtr-uniform">
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <h3>1000 Series</h3>
+                                        <p>Best for smaller businesses and branch offices.</p><br><br>
+                                        <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-1000-series/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <h3>3100 Series</h3>
+                                        <p>Enhanced for medium-sized enterprises, with the flexibility to grow in the
+                                            future.</p><br>
+                                        <a href="https://www.cisco.com/site/us/en/products/security/firewalls/secure-firewall-3100-series/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        <h3>4100 Series</h3>
+                                        <p>Partner with us to fortify your digital defenses and safeguard your
+                                            organization against cyber threats.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-4100-series/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                        <h3>4200 Series</h3>
+                                        <p>Experience faster threat detection with enhanced visibility and the agility
+                                            to protect large enterprise data centers and campus networks.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/security/firewalls/secure-firewall-4200-series/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                        <h3>9300 Series</h3>
+                                        <p>Optimized for service providers and high-performance data centers.</p>
+                                        <br><br>
+                                        <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-9300-series/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                        <h3>Secure Firewall Threat Defense Virtual</h3>
+                                        <p>Virtual firewalls for consistent policies across physical, cloud, and
+                                            hyperconverged environments.</p>
+                                        <a href="https://www.cisco.com/site/us/en/products/security/firewalls/virtual-firewalls/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                        <h3>Secure Firewall ISA3000</h3>
+                                        <p>Rugged design for manufacturing, industrial, and operational technology
+                                            environments.</p><br>
+                                        <a href="https://www.cisco.com/c/en/us/products/security/industrial-security-appliance-isa/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                        <h3>Secure WAF and bot protection</h3>
+                                        <p>Enhance application security and resilience for today’s digital enterprise
+                                            with Secure WAF and bot protection.</p>
+                                        <a href="https://www.cisco.com/c/en/us/products/security/secure-web-application-firewall/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                    <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                        <h3>DDoS protection</h3>
+                                        <p>Defend against attacks that flood your network with traffic, impacting access
+                                            to apps and business-critical services.</p>
+                                        <a href="https://www.cisco.com/c/en/us/products/security/secure-ddos-protection/index.html"
+                                            target="_blank" class="button">Learn More</a>
+                                    </section>
+                                </div>
+                            </div>
+                            <!-- <footer class="major">
+							<ul class="actions special">
+								<li><a href="#" class="button">Magna sed feugiat</a></li>
+							</ul>
+						</footer> -->
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                    <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                            class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                    <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+                </ul>
+            </footer>
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+                function openModel(evt, modelName) {
+                    var i, tabcontent, tablinks;
+
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(modelName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+</body>
+
+</html>
