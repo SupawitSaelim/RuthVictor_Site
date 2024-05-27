@@ -1,128 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Popup in Table</title>
-  <style>
-    /* ปรับสไตล์สำหรับป๊อปอัพ */
-    .popup {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 60px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0,0.9);
-    }
-
-    .popup-content {
-      margin: auto;
-      display: flex; /* เพิ่มคุณสมบัติ flexbox */
-      justify-content: center; /* จัดแสดงตามศูนย์กลางแนวนอน */
-      align-items: center; /* จัดแสดงตามศูนย์กลางแนวตั้ง */
-      width: 80%;
-      max-width: 700px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #bbb;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .trigger-text {
-      color: blue;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    .popup-content p {
-      margin: 0; /* กำหนดค่าขอบล่างเป็น 0 เพื่อลบระยะห่าง */
-    }
-
-    .popup-content img {
-      max-width: 50%; /* กำหนดขนาดภาพให้มีขนาดครึ่งหนึ่งของพื้นที่ป๊อปอัพ */
-      height: auto; /* รักษาอัตราส่วน */
-      margin: 5px; /* เพิ่มระยะห่างรอบภาพ */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .widget {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 40px); /* Three widgets in a row */
+        }
+        .widget.large {
+            flex: 1 1 calc(50% - 40px); /* Two widgets in a row */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .widget {
+                flex: 1 1 calc(50% - 40px);
+            }
+            .widget.large {
+                flex: 1 1 calc(100% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .widget {
+                flex: 1 1 calc(100% - 40px);
+            }
+        }
+    </style>
 </head>
 <body>
-
-<table border="1">
-  <tr>
-    <td id="text1" class="trigger-text" data-popup="popup1">Click here to see the popup with two images</td>
-  </tr>
-</table>
-
-<!-- ป๊อปอัพ -->
-<div id="popup1" class="popup">
-  <span class="close">&times;</span>
-  <div class="popup-content">
-    <p><img src="images/router_1.png" alt=""></p>
-    <p><img src="images/router_2.png" alt=""></p>
-  </div>
-</div>
-
-<script>
-  // ฟังก์ชันสำหรับเปิดป๊อปอัพ
-  function showPopup(popupId) {
-    var popup = document.getElementById(popupId);
-    popup.style.display = "block";
-  }
-
-  // ฟังก์ชันสำหรับปิดป๊อปอัพ
-  function closePopup(popup) {
-    popup.style.display = "none";
-  }
-
-  // รับองค์ประกอบต่างๆ
-  var triggerTexts = document.getElementsByClassName("trigger-text");
-  var closeButtons = document.getElementsByClassName("close");
-
-  // เมื่อกดที่ข้อความ ให้เปิดป๊อปอัพที่ถูกต้อง
-  for (var i = 0; i < triggerTexts.length; i++) {
-    triggerTexts[i].onclick = function() {
-      var popupId = this.getAttribute("data-popup");
-      showPopup(popupId);
-    }
-  }
-
-  // เมื่อกดที่ปุ่มปิด (x) ให้ปิดป๊อปอัพ
-  for (var i = 0; i < closeButtons.length; i++) {
-    closeButtons[i].onclick = function() {
-      var popup = this.closest(".popup");
-      closePopup(popup);
-    }
-  }
-
-  // เมื่อกดที่ใดๆ ที่ไม่ใช่ป๊อปอัพ ให้ปิดป๊อปอัพ
-  window.onclick = function(event) {
-    if (event.target.classList.contains('popup')) {
-      closePopup(event.target);
-    }
-  }
-</script>
-
+    <div class="container">
+        <div class="widget">
+            <h3>1000 Series</h3>
+            <p>Best for smaller businesses and branch offices.</p><br><br>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-1000-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+        <div class="widget">
+            <h3>3100 Series</h3>
+            <p>Enhanced for medium-sized enterprises, with the flexibility to grow in the future.</p><br>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/secure-firewall-3100-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+        <div class="widget">
+            <h3>4100 Series</h3>
+            <p>Partner with us to fortify your digital defenses and safeguard your organization against cyber threats.</p>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-4100-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+        <div class="widget large">
+            <h3>4200 Series</h3>
+            <p>Experience faster threat detection with enhanced visibility and the agility to protect large enterprise data centers and campus networks.</p>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/secure-firewall-4200-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+        <div class="widget large">
+            <h3>9300 Series</h3>
+            <p>Optimized for service providers and high-performance data centers.</p><br><br>
+            <a href="https://www.cisco.com/site/us/en/products/security/firewalls/firepower-9300-series/index.html" target="_blank" class="button">Learn More</a>
+        </div>
+    </div>
 </body>
 </html>
