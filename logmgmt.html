@@ -65,6 +65,18 @@
             display: table;
             clear: both;
         }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 </head>
 
@@ -112,16 +124,16 @@
         <div id="main" class="wrapper style1">
             <div class="container">
                 <!-- <header class="major"> -->
-                    <!-- Tab Navigation -->
-                    <!-- <div class="tab">
+                <!-- Tab Navigation -->
+                <!-- <div class="tab">
                         <button class="tablinks" onclick="navigateTo('cisco_switch.html')"
                             style="color: white;">Cisco</button>
                         <button class="tablinks" onclick="navigateTo('juniper_switch.html')"
                             style="color: white;">Juniper</button>
                     </div> -->
 
-                    <!-- Tab Content -->
-                    <!-- <div id="cisco_switch" class="tabcontent">
+                <!-- Tab Content -->
+                <!-- <div id="cisco_switch" class="tabcontent">
                     </div>
                     <div id="juniper_switch" class="tabcontent">
                     </div> -->
@@ -155,13 +167,192 @@
                 <section id="banner">
                     <div class="content">
                         <header>
-                            <h2>Logs Management</h2>
-                            <p>Logs management is the collective processes and policies used to administer and facilitate the
-                                generation, transmission, analysis, storage, archiving and ultimate disposal of the large
-                                volumes of log data created within an information system. </p>
+                            <h2>Logs Management / SIEM / SOAR </h2>
                         </header>
                     </div>
                 </section>
+                <div id=" main" class="wrapper style1">
+                    <div class="container">
+
+                        <!-- Logs -->
+                        <h2>What is Log Management?</h2>
+                        <p>Organizations produce vast amounts of log data and events from applications, networks,
+                            systems, and users. Managing this data requires a systematic process to oversee and monitor
+                            disparate log files. Log management involves the continuous process of centrally collecting,
+                            parsing, storing, analyzing, and disposing of data to provide actionable insights, which
+                            support troubleshooting, performance enhancement, and security monitoring.</p>
+                        <h2>What is a log file?</h2>
+                        <p>Log files are computer-generated data files that serve as a primary data source for
+                            information related to the activities, operations, and usage patterns of applications,
+                            servers, operating systems, and other devices. Logs are crucial for identifying and
+                            analyzing situations when applications, systems, and networks encounter operational
+                            bottlenecks or performance issues. They provide a detailed record of every action, offering
+                            insights that help identify the root cause of problems or anomalies.
+
+                            Log file management involves aggregating data from multiple log sources. The following are
+                            the most common log types</p>
+                        <ul>
+                            <li><b>Application Logs</b> : These logs are generated when an event occurs within an
+                                application. Code developers use application logs to understand and measure how
+                                applications behave during the development cycle and prior to release.</li>
+                            <li><b>System Logs</b> : These logs record events generated within the operating system,
+                                such as
+                                driver errors during startup, sign-in and sign-out events, and other system activities.
+                            </li>
+                            <li><b>Security Logs</b> : These logs provide a detailed record of security events that
+                                occur
+                                on a computer. They collect various types of events, such as unsuccessful login
+                                attempts, failed authentication requests, password changes, or file deletions.
+                                Administrators can usually configure which events they want to record and track in the
+                                security log.</li><br><br>
+                            <h2>How to collect and organize logs</h2>
+                            <p>Organizations should collect, store, and organize data in a unified manner to make
+                                sifting through massive log data easy and quick. Implementing an out-of-the-box log
+                                management solution with an intuitive interface and smart capabilities helps businesses
+                                get a complete overview of the IT environment and ensure rapid issue identification and
+                                troubleshooting. The key steps in the log management process are listed below</p>
+                            <div class="row">
+                                <div class="column">
+                                    <h3>Centralized Log Aggregation and Standardization</h3>
+                                    <p>Aggregating logs from multiple sources in one place is imperative. Leveraging
+                                        automated log management systems helps overcome the challenges of manual log
+                                        collection and aggregation, reducing the probability of errors and improving the
+                                        speed of operations. It also facilitates remote log management, simplifies the
+                                        overall process, and minimizes the cost and effort of managing massive log
+                                        volumes. Since logs from multiple sources may come in different formats, log
+                                        management solutions ensure data parsing to transform logs into a standard
+                                        format for easy analysis.</p>
+                                    <h3>Event Correlation</h3>
+                                    <p>Intelligent log management systems improve log monitoring by leveraging machine
+                                        learning or rules-based algorithms to correlate events across systems. Drawing
+                                        connections between related events helps in capturing a bigger picture and
+                                        deriving actionable insights for better troubleshooting.</p>
+                                </div>
+                                <div class="column">
+                                    <h3>Log Search and Analysis</h3>
+                                    <p>With smart log management solutions, enterprises can easily filter log data via
+                                        intuitive search capability. An in-built powerful search engine helps refine log
+                                        data and quickly finds log entries, saving time and effort. Businesses can also
+                                        employ intelligent log analysis tools to identify the root cause before an issue
+                                        escalates.</p>
+                                    <h3>Log Reporting and Visualization</h3>
+                                    <p>Sophisticated log management solutions offer automated reports and customizable
+                                        dashboards to visualize log data in real-time. As a result, enterprises can
+                                        track performance metrics, keep a check on operational thresholds, and
+                                        demonstrate adherence to compliance or security requirements easily.</p>
+                                    <img src="images/log_2.png" width="60%" style="margin-left: 5em;" alt="">
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!-- SIEM -->
+                            <h2>What is security information and event management (SIEM)?</h2>
+                            <p>Security information and event management (SIEM) is a security solution that helps
+                                organizations recognize and address potential security threats and vulnerabilities
+                                before they can disrupt business operations. SIEM systems enable enterprise security
+                                teams to detect user behavior anomalies and utilize artificial intelligence (AI) to
+                                automate many of the manual processes associated with threat detection and incident
+                                response.</p>
+                            <p>The original SIEM platforms began as log management tools, combining security information
+                                management (SIM) and security event management (SEM) functions. These platforms enabled
+                                real-time monitoring and analysis of security-related events and facilitated tracking
+                                and logging of security data for compliance or auditing purposes. Gartner coined the
+                                term SIEM for the combination of SIM and SEM technologies in 2005.
+
+                                Over the years, SIEM software has evolved to incorporate user and entity behavior
+                                analytics (UEBA), advanced security analytics, AI, and machine learning capabilities for
+                                identifying anomalous behaviors and indicators of advanced threats. Today, SIEM has
+                                become a staple in modern security operation centers (SOCs) for security monitoring and
+                                compliance management use cases.</p>
+                            <h2>How does SIEM work?</h2>
+                            <p>At the most basic level, all SIEM solutions perform data aggregation, consolidation, and
+                                sorting functions to identify threats and adhere to data compliance requirements. While
+                                some solutions vary in capability, most offer the same core set of functions:</p>
+                            <ul>
+                                <li><b>
+                                        <h3>Log management</h3>
+                                    </b>SIEM ingests event data from a wide range of sources across
+                                    an organization’s entire IT infrastructure, including on-premises and cloud
+                                    environments.
+
+                                    Event log data from users, endpoints, applications, data sources, cloud workloads,
+                                    and networks, as well as from security hardware and software like firewalls or
+                                    antivirus programs, is collected, correlated, and analyzed in real time.
+
+                                    Some SIEM solutions also integrate with third-party threat intelligence feeds to
+                                    correlate internal security data against known threat signatures and profiles.
+                                    Integration with real-time threat feeds enables teams to block or detect new types
+                                    of attack signatures.</li><br>
+                                <li><b>
+                                        <h3>Event correlation and analytics</h3>
+                                    </b>Event correlation is a crucial component of any SIEM solution. Using advanced
+                                    analytics to identify and understand complex data patterns, event correlation
+                                    provides insights to quickly locate and mitigate potential threats to business
+                                    security.
+
+                                    SIEM solutions significantly improve mean time to detect (MTTD) and mean time to
+                                    respond (MTTR) for IT security teams by automating the manual workflows associated
+                                    with the in-depth analysis of security events.</li><br>
+                                <li><b>
+                                        <h3>Incident monitoring and security alerts</h3>
+                                    </b>SIEM consolidates its analysis into a single, central dashboard where security
+                                    teams monitor activity, triage alerts, identify threats, and initiate response or
+                                    remediation.
+
+                                    Most SIEM dashboards also include real-time data visualizations that help security
+                                    analysts spot spikes or trends in suspicious activity. Using customizable,
+                                    predefined correlation rules, administrators can be alerted immediately and take
+                                    appropriate actions to mitigate threats before they materialize into more
+                                    significant security issues.</li><br><br>
+
+                                <h2>What differentiates SIEM and Log Management?</h2>
+                                <p>SIEM encompasses log management functionalities but extends beyond it to provide
+                                    real-time monitoring, advanced threat detection, correlation, incident response, and
+                                    compliance reporting capabilities.</p>
+                                <img src="images/log_3.png" style="width: 50%;margin-left: 15em;" alt="">
+                                <hr>
+
+                                <!-- SOAR -->
+                                <h2>What Is SOAR?</h2>
+                                <p>Security orchestration, automation, and response (SOAR) technology streamline and
+                                    automate security operations by coordinating tasks across people and tools within a
+                                    unified platform. This enables organizations to rapidly respond to cybersecurity
+                                    threats while also gaining insights to prevent future incidents, ultimately
+                                    enhancing their overall security posture.</p>
+                                <p>A comprehensive SOAR product, as defined by Gartner, operates under three primary
+                                    software capabilities: threat and vulnerability management, security incident
+                                    response, and security operations automation.
+
+                                    Threat and vulnerability management (orchestration) encompass technologies that
+                                    address cyberthreats, while security operations automation (automation) pertains to
+                                    technologies enabling automation and orchestration within operations.</p>
+                                <img src="images/log_4.png" width="50%" style="margin-left: 15em;" alt="">
+                                <p>SOAR platforms ingest alert data, which then initiates playbooks automating response
+                                    workflows or tasks. Leveraging a blend of human expertise and machine learning,
+                                    organizations can analyze this varied data to understand and prioritize automated
+                                    incident response actions for future threats, thereby enhancing cybersecurity
+                                    practices and refining security operations.</p><br>
+                                <h2>SOAR vs. SIEM</h2>
+                                <p>Many consider SOAR and SIEM as akin products because both identify security issues
+                                    and gather data about the nature of the problem. They also handle notifications that
+                                    security personnel can use to address concerns. However, significant differences
+                                    exist between them.</p>
+                                <p>SOAR, like SIEM, gathers data and notifies security teams via a centralized platform.
+                                    However, while SIEM solely delivers alerts to security analysts, SOAR integrates
+                                    automation and response into the investigation process through automated playbooks
+                                    or workflows and artificial intelligence (AI) for pattern behavior learning. This
+                                    capability enables SOAR to anticipate similar threats before they occur.
+                                    Additionally, SOAR platforms like Cortex XSOAR often ingest alerts from sources not
+                                    covered by SIEMs, such as vulnerability scan findings, cloud security alerts, and
+                                    IoT device alerts. This integration facilitates alert deduplication, a common use
+                                    case for SOAR and SIEM integration, which reduces the time required for manual alert
+                                    handling. Consequently, IT security personnel can more efficiently detect and
+                                    address threats.</p><br><br>
+                                <img src="images/Log_5.png" width="60%" style="margin-left: 15em;" alt="">
+                    </div>
+                </div>
+
+
 
                 <!-- Main -->
                 <div id="main" class="wrapper style1">
