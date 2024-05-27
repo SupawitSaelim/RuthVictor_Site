@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Juniper | Ruth Victor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Styles for Tabs */
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+        .icon-promo .path1:before {
+            color: #0096a4;
+            content: "";
+            opacity: .3;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="Firewall.html">FireWalls</a>
+        <a href="right-sidebar.html">Right Sidebar</a>
+        <a href="no-sidebar.html">No Sidebar</a>
+        <a href="elements.html">Elements</a>
+        <a href="signup.html" class="button primary">Sign Up</a>
+    </div>
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="switch.html">Switch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logmgmt.html">Logs Management</a></li>
+
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Juniper Firewall</h2>
+                    <p>Protect your network from cyber threats with the right firewall solution for your business.</p>
+
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('Fortinet.html')"
+                            style="color: white;">Fortinet</button>
+                        <button class="tablinks" onclick="navigateTo('Sophos.html')"
+                            style="color: white;">Sophos</button>
+                        <button class="tablinks" onclick="navigateTo('Check_Point.html')"
+                            style="color: white;">Checkpoint</button>
+                        <button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
+                            style="color: white;">Cisco</button>
+                        <button class="tablinks" onclick="navigateTo('paloalto_firewall.html')"
+                            style="color: white;">Paloalto</button>
+                        <button class="tablinks" onclick="navigateTo('juniper_firewall.html')"
+                            style="color: white;">Juniper</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="Fortinet" class="tabcontent">
+                    </div>
+
+                    <div id="Sophos" class="tabcontent">
+                    </div>
+
+                    <div id="Check_Point" class="tabcontent">
+                    </div>
+
+                    <div id="cisco_firewall" class="tabcontent">
+                    </div>
+                    <div id="paloalto_firewall" class="tabcontent">
+                    </div>
+                    <div id="juniper_firewall" class="tabcontent">
+                    </div>
+                </header>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <center>
+                            <img src="images/juniperproduct/srx-series-product-family-1.avif" width="50%"
+                            style="max-width: 100%; height: auto;" alt="">
+                            
+                            <h2>Next-Generation Firewall</h2>
+                            <h5>Effective security for any architecture</h5>
+                            <p>The next-generation firewall (NGFW) has evolved to become the ideal solution for visibility, control, and prevention at the network edge. Whether delivered via an on-premises physical firewall, cloud-based virtual or containerized firewall, or from the cloud as a service, complete visibility into who and what is on the network, proven effective threat protection, and a unified management experience are necessary <br>to safeguard users, devices, and data access.</p>
+                            </center>
+                        </header>
+                    </div>
+                </section>
+
+                <!-- Main -->
+                <div id="main" class="wrapper style1">
+                    <div class="container">
+                        <header class="major">
+                            
+                            
+                        </header>
+                        <div class="row gtr-150">
+                            <div class="col-4 col-12-medium">
+
+                                <!-- Sidebar -->
+                                <section id="sidebar">
+                                    <section>
+                                        <h3>99.9% Security Effectiveness</h3>
+                                        <p>Juniper received an “AAA” rating in CyberRatings’ 2023 Enterprise Network Firewall Report, demonstrating a 99.9% exploit block rate with zero false positives.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="https://www.juniper.net/us/en/forms/2023-cyberratings-enterprise-network-firewall-report.html"
+                                                        target="_blank" class="button">Read report</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                    
+                                    
+                                </section>
+
+                            </div>
+                            <div class="col-8 col-12-medium imp-medium">
+                                <!-- Content -->
+                                <section id="content">
+                                    <img src="images/juniperproduct/ratings-Badges_2023_efw_Juniper.png" style="max-width: 70%;"
+                                            alt="" />
+                                </section>
+                            </div>
+                            <div>
+                                    <hr/>
+                                    <center>
+                                    <h2>How Juniper can help</h2>
+                                    <p>Operationalize security across your network, regardless of architecture, with Juniper next-generation firewalls, managed by one unified management experience. Juniper firewalls are the industry’s most effective against threats—complete with exploit and malware protection that leverages AI to accurately predict threats and stop them before they stop your business.  </p>
+                                    </center>
+                            </div>
+                                    
+                               
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="five" class="wrapper style2 special fade">
+                <div class="container">
+                    <header>
+                        <h2>Seamless security transformation</h2>
+                    </header>
+                    <p>Whether you’re expanding your edge footprint or adopting a SASE architecture, Juniper meets customers where they are on their journey and helps them leverage their existing investments. We empower you to transform your architecture at a pace that is best for your business by automating the transition through a unified management experience and single policy framework with Juniper Security Director Cloud.</p>
+                    
+                </div>
+            </section>
+            <section id="five" class="wrapper style1">
+                <div class="container">
+                    <center>
+                    <header>
+                        <h2>Identity, segmentation, and AI-predictive threat prevention</h2>
+                    </header>
+                    <p>Juniper next-generation firewalls extend zero trust principles to new architectures, including enforcing authorized access to resources and preventing known and zero-day threats at line rate.</p>
+                    </center>
+                    
+                </div>
+            </section>
+            <section id="five" class="wrapper style2 special fade">
+                <div class="container">
+                    <header>
+                        <h2>Consistent efficacy everywhere</h2>
+                    </header>
+                    <p>No matter the form factor or deployment environment, Juniper next-generation firewalls use the same signature and threat-prevention engines, delivering the industry’s most effective protection against attacks. Juniper’s single policy framework makes it easy to create policies once and apply them anywhere and everywhere, so users, devices, and data are consistently protected wherever they go, even as you undergo architecture changes.</p>
+                    
+                </div>
+            </section>
+            <section id="five" class="wrapper style1">
+                <div class="container">
+                    <center>
+                    <header>
+                        <h2>Encrypted traffic insights</h2>
+                    </header>
+                    <p>Privacy and security are no longer mutually exclusive. Next-generation firewalls analyze encrypted traffic to detect and stop threats without decryption.</p>
+                    </center>
+                    <hr/>
+                    
+                </div>
+            </section>
+
+            <div id="main" class="wrapper style1">
+                <div class="container">
+                    <section id="four" class="wrapper style1 special fade-up">
+                        <div class="container">
+                            <header class="major">
+                                <h2>The Products</h2>
+                            </header>
+                            <div class="box alt">
+                                <div class="row gtr-uniform">
+                                    <center>
+                                    <section class="col-4 col-6-medium col-12-xsmall">
+                                        
+                                        <h5>PRODUCT FAMILY</h5>
+                                        <img src="images/juniperproduct/firewall-01.png" width="30%" alt="">
+                                        <h2>SRX Series Firewalls</h2>
+                                        <p>Protect your network edge, data center, and cloud applications with Juniper next-generation physical, virtual, and containerized firewalls, all managed via Juniper Security Director Cloud.</p><br><br>
+                                        <a href="https://www.juniper.net/us/en/products/security/srx-series.html"
+                                            target="_blank" class="button">View details</a>
+                                        
+                                    </section>
+                                    </center>
+                                    
+                                </div>
+                            </div>
+                            <!-- <footer class="major">
+							<ul class="actions special">
+								<li><a href="#" class="button">Magna sed feugiat</a></li>
+							</ul>
+						</footer> -->
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                    <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                            class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                    <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+                </ul>
+            </footer>
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+                function openModel(evt, modelName) {
+                    var i, tabcontent, tablinks;
+
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(modelName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+</body>
+
+</html>
