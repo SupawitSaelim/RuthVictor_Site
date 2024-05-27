@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Huawei | Ruth Victor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Styles for Tabs */
+        a {
+            border-bottom: none;
+        }
+
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="switch.html">Switch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logmgmt.html">Logs Management</a></li>
+                            <li><a href="waf.html">Web Application Firewall</a></li>
+                            <li><a href="threat.html">Threat Intelligence</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('cisco_switch.html')"
+                            style="color: white;">Cisco</button>
+                        <button class="tablinks" onclick="navigateTo('juniper_switch.html')"
+                            style="color: white;">Juniper</button>
+                        <button class="tablinks" onclick="navigateTo('aruba_switch.html')"
+                            style="color: white;">Aruba</button>
+                        <button class="tablinks" onclick="navigateTo('huawei_switch.html')"
+                            style="color: white;">Huawei</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="cisco_switch" class="tabcontent">
+                    </div>
+                    <div id="juniper_switch" class="tabcontent">
+                    </div>
+                    <div id="aruba_switch" class="tabcontent">
+                    </div>
+                    <div id="huawei_switch" class="tabcontent">
+                    </div>
+                </header>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <img src="images/huawei_switch_1.png" width="400G" style="margin-left: 15em;" alt="">
+                            <h2>Switches</h2>
+                            <p>Suitable for a diverse range of applications and network sizes, spanning from <br> cloud
+                                data
+                                centers to campus networks.</p><br>
+                            <img src="images/huawei_switch_2.png" width="500em" style="margin-left: 20em;" alt="">
+                        </header>
+                    </div>
+                    <a href="#content" class="goto-next scrolly">Next</a>
+                </section>
+
+
+                <section id="content">
+                    <div id="main" class="wrapper style1 special fade-up">
+                        <div class="container" style="text-align: center;">
+                            <h2>Why Huawei Switches</h2>
+                            <div class="row gtr-uniform">
+                                <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                    <span class="icon solid alt major fa-cloud"></span>
+                                    <h4>Products & Solutions for Every Scenario</h4>
+                                    <p>Huawei's extensive range of products and solutions empowers you to achieve
+                                        seamless digital transformation and accelerate the growth of virtualization, Big
+                                        Data, and cloud services.</p><br><br>
+                                </section>
+                                <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                    <span class="icon solid alt major fa-users"></span>
+                                    <h4>Tailored for Every Industry </h4>
+                                    <p>Huawei switches have already propelled customers to success across various
+                                        industries including finance, Internet, retail, education, manufacturing, and
+                                        public services. Backed by solutions rated as Challenger and Visionary by
+                                        Gartner, Huawei is poised to elevate you to the next level.</p><br><br>
+                                </section>
+                                <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                    <span class="icon solid alt major fa-globe"></span>
+                                    <h4>Global Services Localized for You</h4>
+                                    <p>Huawei collaborates with thousands of partners worldwide to deliver innovative
+                                        products and solutions tailored to meet your specific needs.</p><br><br>
+                                </section>
+                            </div>
+                            <a href="#one" class="goto-next scrolly">Next</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <section id="one">
+                <div id="main" class="wrapper style2 special fade-up">
+                    <div class="container" style="text-align: center;">
+                        <h2>Select Only the Best for Your Businesss</h2>
+                        <div class="row gtr-uniform">
+                            <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                <a href="https://e.huawei.com/en/products/switches/campus-switches" target="_blank"><img
+                                        src="images/huawei_switch_3.png" width="100%" alt=""></a><br>
+                                <h4>Campus Switches</h4>
+                                <p>Huawei campus switches are perfectly suited for constructing future-proof campus
+                                    networks characterized by simplified management, high reliability, and service
+                                    intelligence. These switches cater to various industries including enterprises,
+                                    governments, education, finance, and manufacturing.</p><br><br>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                <a href="https://e.huawei.com/en/products/switches/data-center-switches"
+                                    target="_blank"><img src="images/huawei_switch_4.png" width="100%" alt=""></a><br>
+                                <h4>Data Center Switches </h4>
+                                <p>CloudEngine data center switches, Ethernet switches widely deployed across
+                                    diverse applications and network sizes, are utilized in both data centers and
+                                    high-end campus networks. These switches offer network scaling, automation,
+                                    programmability, and real-time visibility.</p><br><br>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                <a href="https://e.huawei.com/en/products/network-analysis" target="_blank"><img
+                                        src="images/huawei_switch_4.png" width="100%" alt=""></a><br>
+                                <h4>Network Management, Control, and Analysis Software</h4>
+                                <p>Huawei collaborates with thousands of partners worldwide to deliver innovative
+                                    products and solutions tailored to meet your specific needs.</p><br><br>
+                            </section>
+                        </div>
+                        <a href="#two" class="goto-next scrolly">Next</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="two">
+                <div id="main" class="wrapper style1 special fade-up">
+                    <div class="container" style="text-align: center;">
+                        <h2>Resource</h2>
+                        <div class="row gtr-uniform">
+                            <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                <h4>Huawei CloudEngine Series Data Center Switch Portfolio</h4><br><br>
+                                <a href="https://e.huawei.com/en/material/enterprise/a0e131f5a9da46f7be7278baa6e9836a"
+                                    target="_blank" class="button primary small">Learn More</a>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                <h4>TCloudEngine 16800 Core Switch Datasheet</h4><br><br><br>
+                                <a href="https://e.huawei.com/en/material/networking/dcswitch/54056f0999bd4200b7bf56d2b1bfa5a5"
+                                    target="_blank" class="button  small">Learn More</a>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                <h4>Huawei S7700 Series Switches Product Brochure/h4><br><br><br>
+                                <a href="https://e.huawei.com/en/material/networking/campusswitch/71e4c297ece84f78a7dc3fc2de8eae1f"
+                                    target="_blank" class="button primary small">Learn More</a>
+                            </section>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                        class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+            </ul>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            function openModel(evt, modelName) {
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(modelName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+</body>
+
+</html>
