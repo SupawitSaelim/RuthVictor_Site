@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
+        a {
+            border-bottom: none;
+        }
         /* Styles for Tabs */
         .tab {
             overflow: hidden;
@@ -41,6 +44,18 @@
         .spaced-paragraph {
             margin-bottom: 20px;
         }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 </head>
 
@@ -65,7 +80,7 @@
                             </li>
                             <li><a href="logmgmt.html">Logs Management</a></li>
                             <li><a href="waf.html">Web Application Firewall</a></li>
-							<li><a href="threat.html">Threat Intelligence</a></li>
+                            <li><a href="threat.html">Threat Intelligence</a></li>
                             <li><a href="right-sidebar.html">Right Sidebar</a></li>
                             <li><a href="no-sidebar.html">No Sidebar</a></li>
                             <li>
@@ -89,25 +104,6 @@
         <!-- Main -->
         <div id="main" class="wrapper style1">
             <div class="container">
-                <header class="major">
-                    <h2>Router</h2>
-                    <p>Increasing the efficiency of your network</p>
-                </header>
-
-                <!-- Tab Navigation -->
-                <div class="tab">
-                    <button class="tablinks" onclick="navigateTo('cisco_router.html')"
-                        style="color: white;">Cisco</button>
-                    <button class="tablinks" onclick="navigateTo('juniper_router.html')"
-                        style="color: white;">Juniper</button>
-                </div>
-
-                <!-- Tab Content -->
-                <div id="cisco_router" class="tabcontent">
-                </div>
-                <div id="juniper_router" class="tabcontent">
-                </div>
-
                 <script>
                     function navigateTo(url) {
                         window.location.href = url;
@@ -134,11 +130,14 @@
                     }
                 </script>
                 <!-- Banner -->
-                <section id="banner" style="background-image: url(images/router_1.png);">
+                <section id="banner" style="background-image: url(images/threat_1.jpg);">
                     <div class="content">
                         <header>
-                            <h2>What is a Router?</h2><br>
-                            <p>A router is a device that connects two or more IP networks or subnetworks.</p>
+                            <h2>Threat Intelligence</h2><br>
+                            <h4>is evidence-based information about cyber attacks that <br>cyber security experts
+                                organize and analyze.</p>
+                            </h4>
+                        </header>
                     </div>
                     <a href="#one" class="goto-next scrolly">Next</a>
                 </section>
@@ -147,28 +146,40 @@
                 <section id="one">
                     <div class="content">
                         <header><br><br>
-                            <img src="images/router_2.png" width="70%"
-                                style="margin-left: 10em;background-color: transparent;" alt="">
-                            <br><br>
-                            <p>A router is a device that connects two or more packet-switched networks or subnetworks.
-                                It performs two primary functions: managing traffic between these networks by directing
-                                data packets to their intended IP addresses and allowing multiple devices to share the
-                                same Internet connection.
-
-                                There are various types of routers, but most commonly, they facilitate data transfer
-                                between LANs (local area networks) and WANs (wide area networks). A LAN consists of
-                                interconnected devices within a confined geographic area and typically requires only one
-                                router.
-
-                                Conversely, a WAN covers a vast geographic area, often encompassing multiple locations.
-                                Large organizations and companies with multiple sites across the country, for example,
-                                need individual LANs for each location, which are interconnected to form a WAN. Due to
-                                its extensive reach, a WAN usually requires multiple routers and switches*. </p>
-
-                            <blockquote>*A network switch forwards data packets among devices within the same network,
-                                while a
-                                router directs data between different networks.</blockquote>
+                            <h2>What is threat intelligence?</h2>
                         </header>
+                        <p>Threat intelligence, also known as "cyberthreat intelligence" (CTI) or "threat intel,"
+                            consists of detailed, actionable information designed to prevent and combat
+                            cybersecurity threats targeting an organization. This intelligence aids security teams
+                            in adopting a proactive stance, allowing them to take effective, data-driven actions to
+                            thwart cyberattacks before they happen. Additionally, it helps organizations detect and
+                            respond to ongoing attacks more swiftly.
+
+                            Security analysts generate threat intelligence by collecting raw threat data and
+                            security-related information from various sources. They then correlate and analyze this
+                            data to identify trends, patterns, and relationships, providing a comprehensive
+                            understanding of current or potential threats. The resulting intelligence is</p>
+                        <ul>
+                            <li><b>organization-specific</b>, focusing not on generalities (such as lists of common
+                                malware
+                                strains) but on specific vulnerabilities within the organization’s attack surface, the
+                                attacks these vulnerabilities enable, and the assets they expose.</li><br>
+                            <li><b>detailed and contextual</b>, encompassing not only the threats targeting the
+                                organization
+                                but also the threat actors likely to carry out these attacks. It includes the tactics,
+                                techniques, and procedures (TTPs) employed by these threat actors, as well as the
+                                indicators of compromise (IoCs) that might signal a specific cyberattack.</li><br>
+                            <li><b>actionable</b>, offering information that security teams can use to
+                                address vulnerabilities, prioritize and remediate threats, and evaluate existing or new
+                                cybersecurity tools.
+                            </li>
+                        </ul>
+                        <p>As per IBM’s Cost of a Data Breach 2022 report, the average data breach inflicts a financial
+                            toll of USD 4.35 million on its victims. Notably, detection and escalation expenses
+                            constitute the most substantial portion of this figure, totaling USD 1.44 million. Threat
+                            intelligence equips security teams with the necessary insights to identify attacks promptly,
+                            thereby curbing detection expenses and mitigating the ramifications of successful breaches.
+                        </p>
                     </div>
                 </section>
 
@@ -176,19 +187,43 @@
                 <section id="two">
                     <div class="content">
                         <header><br><br>
-                            <h2>How does a router work?</h2>
+                            <h2>Types of threat intelligence</h2>
                         </header>
-                        <p>Think of a router as an air traffic controller and data packets as aircraft headed to
-                            different airports (or networks). Just as each plane has a unique destination and
-                            follows a specific route, each packet needs to be directed to its destination as
-                            efficiently as possible. Similar to how an air traffic controller ensures planes reach
-                            their destinations without getting lost or experiencing major disruptions, a router
-                            directs data packets to their destination IP addresses.
+                        <p>The threat intelligence lifecycle generates various types of intelligence, contingent upon
+                            the stakeholders involved, established requirements, and the overarching objectives of each
+                            lifecycle instance. Generally, three broad categories of threat intelligence emerge.</p>
+                        <h3>Tactical threat intelligence</h3>
+                        <p>The type utilized by the security operations center (SOC) for detecting and responding to
+                            ongoing cyberattacks primarily concentrates on common indicators of compromise (IoCs). These
+                            may include IP addresses linked to command and control servers, file hashes associated with
+                            recognized malware and ransomware incidents, or email subject lines connected to phishing
+                            attempts.
 
-                            To guide packets effectively, a router uses an internal routing table—a list of paths to
-                            various network destinations. The router reads a packet's header to determine its
-                            destination, then consults the routing table to find the most efficient path. It then
-                            forwards the packet to the next network in the path.</p>
+                            Moreover, tactical threat intelligence not only aids incident response teams in
+                            differentiating between false alarms and legitimate threats but also supports threat-hunting
+                            endeavors aimed at uncovering advanced persistent threats (APTs) and other covert attackers.
+                        </p>
+                        <h3>Operational threat intelligence</h3>
+                        <p>Operational threat intelligence assists organizations in anticipating and thwarting future
+                            attacks. Sometimes referred to as 'technical threat intelligence,' it delves into the
+                            tactics, techniques, and procedures (TTPs) employed by identified threat actors. This
+                            includes the attack vectors they employ, vulnerabilities they exploit, and assets they
+                            target.
+
+                            CISOs, CIOs, and other key decision-makers in information security utilize operational
+                            threat intelligence to pinpoint threat actors with a high likelihood of targeting their
+                            organizations. They then formulate strategic responses, implementing security controls and
+                            other measures specifically designed to counteract these anticipated attacks.</p>
+                        <h3>Strategic threat intelligence</h3>
+                        <p>Strategic threat intelligence provides a comprehensive view of the global threat landscape
+                            and how an organization fits into it. It offers decision-makers beyond the realm of IT, such
+                            as CEOs and other executives, insight into the cyberthreats confronting their organizations.
+
+                            Typically, strategic threat intelligence delves into geopolitical circumstances,
+                            industry-specific cyberthreat patterns, or the rationale behind targeting certain strategic
+                            assets of the organization. Stakeholders leverage this intelligence to align broader
+                            organizational risk management strategies and investments with the evolving cyberthreat
+                            landscape.</p>
                     </div>
                 </section>
 
@@ -196,26 +231,15 @@
                 <section id="three">
                     <div class="content">
                         <header><br><br>
-                            <h2>What is the difference between a router and a modem?</h2>
+                            <h2>What is a malware signature?</h2>
                         </header>
-                        <p>Although some Internet service providers (ISPs) combine a router and a modem within a
-                            single device, they are distinct and serve different, yet equally important, roles in
-                            network connectivity.
+                        <p>A signature serves as a distinctive pattern or sequence of bytes used to identify malware.
+                            Similar to how fingerprints are employed in identifying individuals suspected of a crime,
+                            signatures aid in recognizing malicious software.
 
-                            A router creates networks and manages the flow of data within and between them, while a
-                            modem connects these networks to the Internet. Modems establish an Internet connection
-                            by converting signals from an ISP into a digital format that connected devices can
-                            interpret. A single device can connect to the Internet through a modem; alternatively, a
-                            router can distribute this signal to multiple devices within a network, allowing them
-                            all to access the Internet simultaneously.
-
-                            Consider this analogy: If Bob has a router but no modem, he can create a LAN and
-                            transfer data between devices on that network but cannot connect to the Internet. Alice,
-                            on the other hand, has a modem but no router. She can connect a single device, like her
-                            work laptop, to the Internet but cannot share that connection with multiple devices,
-                            such as her laptop and smartphone. Carol, however, has both a router and a modem. With
-                            these devices, she can create a LAN with her desktop computer, tablet, and smartphone,
-                            and connect them all to the Internet simultaneously.</p>
+                            Signature detection stands as one of the prevailing methods in malware analysis. For it to
+                            maintain efficacy, signature detection necessitates continual updates with the latest
+                            malware signatures observed in real-world scenarios.</p>
                     </div>
                 </section>
 
@@ -223,45 +247,25 @@
                 <section id="four">
                     <div class="content">
                         <header><br><br>
-                            <h2>What are the different types of routers?</h2>
+                            <h2>What are indicators of compromise (IoC)?</h2>
                         </header>
-                        <p>To connect a LAN to the Internet, a router must first communicate with a modem. This can be
-                            achieved in two primary ways
+                        <p>An indicator of compromise (IoC) is a data fragment aiding in the identification of whether
+                            an attack has transpired or is ongoing. Much like physical evidence gathered by a detective
+                            to ascertain who was present at a crime scene, IoCs include certain digital clues such as
+                            abnormal activity logged, unauthorized server network traffic, etc.—enabling administrators
+                            to discern the occurrence and nature of an attack.
 
-                        <ol>
-                            <li>Wireless router: A wireless router connects to a modem via an Ethernet cable. It
-                                distributes data by converting packets from binary code into radio signals, which are
-                                then broadcast wirelessly using antennas. Instead of creating LANs, wireless routers
-                                establish WLANs (wireless local area networks), allowing multiple devices to connect
-                                wirelessly.
-                            </li>
-                            <li>
-                                Wired router: Similarly, a wired router connects to a modem using an Ethernet cable. It
-                                then uses additional cables to connect to one or more devices within the network,
-                                creating a LAN and linking those devices to the Internet.
-                            </li>
-                        </ol>
-                        Beyond wireless and wired routers for small LANs, there are several specialized types of routers
-                        designed for specific functions
-                        <ul><br><br>
-                            <li>
-                                Core router: Core routers are used by large corporations and businesses to manage a high
-                                volume of data packets within their internal networks. Operating at the "core" of a
-                                network, these routers do not communicate with external networks.
-                            </li>
-                            <li>
-                                Edge router: Unlike core routers, edge routers handle communication with both core
-                                routers and external networks. Positioned at the "edge" of a network, edge routers use
-                                the BGP (Border Gateway Protocol) to exchange data with other LANs and WANs.
-                            </li>
-                            <li>
-                                Virtual router: A virtual router is a software-based router that performs the same
-                                functions as a physical router. It can use the Virtual Router Redundancy Protocol (VRRP)
-                                to establish primary and backup virtual routers, ensuring continued operation if one
-                                fails.
-                            </li>
-                        </ul>
-                        </p>
+                            In absence of IoCs, detecting whether an attack has unfolded can pose challenges. It
+                            frequently serves the attacker's interest to evade detection, particularly if they intend to
+                            utilize a compromised device within a botnet, for instance.</p>
+
+                        <h2>What is a threat intelligence feed?</h2>
+                        <p>A threat intelligence feed functions as an external conduit for threat intelligence data.
+                            Analogous to an RSS feed for blogs, organizations have the option to subscribe to a threat
+                            intelligence feed to receive ongoing security updates for their systems.
+
+                            These feeds vary in nature: some are freely accessible, while others entail a cost and
+                            furnish proprietary intelligence not accessible through open sources.</p>
                     </div>
                 </section>
                 <hr><br><br>
@@ -272,148 +276,96 @@
                         <!-- Sidebar -->
                         <section id="sidebar">
                             <section>
-                                <h2>How to choose small business routers</h2>
-                                <ul>
-                                    <li>
-                                        <h3>Connectivity</h3>
-                                    </li>
-                                </ul>
-                                <p>Ensure you pay attention to the numbers and types of ports available, including
-                                    phone, Ethernet, cable, and USB ports, to ensure you can connect all necessary
-                                    devices. Having unused ports is beneficial as it provides flexibility for expanding
-                                    the network as needed in the future.</p>
+                                <h2>What are the available Threat Intelligence tools?</h2>
+                                <p>A diverse array of threat intelligence tools is available for purchase or accessible
+                                    at no cost through the open-source community. Each tool employs slightly distinct
+                                    methodologies for gathering threat intelligence</p>
                             </section>
                             <hr />
                             <section>
-                                <a href="router.html" class="image fit"><img src="images/router_3.jpg" alt="" /></a>
+                                <a href="threat.html" class="image fit"><img src="images/threat_3.jpg" alt="" /></a>
                                 <ul>
                                     <li>
-                                        <h3>Flexibility</h3>
+                                        <h3>Who benefits from threat intelligence?</h3>
                                     </li>
                                 </ul>
-                                <p>A virtual firewall is commonly installed as a virtual appliance within either a
-                                    private cloud environment (such as VMware ESXi,
-                                    Microsoft Hyper-V, or KVM) or a public cloud infrastructure (like Amazon Web
-                                    Services, Microsoft Azure, Google Cloud Platform,
-                                    or Oracle Cloud Infrastructure). Its primary function is to oversee and safeguard
-                                    network traffic traversing both physical and virtual networks. Furthermore, a
-                                    virtual firewall frequently serves as a vital element within software-defined
-                                    networks (SDN).</p>
+                                <p>Everyone who has an interest in security benefits from threat intelligence.
+                                    Particularly if you’re running a business, benefits include</p>
                                 <ul>
                                     <li>
-                                        <h3>Automatic updates</h3>
+                                        <h4>Reduced risks</h4>
                                     </li>
                                 </ul>
-                                <p>Routers feature software that requires periodic updates to ensure optimal performance
-                                    and security. Ideally, manufacturers should automate these updates, as they occur
-                                    seamlessly in the background without requiring any action from users.</p>
                                 <ul>
                                     <li>
-                                        <h3>Mesh networks</h3>
+                                        <h4>Avoiding data breaches</h4>
                                     </li>
                                 </ul>
-                                <p>
-
-                                    A more effective solution is a mesh network, which enables you to deploy multiple
-                                    Wi-Fi transmitters throughout your office while maintaining a single unified
-                                    network. Unlike extenders, which can be used with any wireless router, mesh networks
-                                    require a router with built-in mesh capability for optimal performance and seamless
-                                    integration.</p>
-                                <!-- <footer>
-                                    <ul class="actions">
-                                        <li><a href="#" class="button">Learn More</a></li>
-                                    </ul>
-                                </footer> -->
+                                <ul>
+                                    <li>
+                                        <h4>Reduced costs</h4>
+                                    </li>
+                                </ul>
                             </section>
                         </section>
                     </div>
                     <div class="col-8 col-12-medium imp-medium">
                         <!-- Content -->
                         <section id="content">
-                            <a href="router.html" class="image fit"><img src="images/router_4.jpg" alt="" /></a><br>
+                            <a href="threat.html" class="image fit"><img src="images/threat_2.jpg" alt="" /></a><br>
                             <ul>
                                 <li>
-                                    <h3>Bandwidth</h3>
+                                    <h3>Malware disassemblers</h3>
                                 </li>
                             </ul>
-                            <p>Adequate bandwidth is crucial for ensuring a positive user experience. It guarantees
-                                optimal performance for multiple users: as the number of users increases, so does the
-                                demand for bandwidth. To expand your business's network, you can incorporate additional
-                                routers or hubs as needed. However, any inadequacy in bandwidth within the network can
-                                lead to bottlenecks and degrade overall performance.</p>
+                            <p>These tools engage in reverse engineering of malware to comprehend its functionality and
+                                aid security engineers in devising defenses against potential future attacks of a
+                                similar nature.</p>
                             <ul>
                                 <li>
-                                    <h3>Wireless capability</h3>
+                                    <h3>Security information and event management (SIEM) tools</h3>
                                 </li>
                             </ul>
-                            <p>While Wi-Fi is essential, it's important to note that there are various standards
-                                available. The newest standard, Wi-Fi 6 (802.11ax), offers significantly higher
-                                transmission speeds, particularly when multiple access points, like devices or
-                                additional routers, are connected simultaneously. Additionally, Wi-Fi 6 routers are
-                                backward-compatible with older Wi-Fi standards, ensuring seamless integration with
-                                existing devices and networks.</p>
+                            <p>SIEM (Security Information and Event Management) tools empower security teams to monitor
+                                networks in real-time, collecting data on anomalous activities and potentially malicious
+                                traffic.</p>
                             <ul>
                                 <li>
-                                    <h3>Simplified setup and management</h3>
+                                    <h3>Network traffic analysis tools</h3>
                                 </li>
                             </ul>
-                            <p>While most routers offer a browser-based interface for setup and administration, many
-                                manufacturers now offer mobile apps tailored to their devices. These apps provide more
-                                intuitive interfaces and streamline the setup process.</p>
+                            <p>Network traffic analysis tools gather and log network data to furnish insights that
+                                facilitate the detection of intrusions, simplifying the process of identifying
+                                unauthorized access or suspicious activities.</p>
                             <ul>
                                 <li>
-                                    <h3>Simplified setup and management</h3>
+                                    <h3>Threat intelligence communities and resource collections</h3>
                                 </li>
                             </ul>
-                            <p>Your router should provide at least WPA or WPA2 password protection for securing your
-                                network. Additionally, some routers come equipped with firewall software that monitors
-                                incoming data for malware and viruses. MAC (Media Access Control) address filtering is
-                                another valuable tool, which uses device-specific IDs to screen users and create a
-                                whitelist or blacklist for network access.</p>
-                            <ul>
-                                <li>
-                                    <h3>User changeable configurations</h3>
-                                </li>
-                            </ul>
-                            <p>This functionality enables you to oversee network traffic, guest networks, parental
-                                controls, and security settings. Managing these aspects becomes more convenient when the
-                                router's configuration can be handled through a dedicated mobile app rather than a
-                                browser interface.</p>
-                            <ul>
-                                <li>
-                                    <h3>Guest networks</h3>
-                                </li>
-                            </ul>
-                            <p>Guest networks serve as an essential layer of additional security, particularly when
-                                visitors require Wi-Fi access within a business premises. By implementing a guest
-                                network, access to the business's devices and files is restricted, while still providing
-                                connectivity to visitors. This segregation helps safeguard sensitive information and
-                                resources from unauthorized access.</p>
-                            <ul>
-                                <li>
-                                    <h3>Quality of service (QoS) controls</h3>
-                                </li>
-                            </ul>
-                            <p>
-                                Coupled with tools for monitoring usage across all users, this feature empowers you to
-                                regulate network usage by controlling both up- and downstream transmissions, managing
-                                specific types of activities (such as video streaming), and allocating bandwidth for
-                                individual users. By offering such capabilities, this feature not only enhances security
-                                but also facilitates comprehensive network monitoring and management.
-                            </p>
-                            <!-- <ul>
-                                <li>Faucibus orci lobortis ac adipiscing integer.</li>
-                                <li>Col accumsan arcu mi aliquet placerat.</li>
-                                <li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-                                <li>Blandit massa non blandit tempor interdum.</li>
-                                <li>Lacinia mattis arcu nascetur lobortis.</li>
-                            </ul> -->
+                            <p>Freely accessible websites that aggregate known indicators of compromise and
+                                community-generated threat data serve as valuable sources of threat intelligence.
+                                Certain communities facilitate collaborative research and offer actionable guidance on
+                                preventing or mitigating threats.</p>
+                            <p>Organizations equipped with awareness of emerging threats and strategies for avoidance
+                                can proactively prevent attacks before they occur. Incorporating the gathering and
+                                review of threat intelligence into the enterprise security strategy is essential for
+                                every organization.</p>
                         </section>
                     </div>
                 </div>
+                <hr>
             </div>
         </div>
-        <hr>
+
+        <!-- Logo products -->
+        <div class="wrapper style2 fade-up">
+        <a href="https://www.mandiant.com/advantage/threat-intelligence"><img src="images/threat_man.png" style="margin-left: 6em;" width="250em" alt=""></a>
+        <a href="https://www.paloaltonetworks.com/cortex/threat-intelligence" target="_blank"><img src="images/threat_palo.svg" style="margin-left: 6em;" width="170em" alt=""></a>
+        <a href="https://socradar.io/products/cyber-threat-intelligence/" target="_blank"><img src="images/threat_soc.png.webp" style="margin-left: 6em;" width="170em" alt=""></a>
+        <a href="https://www.recordedfuture.com/products/threat-intelligence" target="_blank"><img src="images/threat_rec.png.webp" style="margin-left: 6em;" width="170em" alt=""></a>
+        <a href="https://cyble.com" target="_blank"><img src="images/threat_cyble.png" style="margin-left: 6em;" width="70em" alt=""></a>
+        </div>
+
 
         <!-- Footer -->
         <footer id="footer">
