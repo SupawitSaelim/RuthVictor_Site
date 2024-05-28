@@ -90,30 +90,57 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="col-4 col-12-medium">
-                            <div class="connect">
-                                <div class="form">
-                                    <h1>Contact Us</h1>
-                                    <form action="https://api.web3forms.com/submit" method="POST">
-										<input type="hidden" name="access_key" value="3c1884a3-e936-4dd7-b5b6-16776c314198">
-                                        <input type="text" name="name" placeholder="Name" required>
-                                        <input type="email" name="email" placeholder="Email" required>
-                                        <input type="text" name="subject" placeholder="Subject" required>
-                                        <textarea name="message" placeholder="Message" required></textarea>
-                                        <input type="hidden" name="_captcha" value="false">
-                                        <input type="hidden" name="_cc" value="watcharakornminna@gmail.com,nichada032713@gmail.com">
-                                        <button type="submit">Submit</button>
-                                    </form>
-									
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
+                    
                 </div>
             </div>
         </section>
+    <div id="main" class="wrapper style1">
+        <div class="container">
+        <section>
+            <h3>Form</h3>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="row gtr-uniform gtr-50">
+                    <input type="hidden" name="access_key" value="9d179cb4-5408-41d2-b636-b28b77a22338">
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="firstname" placeholder="Firstname" required>
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="lastname" placeholder="Lastname" required>
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+                        <input type="email" name="email" placeholder="Email-Company" required>
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text"  name="phone" placeholder="Phone" required oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                    </div>
+                    <div class="col-12">
+                        <select name="job_level" id="job_level">
+                            <option value="">- Job level -</option>
+                            <option value="1">Manufacturing</option>
+                            <option value="2">Shipping</option>
+                            <option value="3">Administration</option>
+                            <option value="4">Human Resources</option>
+                        </select>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <div class="h-captcha" data-captcha="true"></div>
+                    </div>
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
+                    <div class="col-12">
+                        <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                            <li><input type="reset" value="Reset" /></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </section>
+        </div>
+    </div>
 
         <!-- Footer -->
         <footer id="footer">
