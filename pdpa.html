@@ -129,8 +129,8 @@
 
 
         <section id="head">
-            <div class="wrapper style2 special fade-up" style="background-image: url(images/pam_1.jpg);">
-                <h2 style="margin-left: 60%;font-size: 250%;">Privileged Access Management</h2>
+            <div class="wrapper style2 special fade-up" style="background-image: url(images/pdpa/126095-OQTH3F-706.jpg);">
+                <h2 style="margin-left: 60%;font-size: 250%;">Data Protection & Data Loss</h2>
             </div>
         </section>
 
@@ -143,274 +143,138 @@
 
                 <p>The purpose of the PDPA is to protect individuals from the unlawful gathering and use of their personal data.</p>
                 
-                <p>This glossary post will cover</p>
+                <p>If you manage a website in Thailand or are a foreign organization or company doing business with users based in Thailand, the PDPA applies to you as well.</p>
+                <p>Violations of the PDPA can result in fines of up to 5,000,000 Baht or imprisonment for up to one year.</p>
+                <p>Here, we will outline how the PDPA may impact your business website and how Cookie Information can help you comply.</p>
+                <h2>What is personal data under the PDPA?</h2>
+                <p>According to Section 6 of the PDPA, personal data is defined as any information that can identify a person either directly or indirectly. This includes data such as name, address, email address, phone number, ID number, or other information that identifies a specific person.</p>
+                <p>Sensitive personal data is given further protection under the PDPA and includes:</p>
                 <ul>
-                    <li><b>What privilege refers to in a computing context</b></li><br>
-                    <li><b>Categories of privileges and privileged accounts/credentials</b></li><br>
-                    <li><b>Typical risks associated with privileges and avenues of threats</b></li><br>
-                    <li><b>Privileged access security best practices</b></li><br>
-                    <li><b>How to implement PAM</b></li><br>
+                    <li>Health data, biometric data, and genetic data</li>
+                    <li>Gender, sexual orientation, and disability</li>
+                    <li>Racial and ethnic origin, and religion</li>
+                    <li>Trade union information and political opinions</li>
                 </ul>
+                <p>If the data collected by a website can in any way identify a user (the data subject), then the user is protected by the PDPA.</p>
+                <p>Personal data about website users can be collected if there is a legal basis for doing so. This includes legal obligations, public interest, legitimate interest, or consent.</p>
             </div>
         </div>
 
 
         <div class="wrapper style1 special fade-up" style="background-color: snow;">
             <div class="container" style="color: black;">
-                <h2 style="color: black;">What Are Privileges and How Are They Created?</h2>
+                <h2 style="color: black;">What Is Data Protection?</h2>
                 <p>
-                    In information technology (IT), privilege refers to the authority granted to a specific
-                    account or process within a computing system or network. This authorization enables the
-                    account or process to override or bypass certain security restrictions, allowing actions
-                    like shutting down systems, loading device drivers, configuring networks or systems,
-                    provisioning and configuring accounts and cloud instances, and more.
+                    Data protection refers to the practices, technologies, and policies used to safeguard data against unauthorized access, loss, corruption, and other threats. This encompasses protecting data at rest (stored data), in transit (data being transferred between systems), and in use (data being accessed by authorized users).
                 </p>
-                <blockquote>
-                    In his book "Privileged Attack Vectors," industry thought leader Morey Haber provides a
-                    fundamental definition: "privilege is a special right or advantage. It entails an elevation
-                    above the normal and is not merely a setting or permission granted to the masses."
-                </blockquote>
-                <p>Privileges play a crucial role in operations by granting elevated rights to users,
-                    applications, and system processes, allowing them access to specific resources and
-                    facilitating work-related tasks. However, the potential for misuse or exploitation of
-                    privilege, whether by insiders or external attackers, poses a significant security challenge
-                    for organizations.
+                <p>
+                    Data protection involves implementing a range of security measures, such as encryption, access controls, and backup and recovery solutions, to protect data from cyber threats, accidental loss or deletion, and other risks. It also entails ensuring compliance with data protection regulations, such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), which mandate organizations to protect personal data and provide individuals with specific rights over their data.
 
-                    Operating systems, file systems, applications, databases, hypervisors, cloud management
-                    platforms, and other components incorporate privileges for various user accounts and
-                    processes. Additionally, certain privileged users, such as system or network administrators,
-                    have the ability to assign privileges.
+                </p>
 
-                    Depending on the system, privilege assignment, or delegation, to individuals may be based on
-                    role-based attributes, such as business unit (e.g., marketing, HR, or IT), as well as
-                    various other parameters like seniority, time of day, or special circumstances.
+                <p>
+                    Effective data protection is critical for businesses, as it helps safeguard sensitive information such as customer data, financial records, and intellectual property from being compromised or lost. Data breaches and data loss incidents can have serious consequences, including financial losses, legal liabilities, reputational damage, and loss of customer trust. Therefore, implementing robust data protection measures is essential for ensuring the confidentiality, integrity, and availability of data.
                 </p>
             </div>
         </div>
-
-
-        <div class="wrapper style1 special fade-up">
+        <div class="wrapper style2 special fade-up">
             <div class="container">
-                <h2>What are Privileged Accounts?</h2>
-                <p>A privileged account is defined as any account that offers access and privileges surpassing
-                    those of non-privileged accounts. Concurrently, a privileged user is someone currently
-                    utilizing privileged access, typically through a privileged account. Due to their heightened
-                    capabilities and access, privileged users and accounts present significantly greater risks
-                    compared to non-privileged counterparts.
-
-                    Superuser accounts, a special category of privileged accounts, are primarily utilized for
-                    administrative purposes by specialized IT personnel. These accounts grant virtually
-                    unrestricted power to execute commands and implement system modifications. Commonly referred
-                    to as "Root" in Unix/Linux and "Administrator" in Windows systems, superuser accounts enjoy
-                    broad access to files, directories, and resources with full read, write, and execute
-                    permissions. They possess the authority to enact systemic changes across a network,
-                    including file creation or installation, modification of files and settings, and user and
-                    data deletion. Moreover, superusers hold the capability to grant and revoke permissions for
-                    other users.
-
-                    If misused, whether inadvertently (e.g., accidental deletion of a critical file or erroneous
-                    command input) or maliciously, these highly privileged accounts can precipitate catastrophic
-                    damage throughout a system, or even across the entire enterprise.</p>
-                <p>In Windows systems, each computer typically includes at least one administrator account. The
-                    Administrator account permits users to carry out activities like software installation and
-                    adjustments to local configurations and settings.
-
-                    macOS, conversely, adopts a Unix-like structure but is seldom deployed as a server compared
-                    to Unix and Linux. Users on Mac endpoints may typically operate with root access by default.
-                    However, adhering to macOS security best practices, it is recommended to establish and
-                    utilize a non-privileged account for routine computing tasks, thereby reducing the potential
-                    for and impact of privileged threats.<br>
-
-                    In a least privilege environment, the majority of users primarily operate with
-                    non-privileged accounts 90-100% of the time. These non-privileged accounts, often referred
-                    to as least privileged accounts (LUA), generally fall into two categories</p>
+                <h2>What Are the Benefits of DPAAS?</h2>
+                <p>Data Protection as a Service (DPaaS) offers several benefits for businesses and organizations, including:</p>
                 <ol>
-                    <li>
-                        Standard user accounts: These accounts possess a restricted set of privileges, typically
-                        allowing activities such as internet browsing, accessing specific applications (e.g., MS
-                        Office), and limited resource access, often dictated by role-based access policies.
-                    </li>
-                    <li>
-                        Guest user accounts: These accounts have even fewer privileges than standard user
-                        accounts, usually limited to basic application usage and internet browsing.
-                    </li>
+                    <li><b>Cost savings:</b> DPaaS can help businesses reduce their capital and operational expenses by outsourcing data protection to a service provider, eliminating the need to invest in and manage their own backup and recovery infrastructure.</li>
+                    <li><b>Scalability:</b> DPaaS is a flexible solution that can be easily scaled up or down as business needs change, allowing businesses to quickly adapt to changing demands.</li>
+                    <li><b>Expertise and advanced technology:</b> DPaaS providers offer advanced technologies and expertise that may not be available in-house, ensuring that businesses can access the latest data protection solutions.</li>
+                    <li><b>Improved data security:</b> DPaaS providers can help businesses protect their data from theft, loss, or corruption through encryption, access controls, and monitoring.</li>
+                    <li><b>Regulatory compliance:</b> DPaaS providers can help businesses comply with regulatory requirements, such as data retention and privacy regulations, reducing the risk of non-compliance penalties.</li>
+                    <li><b>Improved disaster recovery:</b> DPaaS providers can help businesses develop and execute disaster recovery plans, ensuring that they can quickly recover from data loss or other disasters.</li>
                 </ol>
-            </div>
-        </div>
-
-
-        <div class="wrapper style2 special fade-up">
-            <div class="container">
-                <h2>What are Privileged Credentials?</h2>
-                <p>Privileged credentials, also known as privileged passwords, constitute a subset of credentials
-                    that confer elevated access and permissions across various accounts, applications, and systems.
-                    These credentials can be associated with human users, applications, service accounts, and more.
-                    Among these, SSH keys represent a type of privileged credential widely used in enterprises to
-                    access servers and establish connections to highly sensitive assets.
-
-                    In some instances, particularly within DevOps environments, privileged credentials may be
-                    referred to as "secrets."</p>
-                <p>Privileged account passwords are often dubbed as "the keys to the IT kingdom" due to their
-                    capability, especially in the case of superuser passwords, to grant authenticated users nearly
-                    unrestricted privileged access rights across an organization's most critical systems and data.
-                    Given the significant power embedded within these privileges, they are susceptible to abuse by
-                    insiders and are highly sought after by hackers. According to Forrester Research, approximately
-                    80% of security breaches involve the compromise of privileged credentials.</p>
-            </div>
-        </div>
-
-
-        <div class="wrapper style1 special fade-up">
-            <div class="container">
-                <h2>Types of Privileged Accounts</h2>
-                <p>As a best practice, most non-IT users should only have access to standard user accounts.
-                    However, some IT employees may have multiple accounts. They may log in as standard users for
-                    routine tasks and switch to superuser accounts for administrative activities. Since
-                    administrative accounts carry more privileges and consequently pose a greater risk if
-                    misused or abused, it's recommended in Privileged Access Management (PAM) to use these
-                    accounts only when absolutely necessary and for the shortest duration possible.</p>
-                <p><b>Examples of privileged accounts typically in an organization</b></p>
                 <p>
-                    <li><b>Local administrative accounts:</b> Non-personal accounts providing administrative
-                        access to the local host or instance only.</li>
-                    <li><b>Domain administrative accounts:</b> Granting privileged administrative access across
-                        all workstations and servers within the domain.</li>
-                    <li><b>Break glass (also called emergency or firecall) accounts:</b> Emergency provision of
-                        administrative access to unprivileged users for secure systems.</li>
-                    <li><b>Service account:</b> Accounts, whether local or domain-based, endowed with
-                        privileges, utilized by an application or service to interact with the operating system.
-                    </li>
-                    <li><b>Active Directory or domain service accounts:</b> Enable password changes to accounts,
-                        etc.</li>
-                    <li><b>Application accounts:</b> Utilized by applications for tasks such as accessing
-                        databases, executing batch jobs or scripts, or facilitating access to other
-                        applications.</li>
+                    Overall, DPaaS offers businesses an efficient and cost-effective solution for data protection, allowing them to focus on their core business while outsourcing the responsibility for data protection to a trusted service provider.
                 </p>
-                <p>In recent times, privileged accounts are often linked to a machine identity rather than a
-                    human one. The rise of machine accounts, as seen in Robotic Process Automation (RPA) and
-                    other automated workflows, introduces considerable security complexity to IT environments.
-                    This underscores the critical role of Privileged Access Management (PAM) systems in managing
-                    these accounts effectively.</p>
+                
+
             </div>
         </div>
 
-        <div class="wrapper style2 special fade-up" style="background-color: snow;">
-            <div class="container" style="color: black;">
-                <h2 style="color: black;">
-                    Privileged Risks & Privileged Threats – Why PAM is Needed
-                </h2>
-                <ul style="color: black;">
-                    <li><b style="color: black;">Lack of visibility and awareness of privileged users, accounts, assets,
-                            and credentials.</b>
-                        <p>Long-forgotten privileged accounts are commonly spread across organizations. These orphaned
-                            accounts, which may number in the millions, present dangerous backdoors for attackers,
-                            including former employees who have left the company but still retain access. Additionally,
-                            many cloud identities and accounts are dynamic and ephemeral, yet carry extensive
-                            privileges. This increasingly blurs the distinction between unprivileged and privileged
-                            identities. A vague understanding of who possesses what access and how they utilize it
-                            leaves organizations vulnerable to undetected threats and attack paths.</p>
-                    </li>
-                    <li><b style="color: black;">Over-provisioning of privileges.</b>
-                        <p>If privileged access controls are overly restrictive, they can disrupt user workflows,
-                            causing frustration and hindering productivity. Since end users rarely complain about having
-                            too many privileges, IT admins traditionally grant broad sets of privileges. Additionally,
-                            an employee’s role often evolves, leading to the accumulation of new responsibilities and
-                            corresponding privileges, while still retaining privileges they no longer need.<br><br>
-
-                            This excess of privileges contributes to a bloated attack surface. Routine computing for
-                            employees on personal PCs might include internet browsing, streaming video, using MS Office
-                            and other basic applications, including SaaS tools (e.g., Salesforce.com, Google Docs,
-                            Slack). In the case of Windows PCs, users often log in with administrative account
-                            privileges, which are far broader than necessary. These excessive privileges significantly
-                            increase the risk of malware or hackers stealing passwords or installing malicious code via
-                            web surfing or email attachments. The malware or hacker could then exploit the full set of
-                            privileges of the account, accessing data on the infected computer and potentially launching
-                            attacks against other networked computers or servers.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
         <div class="wrapper style1 special fade-up">
             <div class="container">
-                <ul>
-                    <li><b>Shared accounts and passwords</b>
-                        <p>IT teams commonly share root, Windows Administrator, and other privileged credentials for
-                            convenience, allowing workloads and duties to be seamlessly shared. However, when multiple
-                            people use the same account password, it becomes impossible to attribute actions performed
-                            with that account to a single individual. This practice creates significant security,
-                            auditability, and compliance issues.</p>
-                    </li>
-                    <li><b>Hard-coded / embedded credentials</b>
-                        <p>Privileged credentials are essential for facilitating authentication for app-to-app (A2A) and
-                            application-to-database (A2D) communications and access. Applications, systems, network
-                            devices, and IoT devices may be shipped or deployed with embedded, default credentials that
-                            are easily guessable and pose substantial risks. Additionally, employees often hardcode
-                            secrets in plain text—such as within a script, code, or file—making them easily accessible
-                            when needed.</p>
-                    </li>
-                    <li><b>Manual and/or decentralized credential management</b>
-                        <p>Privilege security controls are often immature. Privileged accounts and credentials may be
-                            managed differently across various organizational silos, resulting in inconsistent
-                            enforcement of best practices. Human privilege management processes cannot scale in most IT
-                            environments, where thousands—or even millions—of privileged accounts, credentials, and
-                            assets can exist. With so many systems and accounts to manage, humans invariably take
-                            shortcuts, such as re-using credentials across multiple accounts and assets. Consequently,
-                            one compromised account can jeopardize the security of other accounts sharing the same
-                            credentials.</p>
-                    </li>
-                    <li><b>Lack of visibility into application and service account privileges</b>
-                        <p>Applications and service accounts often automatically execute privileged processes to perform
-                            actions and communicate with other applications, services, resources, and more. These
-                            applications and service accounts frequently possess excessive privileged access rights by
-                            default and are prone to other serious security deficiencies.Applications and service
-                            accounts often automatically execute privileged processes to perform actions and communicate
-                            with other applications, services, resources, and more. These applications and service
-                            accounts frequently possess excessive privileged access rights by default and are prone to
-                            other serious security deficiencies.</p>
-                    </li>
-                    <li><b>Siloed identity management tools and processes</b>
-                        <p>Modern IT environments typically operate across multiple platforms (e.g., Windows, Mac, Unix,
-                            Linux) and environments (on-premises, Azure, AWS, Google Cloud), each maintained and managed
-                            separately. This practice leads to inconsistent administration for IT, added complexity for
-                            end users, and increased cyber risk.</p>
-                    </li>
-                </ul>
+                <h2>What Is Data Loss?</h2>
+                <p>Data loss refers to the unintentional or unexpected loss of information, which can happen due to various reasons. These reasons include hardware failure, where storage devices become non-functional; software errors that lead to the deletion or corruption of data; human errors such as accidentally deleting important files; malware or viruses that delete or encrypt data; natural disasters like fires, floods, or earthquakes that destroy storage devices; power failures that corrupt data during read/write processes; and theft or loss of devices such as laptops or smartphones that store important data.</p>
+                <h2>Data loss prevention definition</h2>
+                <p>
+                    Data protection is everyone’s responsibility, not just an IT function. Data loss prevention (DLP) is a key component of a company’s security policy aimed at preventing the loss, leakage, misuse, or unauthorized access of data. As part of their DLP practices, organizations classify business-critical information to ensure that their policies comply with relevant regulations, such as HIPAA and GDPR.
+                </p>
+                <p>
+                    Data loss prevention (DLP) tools and solutions can monitor, remotely control, and safeguard data on endpoint devices, corporate applications, and both cloud and on-premises environments. Whether data is in transit or at rest, DLP solutions protect organizations from internal and external threats that could lead to the intentional or accidental loss of data.
+
+                </p>
+                <p>
+                    We recommend a proactive strategy, utilizing robust data loss prevention (DLP) tools to avoid costly and damaging data loss events.
+                </p>
+                
             </div>
         </div>
 
+
         <div class="wrapper style2 special fade-up">
+            <div class="container">
+                <h2>What is data loss prevention?</h2>
+                <p>
+                    As the name implies, data loss prevention is a proactive approach aimed at securing data and digital resources against potential theft, and accidental or malicious loss. As part of an organization’s security strategy, optimizing data protection safeguards valuable data, ensuring high levels of recoverability from loss events. Data loss prevention applies throughout the full data lifecycle, including when data is in transit across the network, stored at rest, or actively used by applications.
+                </p>
+                <p>DLP solutions can expedite incident response by providing alerts and isolating data in the event of a cyberattack or breach. Data loss prevention tools are also capable of classifying company information to ensure that data policies comply with relevant internal, local, government, and industry-mandated regulatory requirements.</p>
+
+            </div>
+        </div>
+
+
+        
+
+        
+
+        <div class="wrapper style1 special fade-up">
             <div class="container">
                 <h2>
-                    Benefits of Privileged Access Management
+                    Benefits of data loss prevention
                 </h2>
-                <p>The more privileges and access a user, account, or process accumulates, the higher the risk of abuse,
-                    exploitation, or error. Implementing privilege management not only reduces the likelihood of a
-                    security breach occurring but also helps contain the impact of a breach should one occur.
-                    Implementing Privileged Access Management (PAM) best practices, such as removing admin rights,
-                    enforcing least privilege, and eliminating default or embedded credentials, is a crucial aspect of
-                    hardening enterprise IT systems.
+                <p>
+                    Digital data and applications are the drivers of business growth. Protecting business-critical data is vital for business survival and serves as a safety net against data loss or theft. Preventing data loss is becoming increasingly challenging with more data to store and more places to store it. Adopting and enforcing a DLP strategy is a cornerstone of keeping your valuable data out of the wrong hands. DLP offers a helping hand to IT teams for:
 
-                    One key distinction between PAM and other security technologies is that PAM can disrupt multiple
-                    points of the cyberattack chain, offering protection against both external attacks and attacks that
-                    penetrate networks and systems.</p>
+                </p>
+                <p>
+                    <b>Rapid recovery:</b> Data loss prevention tools provide administrators with the necessary tools and capabilities to restore data with speed and precision. With granular search and flexible point-in-time or out-of-place recovery options, IT teams have complete control over when, where, and how to restore valuable data.
+                </p>
+                <p>
+                    <b>Comprehensive coverage:</b>  DLP extends protection across data estates, offering comprehensive coverage for users, systems, applications, and environments. And with data scattered in many cloud and on-premises locations – dedicated solutions deliver better peace of mind and coverage for valuable organizational data.
+                </p>
+                <p>
+                    <b>Lower costs:</b> Data loss prevention saves organizations significant resources by avoiding potential liabilities, harmful exposure, fines, and lost revenue due to data loss.
+                </p>
             </div>
         </div>
 
         <div class="wrapper style2 special fade-up" style="background-color: white;">
             <div class="container">
                 <h2 style="color: black;text-align: center;">
-                    Discover the leading Privileged Access Management (PAM) Solutions for your organization through
-                    Gartner's Magic Quadrant ranking of top PAM offerings.
+                    Discover the leading Data Protection & Data Loss Solutions for your organization through
+                    Gartner's Magic Quadrant ranking of top <br>Data Protection & Data Loss offerings.
                 </h2><br><br>
-                <a href="https://www.beyondtrust.com/brand" class="pam-logo"><img src="images/pam_2.svg.png" width="400em" alt=""></a>
-                <a href="https://delinea.com" style="margin-left: 5%;"><img src="images/pam_3.png" width="200em"
-                        alt=""></a>
-                <a href="https://www.wallix.com/privileged-access-management" style="margin-left: 5%;"><img
-                        src="images/pam_4.png" width="200em" alt=""></a>
-                <a href="https://www.broadcom.com/products/identity/pam"
-                    style="margin-left: 5%; margin-bottom: 5em;"><img src="images/pam_5.svg.png" width="300em"
-                        alt=""></a>
+                <a href="https://www.crowdstrike.com/platform/endpoint-security/"><img src="images/pdpa/Acronis.png" style="margin-left: 6em; margin-bottom: -0.4cm;" width="170em" alt=""></a>
+
+                <a href="https://www.microsoft.com/th-th/security/business/endpoint-security/microsoft-defender-endpoint" target="_blank"><img src="images/pdpa/Arcserve_logo.png" style="margin-left: 6em;" width="170em" alt=""></a>
+
+                <a href="https://www.trendmicro.com/en_us/business/products/endpoint-security.html" target="_blank"><img src="images/pdpa/Broadcom_Ltd_Logo.png" style="margin-left: 6em;" width="200em" alt=""></a>
+                
+                <a href="https://www.recordedfuture.com/products/threat-intelligence" target="_blank"><img src="images/pdpa/forcepoint-logo.svg" style="margin-left: 6em; " width="170em" alt=""></a>
+                
+                <a href="https://www.sentinelone.com/surfaces/endpoint/" target="_blank"><img src="images/pdpa/Proofpoint-vector-logo.png" style="margin-left: 14em;" width="170em" alt=""></a>
+                
+                <a href="https://www.fortinet.com/solutions/enterprise-midsize-business/endpoint-protection" target="_blank"><img src="images/pdpa/veeam_logo.png" style="margin-left: 6em; margin-bottom: 1.7cm;" width="170em" alt=""></a>
+                
+                <a href="https://www.sophos.com/en-us/products/endpoint-antivirus" target="_blank"><img src="images/pdpa/Veritas-logo.svg" style="margin-left: 6em; margin-bottom: 1.8cm;" width="170em" alt=""></a>
+
 
             </div>
         </div>
