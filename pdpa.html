@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Data Protection & Data Loss | Ruth Victor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        a {
+            border-bottom: none;
+        }
+
+
+        /* Styles for Tabs */
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .pam-logo {
+            transition: transform 0.3s ease;
+        }
+
+        /* Scale the link logos when hovered over */
+        .pam-logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="switch.html">Switch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logmgmt.html">Logs Management</a></li>
+                            <li><a href="waf.html">Web Application Firewall</a></li>
+                            <li><a href="threat.html">Threat Intelligence</a></li>
+                            <li><a href="Endpoint_Security.html">Endpoint Security</a></li>
+                            <li><a href="pam.html">Privileged Access Management</a></li>
+                            <li><a href="pdpa.html">Data Protection & Data Loss</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="head">
+            <div class="wrapper style2 special fade-up" style="background-image: url(images/pam_1.jpg);">
+                <h2 style="margin-left: 60%;font-size: 250%;">Privileged Access Management</h2>
+            </div>
+        </section>
+
+        <div class="wrapper style1 special fade-up">
+            <div class="container">
+                <h2>What is PDPA?</h2>
+                <p>The Thailand Personal Data Protection Act 2019 (PDPA) was published on May 27, 2019, in the Royal Thai Government Gazette. It is the first law governing data protection in Thailand.</p>
+
+                <p>The Thailand PDPA, not to be confused with the Singapore PDPA, describes the requirements for websites on how to collect consent before the processing of personal data.</p>
+
+                <p>The purpose of the PDPA is to protect individuals from the unlawful gathering and use of their personal data.</p>
+                
+                <p>This glossary post will cover</p>
+                <ul>
+                    <li><b>What privilege refers to in a computing context</b></li><br>
+                    <li><b>Categories of privileges and privileged accounts/credentials</b></li><br>
+                    <li><b>Typical risks associated with privileges and avenues of threats</b></li><br>
+                    <li><b>Privileged access security best practices</b></li><br>
+                    <li><b>How to implement PAM</b></li><br>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="wrapper style1 special fade-up" style="background-color: snow;">
+            <div class="container" style="color: black;">
+                <h2 style="color: black;">What Are Privileges and How Are They Created?</h2>
+                <p>
+                    In information technology (IT), privilege refers to the authority granted to a specific
+                    account or process within a computing system or network. This authorization enables the
+                    account or process to override or bypass certain security restrictions, allowing actions
+                    like shutting down systems, loading device drivers, configuring networks or systems,
+                    provisioning and configuring accounts and cloud instances, and more.
+                </p>
+                <blockquote>
+                    In his book "Privileged Attack Vectors," industry thought leader Morey Haber provides a
+                    fundamental definition: "privilege is a special right or advantage. It entails an elevation
+                    above the normal and is not merely a setting or permission granted to the masses."
+                </blockquote>
+                <p>Privileges play a crucial role in operations by granting elevated rights to users,
+                    applications, and system processes, allowing them access to specific resources and
+                    facilitating work-related tasks. However, the potential for misuse or exploitation of
+                    privilege, whether by insiders or external attackers, poses a significant security challenge
+                    for organizations.
+
+                    Operating systems, file systems, applications, databases, hypervisors, cloud management
+                    platforms, and other components incorporate privileges for various user accounts and
+                    processes. Additionally, certain privileged users, such as system or network administrators,
+                    have the ability to assign privileges.
+
+                    Depending on the system, privilege assignment, or delegation, to individuals may be based on
+                    role-based attributes, such as business unit (e.g., marketing, HR, or IT), as well as
+                    various other parameters like seniority, time of day, or special circumstances.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="wrapper style1 special fade-up">
+            <div class="container">
+                <h2>What are Privileged Accounts?</h2>
+                <p>A privileged account is defined as any account that offers access and privileges surpassing
+                    those of non-privileged accounts. Concurrently, a privileged user is someone currently
+                    utilizing privileged access, typically through a privileged account. Due to their heightened
+                    capabilities and access, privileged users and accounts present significantly greater risks
+                    compared to non-privileged counterparts.
+
+                    Superuser accounts, a special category of privileged accounts, are primarily utilized for
+                    administrative purposes by specialized IT personnel. These accounts grant virtually
+                    unrestricted power to execute commands and implement system modifications. Commonly referred
+                    to as "Root" in Unix/Linux and "Administrator" in Windows systems, superuser accounts enjoy
+                    broad access to files, directories, and resources with full read, write, and execute
+                    permissions. They possess the authority to enact systemic changes across a network,
+                    including file creation or installation, modification of files and settings, and user and
+                    data deletion. Moreover, superusers hold the capability to grant and revoke permissions for
+                    other users.
+
+                    If misused, whether inadvertently (e.g., accidental deletion of a critical file or erroneous
+                    command input) or maliciously, these highly privileged accounts can precipitate catastrophic
+                    damage throughout a system, or even across the entire enterprise.</p>
+                <p>In Windows systems, each computer typically includes at least one administrator account. The
+                    Administrator account permits users to carry out activities like software installation and
+                    adjustments to local configurations and settings.
+
+                    macOS, conversely, adopts a Unix-like structure but is seldom deployed as a server compared
+                    to Unix and Linux. Users on Mac endpoints may typically operate with root access by default.
+                    However, adhering to macOS security best practices, it is recommended to establish and
+                    utilize a non-privileged account for routine computing tasks, thereby reducing the potential
+                    for and impact of privileged threats.<br>
+
+                    In a least privilege environment, the majority of users primarily operate with
+                    non-privileged accounts 90-100% of the time. These non-privileged accounts, often referred
+                    to as least privileged accounts (LUA), generally fall into two categories</p>
+                <ol>
+                    <li>
+                        Standard user accounts: These accounts possess a restricted set of privileges, typically
+                        allowing activities such as internet browsing, accessing specific applications (e.g., MS
+                        Office), and limited resource access, often dictated by role-based access policies.
+                    </li>
+                    <li>
+                        Guest user accounts: These accounts have even fewer privileges than standard user
+                        accounts, usually limited to basic application usage and internet browsing.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="wrapper style2 special fade-up">
+            <div class="container">
+                <h2>What are Privileged Credentials?</h2>
+                <p>Privileged credentials, also known as privileged passwords, constitute a subset of credentials
+                    that confer elevated access and permissions across various accounts, applications, and systems.
+                    These credentials can be associated with human users, applications, service accounts, and more.
+                    Among these, SSH keys represent a type of privileged credential widely used in enterprises to
+                    access servers and establish connections to highly sensitive assets.
+
+                    In some instances, particularly within DevOps environments, privileged credentials may be
+                    referred to as "secrets."</p>
+                <p>Privileged account passwords are often dubbed as "the keys to the IT kingdom" due to their
+                    capability, especially in the case of superuser passwords, to grant authenticated users nearly
+                    unrestricted privileged access rights across an organization's most critical systems and data.
+                    Given the significant power embedded within these privileges, they are susceptible to abuse by
+                    insiders and are highly sought after by hackers. According to Forrester Research, approximately
+                    80% of security breaches involve the compromise of privileged credentials.</p>
+            </div>
+        </div>
+
+
+        <div class="wrapper style1 special fade-up">
+            <div class="container">
+                <h2>Types of Privileged Accounts</h2>
+                <p>As a best practice, most non-IT users should only have access to standard user accounts.
+                    However, some IT employees may have multiple accounts. They may log in as standard users for
+                    routine tasks and switch to superuser accounts for administrative activities. Since
+                    administrative accounts carry more privileges and consequently pose a greater risk if
+                    misused or abused, it's recommended in Privileged Access Management (PAM) to use these
+                    accounts only when absolutely necessary and for the shortest duration possible.</p>
+                <p><b>Examples of privileged accounts typically in an organization</b></p>
+                <p>
+                    <li><b>Local administrative accounts:</b> Non-personal accounts providing administrative
+                        access to the local host or instance only.</li>
+                    <li><b>Domain administrative accounts:</b> Granting privileged administrative access across
+                        all workstations and servers within the domain.</li>
+                    <li><b>Break glass (also called emergency or firecall) accounts:</b> Emergency provision of
+                        administrative access to unprivileged users for secure systems.</li>
+                    <li><b>Service account:</b> Accounts, whether local or domain-based, endowed with
+                        privileges, utilized by an application or service to interact with the operating system.
+                    </li>
+                    <li><b>Active Directory or domain service accounts:</b> Enable password changes to accounts,
+                        etc.</li>
+                    <li><b>Application accounts:</b> Utilized by applications for tasks such as accessing
+                        databases, executing batch jobs or scripts, or facilitating access to other
+                        applications.</li>
+                </p>
+                <p>In recent times, privileged accounts are often linked to a machine identity rather than a
+                    human one. The rise of machine accounts, as seen in Robotic Process Automation (RPA) and
+                    other automated workflows, introduces considerable security complexity to IT environments.
+                    This underscores the critical role of Privileged Access Management (PAM) systems in managing
+                    these accounts effectively.</p>
+            </div>
+        </div>
+
+        <div class="wrapper style2 special fade-up" style="background-color: snow;">
+            <div class="container" style="color: black;">
+                <h2 style="color: black;">
+                    Privileged Risks & Privileged Threats – Why PAM is Needed
+                </h2>
+                <ul style="color: black;">
+                    <li><b style="color: black;">Lack of visibility and awareness of privileged users, accounts, assets,
+                            and credentials.</b>
+                        <p>Long-forgotten privileged accounts are commonly spread across organizations. These orphaned
+                            accounts, which may number in the millions, present dangerous backdoors for attackers,
+                            including former employees who have left the company but still retain access. Additionally,
+                            many cloud identities and accounts are dynamic and ephemeral, yet carry extensive
+                            privileges. This increasingly blurs the distinction between unprivileged and privileged
+                            identities. A vague understanding of who possesses what access and how they utilize it
+                            leaves organizations vulnerable to undetected threats and attack paths.</p>
+                    </li>
+                    <li><b style="color: black;">Over-provisioning of privileges.</b>
+                        <p>If privileged access controls are overly restrictive, they can disrupt user workflows,
+                            causing frustration and hindering productivity. Since end users rarely complain about having
+                            too many privileges, IT admins traditionally grant broad sets of privileges. Additionally,
+                            an employee’s role often evolves, leading to the accumulation of new responsibilities and
+                            corresponding privileges, while still retaining privileges they no longer need.<br><br>
+
+                            This excess of privileges contributes to a bloated attack surface. Routine computing for
+                            employees on personal PCs might include internet browsing, streaming video, using MS Office
+                            and other basic applications, including SaaS tools (e.g., Salesforce.com, Google Docs,
+                            Slack). In the case of Windows PCs, users often log in with administrative account
+                            privileges, which are far broader than necessary. These excessive privileges significantly
+                            increase the risk of malware or hackers stealing passwords or installing malicious code via
+                            web surfing or email attachments. The malware or hacker could then exploit the full set of
+                            privileges of the account, accessing data on the infected computer and potentially launching
+                            attacks against other networked computers or servers.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper style1 special fade-up">
+            <div class="container">
+                <ul>
+                    <li><b>Shared accounts and passwords</b>
+                        <p>IT teams commonly share root, Windows Administrator, and other privileged credentials for
+                            convenience, allowing workloads and duties to be seamlessly shared. However, when multiple
+                            people use the same account password, it becomes impossible to attribute actions performed
+                            with that account to a single individual. This practice creates significant security,
+                            auditability, and compliance issues.</p>
+                    </li>
+                    <li><b>Hard-coded / embedded credentials</b>
+                        <p>Privileged credentials are essential for facilitating authentication for app-to-app (A2A) and
+                            application-to-database (A2D) communications and access. Applications, systems, network
+                            devices, and IoT devices may be shipped or deployed with embedded, default credentials that
+                            are easily guessable and pose substantial risks. Additionally, employees often hardcode
+                            secrets in plain text—such as within a script, code, or file—making them easily accessible
+                            when needed.</p>
+                    </li>
+                    <li><b>Manual and/or decentralized credential management</b>
+                        <p>Privilege security controls are often immature. Privileged accounts and credentials may be
+                            managed differently across various organizational silos, resulting in inconsistent
+                            enforcement of best practices. Human privilege management processes cannot scale in most IT
+                            environments, where thousands—or even millions—of privileged accounts, credentials, and
+                            assets can exist. With so many systems and accounts to manage, humans invariably take
+                            shortcuts, such as re-using credentials across multiple accounts and assets. Consequently,
+                            one compromised account can jeopardize the security of other accounts sharing the same
+                            credentials.</p>
+                    </li>
+                    <li><b>Lack of visibility into application and service account privileges</b>
+                        <p>Applications and service accounts often automatically execute privileged processes to perform
+                            actions and communicate with other applications, services, resources, and more. These
+                            applications and service accounts frequently possess excessive privileged access rights by
+                            default and are prone to other serious security deficiencies.Applications and service
+                            accounts often automatically execute privileged processes to perform actions and communicate
+                            with other applications, services, resources, and more. These applications and service
+                            accounts frequently possess excessive privileged access rights by default and are prone to
+                            other serious security deficiencies.</p>
+                    </li>
+                    <li><b>Siloed identity management tools and processes</b>
+                        <p>Modern IT environments typically operate across multiple platforms (e.g., Windows, Mac, Unix,
+                            Linux) and environments (on-premises, Azure, AWS, Google Cloud), each maintained and managed
+                            separately. This practice leads to inconsistent administration for IT, added complexity for
+                            end users, and increased cyber risk.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper style2 special fade-up">
+            <div class="container">
+                <h2>
+                    Benefits of Privileged Access Management
+                </h2>
+                <p>The more privileges and access a user, account, or process accumulates, the higher the risk of abuse,
+                    exploitation, or error. Implementing privilege management not only reduces the likelihood of a
+                    security breach occurring but also helps contain the impact of a breach should one occur.
+                    Implementing Privileged Access Management (PAM) best practices, such as removing admin rights,
+                    enforcing least privilege, and eliminating default or embedded credentials, is a crucial aspect of
+                    hardening enterprise IT systems.
+
+                    One key distinction between PAM and other security technologies is that PAM can disrupt multiple
+                    points of the cyberattack chain, offering protection against both external attacks and attacks that
+                    penetrate networks and systems.</p>
+            </div>
+        </div>
+
+        <div class="wrapper style2 special fade-up" style="background-color: white;">
+            <div class="container">
+                <h2 style="color: black;text-align: center;">
+                    Discover the leading Privileged Access Management (PAM) Solutions for your organization through
+                    Gartner's Magic Quadrant ranking of top PAM offerings.
+                </h2><br><br>
+                <a href="https://www.beyondtrust.com/brand" class="pam-logo"><img src="images/pam_2.svg.png" width="400em" alt=""></a>
+                <a href="https://delinea.com" style="margin-left: 5%;"><img src="images/pam_3.png" width="200em"
+                        alt=""></a>
+                <a href="https://www.wallix.com/privileged-access-management" style="margin-left: 5%;"><img
+                        src="images/pam_4.png" width="200em" alt=""></a>
+                <a href="https://www.broadcom.com/products/identity/pam"
+                    style="margin-left: 5%; margin-bottom: 5em;"><img src="images/pam_5.svg.png" width="300em"
+                        alt=""></a>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                        class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
