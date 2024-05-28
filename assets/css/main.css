@@ -119,6 +119,19 @@ input, select, textarea {
 			color: #e44c65 !important;
 			border-bottom-color: transparent;
 		}
+	
+		.zoom {
+			padding: 50px;
+			background-color: green;
+			transition: transform .2s; /* Animation */
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+		  }
+		  
+		  .zoom:hover {
+			transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+		  }
 
 	strong, b {
 		color: #ffffff;
@@ -3158,6 +3171,10 @@ input, select, textarea {
 
 		.spotlight.style3 .content {
 			border-color: rgb(140, 40, 60);
+		}
+
+		.spotlight.style4 .content {
+			border-color: #ffffff;
 		}
 
 		.spotlight.inactive .content {
