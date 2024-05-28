@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Huawei | Ruth Victor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Styles for Tabs */
+        a {
+            border-bottom: none;
+        }
+
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="switch.html">Switch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logmgmt.html">Logs Management</a></li>
+                            <li><a href="waf.html">Web Application Firewall</a></li>
+                            <li><a href="threat.html">Threat Intelligence</a></li>
+                            <li><a href="Endpoint_Security.html">Endpoint Security</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('cisco_router.html')"
+                            style="color: white;">Cisco</button>
+                        <button class="tablinks" onclick="navigateTo('juniper_router.html')"
+                            style="color: white;">Juniper</button>
+                        <button class="tablinks" onclick="navigateTo('arista_router.html')"
+                            style="color: white;">Arista</button>
+                        </button>
+                        <button class="tablinks" onclick="navigateTo('huawei_router.html')"
+                            style="color: white;">Huawei</button>
+                    </div>
+                </header>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <img src="images/huawei_switch_1.png" width="400G" style="margin-left: 15em;" alt="">
+                            <h3>Enterprise Routers</h2>
+                                <p>Accelerating the digital transformation of enterprise with solutions that are
+                                    high-capacity, reliable, energy-efficient, and easy to maintain.</p><br>
+                                <img src="images/huawei_router_1.png" width="70%" style="margin-left: 20em;" alt="">
+                        </header>
+                    </div>
+                    <a href="#content" class="goto-next scrolly">Next</a>
+                </section>
+
+
+                <section id="content">
+                    <div id="main" class="wrapper style1 special fade-up">
+                        <div class="container" style="text-align: center;">
+                            <h2>Why Huawei Routers?</h2>
+                            <div class="row gtr-uniform">
+                                <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                    <span class="icon solid alt major fa-cogs"></span>
+                                    <h4>Market Leader</h4>
+                                    <p>Ranked No. 1 in China and No. 2 globally, Huawei routers are the preferred
+                                        choice for 70% of carriers and enterprise network Named Accounts (NAs).</p>
+                                    <br><br>
+                                </section>
+                                <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                    <span class="icon solid alt major fa-users"></span>
+                                    <h4>Strong Development Capabilities</h4>
+                                    <p>Huawei is a leader and a major contributor in the IP standards field. Its
+                                        Versatile Routing Platform (VRP) software is the result of 17 years of
+                                        innovation.</p><br><br>
+                                </section>
+                                <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                                    <span class="icon solid alt major fa-laptop"></span>
+                                    <h4>Certified, Award-Winning Technology</h4>
+                                    <p>In addition to winning multiple international awards such as the SDN-VDC
+                                        InfoVision award and a Grand Prize from Japan’s Interop, Huawei routers have
+                                        also received certifications from various respected third-party bodies
+                                        worldwide.</p><br><br>
+                                </section>
+                            </div>
+                            <a href="#one" class="goto-next scrolly">Next</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <section id="one">
+                <div id="main" class="wrapper style2 special fade-up">
+                    <div class="container" style="text-align: center;">
+                        <h2>Select the Best Products for Your Busines</h2>
+                        <h3>WAN Router</h3>
+                        <div class="row gtr-uniform"><br><br>
+                            <div class="row">
+                                <div class="column">
+                                    <a href="https://e.huawei.com/en/products/routers/ne8000" target="_blank"><img
+                                            src="images/huawei_router_1.png" width="100%" alt=""></a> <br><br>
+                                </div>
+                                <div class="column">
+                                    <h3>NetEngine 8000 Series Routers
+                                    </h3>
+                                    <p style="text-align: left;">The Huawei NetEngine 8000 series routers offer an
+                                        all-service, intelligent router
+                                        platform tailored for the cloud era. Leveraging ultra-broadband pipes, they
+                                        construct simplified networks while utilizing Segment Routing (SR) and Segment
+                                        Routing over IPv6 (SRv6) protocols to establish intelligent connections.
+                                        Integrated with Huawei's next-generation Network Cloud Engine (NCE), the
+                                        NetEngine 8000 series enables full-lifecycle automation and proactive Operations
+                                        and Maintenance (O&M). With an intent-driven approach, it liberates customers
+                                        from unnecessary constraints, unlocking the full potential of their networks.
+                                    </p>
+
+                                    <a href="https://e.huawei.com/en/products/routers/ne8000" target="_blank"
+                                        class="button small">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#two" class="goto-next scrolly">Next</a>
+                    </div>
+                    <a href="#two" class="goto-next scrolly">Next</a>
+                </div>
+            </section>
+
+            <section id="two">
+                <div id="main" class="wrapper style1 special fade-up">
+                    <div class="container" style="text-align: center;">
+                        <h3>Branch Interconnection Router</h3>
+                        <div class="row gtr-uniform"><br><br>
+                            <div class="row">
+                                <div class="column">
+                                    <a href="https://e.huawei.com/en/products/routers/netengine-ar8700"
+                                        target="_blank"><img src="images/huawei_router_2.png" width="100%" alt=""></a>
+                                    <br><br>
+                                </div>
+                                <div class="column">
+                                    <h3>NetEngine AR8700 Series Router
+                                    </h3>
+                                    <p style="text-align: left;">The Huawei NetEngine AR8700 series routers are designed
+                                        as high-performance and high-reliability egress routers specifically for SD-WAN
+                                        scenarios in large campus networks. These routers leverage ARM-based multi-core
+                                        processors and a non-blocking switching architecture to deliver exceptional
+                                        performance. They find extensive usage across various sectors including finance,
+                                        government, energy, and retail.
+                                    </p>
+                                    <a href="https://e.huawei.com/en/products/routers/netengine-ar8700" target="_blank"
+                                        class="button small primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#three" class="goto-next scrolly">Next</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="three">
+                <div id="main" class="wrapper style2 special fade-up">
+                    <div class="container" style="text-align: center;">
+                        <h3>Multi-Service Control Gateway</h3>
+                        <div class="row gtr-uniform"><br><br>
+                            <div class="row">
+                                <div class="column">
+                                    <a href="https://e.huawei.com/en/products/routers/me60" target="_blank"><img
+                                            src="images/huawei_router_3.png" width="100%" alt=""></a>
+                                    <br><br>
+                                </div>
+                                <div class="column">
+                                    <h3>ME60 Multiple-Service Control Gateway
+                                    </h3>
+                                    <p style="text-align: left;">The ME60 series, developed by Huawei, comprises
+                                        multiple-service control gateways, functioning as a type of Broadband Remote
+                                        Access Server (BRAS). These gateways serve as a unified platform for user access
+                                        and management, ideally suited for industries like broadcasting, television, and
+                                        education. Built on a 2T platform, the series features the industry's
+                                        largest-capacity routing line card (480G) and a large-capacity NAT service line
+                                        card (160G), facilitating seamless transition from IPv4 to IPv6.
+                                    </p>
+                                    <a href="https://e.huawei.com/en/products/routers/me60" target="_blank"
+                                        class="button small">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#four" class="goto-next scrolly">Next</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="four">
+                <div id="main" class="wrapper style1 special fade-up">
+                    <div class="container" style="text-align: center;">
+                        <h3>Sliced packet network platform</h3>
+                        <div class="row gtr-uniform"><br><br>
+                            <div class="row">
+                                <div class="column">
+                                    <a href="https://e.huawei.com/en/products/routers/ptn-7900" target="_blank"><img
+                                            src="images/huawei_router_4.png" width="100%" alt=""></a>
+                                    <br><br>
+                                </div>
+                                <div class="column">
+                                    <h3>PTN 7900 Series
+                                    </h3>
+                                    <p style="text-align: left;">Huawei introduces the industry’s pioneering
+                                        Software-Defined Packet Transport Network (SPTN) solution, delivering unified
+                                        multi-service transmission, high bandwidth, and differentiated quality
+                                        assurance, crucial for forward-looking packet transport networks.
+
+                                        The PTN 7900 series represents the industry's premier Software Defined
+                                        Networking (SDN)-based Packet Transport Network (PTN) device, featuring
+                                        substantial capacity and high bandwidth. This series offers a range of
+                                        interfaces including 40 GE, 50 GE, 100 GE, and 400 GE, along with intelligent
+                                        services, traffic visualization, quality measurement, and capacity
+                                        predictability. It effectively supports long-term evolution and multi-service
+                                        transmission for enterprises. Furthermore, it serves as a core transmission
+                                        device in the production networks of industries such as electric power,
+                                        transportation, and mining.
+                                    </p>
+                                    <a href="https://e.huawei.com/en/products/routers/ptn-7900" target="_blank"
+                                        class="button small primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div id="main" class="wrapper style2 special fade-up">
+                <div class="container" style="text-align: center;">
+                    <h2>Stories of Success</h2>
+                    <div class="row gtr-uniform">
+                        <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                            <span class="icon solid alt major fa-cogs"></span>
+                            <h4>Huawei CloudWAN Solution Helps Agricultural Bank of China Build an Intelligent Backbone
+                                Network</h4>
+                            <p>Leveraging Huawei's CloudWAN solution, the Agricultural Bank of China has established an
+                                industry-leading financial backbone network. Huawei’s SRv6 technology plays a pivotal
+                                role in enhancing the service experience for core global business transactions.</p>
+                        </section>
+                        <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                            <span class="icon solid alt major fa-users"></span>
+                            <h4>Brazil’s Caixa Transformed into Digital Bank</h4>
+                            <p>Digital banking hinges on the provision of digital products and services, utilizing
+                                digital channels for day-to-day financial activities, and employing ICT infrastructures
+                                for real-time digital interaction. As technology evolves, Huawei is committed to
+                                investing more in innovations and collaborating with industry-leading partners to
+                                further enhance its industry solutions.</p>
+                        </section>
+                        <section class="col-4 col-6-medium col-12-xsmall"><br><br>
+                            <span class="icon solid alt major fa-laptop"></span>
+                            <h4>Ping An’s Fast AI with Huawei SD-WAN Solution</h4>
+                            <p>Ping An Technology said: “Huawei’s SD-WAN Solution makes full use of Internet resources,
+                                supports Zero-Touch Provisioning (ZTP) of services, and provides intelligent O&M
+                                features. Huawei’s SD-WAN solution provides a strong network for our AI customer
+                                service.”</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                        class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+            </ul>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            function openModel(evt, modelName) {
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(modelName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+</body>
+
+</html>
