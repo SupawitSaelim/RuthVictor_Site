@@ -10,7 +10,7 @@
 		<style>
 			
 			#banner1 {
-				background-color: rgba(0, 0, 0, 0.384); /* เพิ่มสีพื้นหลังที่มืดขึ้น */
+				background-color: rgba(0, 0, 0, 0); /* เพิ่มสีพื้นหลังที่มืดขึ้น */
 				background-attachment: fixed;
 				background-color: #272833;
 				background-image: url("../../images/banner.jpg");
@@ -22,7 +22,7 @@
 				text-align: center;
 				z-index: 21;
 			}
-			#banner:before {
+			#banner1:before {
 			content: '';
 			display: inline-block;
 			height: 100vh;
@@ -30,11 +30,11 @@
 			width: 1%;
 		}
 
-		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+		#banner1:after {
+			background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -44,7 +44,7 @@
 			width: 100%;
 		}
 
-		#banner .content {
+		#banner1 .content {
 			display: inline-block;
 			margin-right: 1%;
 			max-width: 95%;
@@ -85,11 +85,11 @@
 					width: 100%;
 				}
 
-	body.is-touch #banner1 {
-		background-attachment: scroll;
-	}
+			body.is-touch #banner1 {
+				background-attachment: scroll;
+			}
 			video.video-background {
-				opacity: 0; /* ปรับค่าความเข้มของวิดีโอให้เป็น 1 */
+				opacity: 1; /* ปรับค่าความเข้มของวิดีโอให้เป็น 1 */
 			}
 		</style>
 	</head>
@@ -139,7 +139,7 @@
 				</header>
 
 			<!-- Banner -->
-			<section id="banner" style="position: relative; overflow: hidden;">
+			<section id="banner1" style="position: relative; overflow: hidden;">
 				<video class="video-background" src="images/video/video-home.mp4" autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 1; z-index: -1;"></video>
 				<div class="content" style="position: relative; z-index: 1;">
 					<header>
