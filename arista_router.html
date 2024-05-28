@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Arista | Ruth Victor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Styles for Tabs */
+        a {
+            border-bottom: none;
+        }
+
+        .tab {
+            overflow: hidden;
+            background-color: rgb(140, 40, 60);
+            ;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: rgb(120, 0, 20);
+        }
+
+        .tab button.active {
+            background-color: rgb(140, 40, 60);
+            ;
+        }
+
+        .spaced-paragraph {
+            margin-bottom: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="Firewall.html">FireWalls</a>
+        <a href="right-sidebar.html">Right Sidebar</a>
+        <a href="no-sidebar.html">No Sidebar</a>
+        <a href="elements.html">Elements</a>
+        <a href="signup.html" class="button primary">Sign Up</a>
+    </div>
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="switch.html">Switch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logmgmt.html">Logs Management</a></li>
+                            <li><a href="waf.html">Web Application Firewall</a></li>
+                            <li><a href="threat.html">Threat Intelligence</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <!-- Tab Navigation -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="navigateTo('cisco_router.html')"
+                            style="color: white;">Cisco</button>
+                        <button class="tablinks" onclick="navigateTo('juniper_router.html')"
+                            style="color: white;">Juniper</button>
+                        <button class="tablinks" onclick="navigateTo('arista_router.html')"
+                            style="color: white;">Arista</button>
+                        </button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="cisco_router" class="tabcontent">
+                    </div>
+                    <div id="juniper_router" class="tabcontent">
+                    </div>
+                    <div id="arista_router" class="tabcontent">
+                    </div>
+                </header>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+
+                    function openModel(evt, modelName) {
+                        var i, tabcontent, tablinks;
+
+                        // Hide all tab content
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Remove the background color of all tablinks/buttons
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the specific tab content
+                        document.getElementById(modelName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <img src="images/arista_router_1.png" width="80%" style="margin-left: 15em;" alt="">
+                            <p>High-performance, programmable, and scalable routers for the most demanding networks</p>
+                        </header>
+                    </div>
+                    <a href="#one" class="goto-next scrolly">Next</a>
+                </section>
+            </div>
+
+            <section id="one">
+                <div class="wrapper style1 special fade-up">
+                    <div class="container" style="text-align: center;">
+                        <h2>Products</h2>
+                        <h4>Cloud Network Design Choices</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="one-" class="wrapper style2 special fade">
+                <div class="container">
+                    <form method="post" action="#" class="cta">
+                        <!-- <div class="row gtr-uniform gtr-50"> -->
+                        <div style="display: flex; justify-content: center; align-items: center;">
+
+                            <!--Design Choices-->
+                            <div>
+                                <h3>SplineTM</h2>
+                                    <img src="images/arista_router_2.png.webp" width="350em" alt=""><br>
+                                    <p>The Arista Spline architecture directly connects hosts to a pair of switches
+                                        configured in an MLAG, allowing it to scale to over 2000 hosts without blocking.
+                                        This extensive single-tier setup supports densely deployed applications such as
+                                        IP
+                                        and Ethernet storage, next-generation file systems, distributed computing, and
+                                        virtualization.</p>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div>
+                                <h3>Layer2 / MLAG</h2>
+                                    <img src="images/arista_router_3.png.webp" width="350em" alt=""><br><br>
+                                    <p>The L2LS network design is a two-tier architecture consisting of two spine
+                                        switches
+                                        and one or more Top-of-Rack (ToR) leaf switches. Leaf switches connect to
+                                        storage,
+                                        compute, service, and data center edge network elements, and can be deployed
+                                        individually or in pairs for high availability. Spine switches aggregate the
+                                        leaf
+                                        switches and provide a high-speed backbone./p>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div>
+                                <h3>Layer3 / ECMP</h2>
+                                    <img src="images/arista_router_4.png.webp" width="350em" alt=""><br><br>
+                                    <p>The L3LS network design is a two-tier architecture consisting of 2 to 128 spine
+                                        switches and one or more Top-of-Rack (ToR) leaf switches. Leaf switches connect
+                                        to
+                                        storage, compute, service, and data center edge network elements and can be
+                                        deployed
+                                        individually or in pairs for high availability. Spine switches aggregate the
+                                        leaf
+                                        switches and provide a high-speed backbone.</p>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div>
+                                <h3>L2 over Layer 3 VXLAN</h2>
+                                    <img src="images/arista_router_5.png.webp" width="350em" alt="">
+                                    <p>Building on the same two-tier architecture of the L3LS design, the Arista
+                                        Networks L3LS-V Solution incorporates Virtual eXtensible Local Area Network
+                                        (VXLAN). VXLAN is an open IETF specification that standardizes an overlay
+                                        encapsulation protocol, enabling the relay of Layer 2 traffic over IP networks.
+                                    </p>
+                            </div>
+                    </form>
+                </div>
+                <a href="#two" class="goto-next scrolly">Next</a>
+            </section>
+
+            <section id="two">
+                <div class="wrapper style1 special fade-up">
+                    <div class="container">
+                        <img src="images/arista_router_6.png.webp" style="background-color: whitesmoke;" width="100%"
+                            alt="">
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="three">
+                <div class="wrapper style1 special fade-up">
+                    <div class="container" style="text-align: center;">
+                        <h2>The Best Data Center Portfolio</h2>
+                        <form method="post" action="#" class="cta">
+                            <!-- <div class="row gtr-uniform gtr-50"> -->
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <div>
+                                    <a href="https://www.arista.com/products/eos" target="_blank"><img
+                                            src="images/arista_router_7.png.webp" width="200em" alt=""><br></a>
+                                    <a href="https://www.arista.com/products/eos" target="_blank">
+                                        <h4>Arista EOS/cEOS/vEOS Router</h4>
+                                    </a>
+                                    <p>World's Most Advanced Network Operating System</p>
+                                </div>
+                                <div style="margin-left: 10em;">
+                                    <a href="https://www.arista.com/products/eos/eos-cloudvision" target="_blank"><img
+                                            src="images/arista_router_8.png.webp" width="200em" alt=""><br></a>
+                                    <a href="https://www.arista.com/products/eos/eos-cloudvision target=" _blank">
+                                        <h4>CloudVision</h4>
+                                    </a>
+                                    <p>Network-Wide Cloud Automation and Telemetry</p>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div style="margin-left: 10em;">
+                                    <a href="https://www.arista.com/products/cloudvision-cue" target="_blank"><img
+                                            src="images/arista_router_9.png.webp" width="200em" alt=""><br></a>
+                                    <a href="https://www.arista.com/products/cloudvision-cue" target="_blank">
+                                        <h4>Cognitive Wi-Fi</h4>
+                                    </a>
+                                    <p>Industry leading performance with cloud grade management and security</p>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main -->
+            <div id="main" class="wrapper style1">
+                <div class="container">
+                    <div class="row gtr-150">
+                        <div class="col-8 col-12-medium">
+
+                            <!-- Content -->
+                            <section id="four">
+                                <img src="images/arista_router_10.jpg" width="100%" alt=""><br><br>
+                                <h2>Spine & Edge Routing</h2>
+                                <h3>Feature Rich Campus Spine and Edge Routing</h3>
+                                <p>The comprehensive and feature-rich range for campus edge routing, aggregation, and
+                                    spine provides various options for density, performance, and scale. All systems
+                                    operate on EOS, the most advanced network operating system available.</p>
+                                <div class="row">
+                                    <div class="column">
+                                        <a href="https://www.arista.com/products/7280r3-series/7280r3-modular"
+                                            target="_blank"><img src="images/arista_router_11.png.webp" width="70%"
+                                                alt=""></a><br><br>
+                                        <h4>Arista 7280R3 Modular Series</h4>
+                                        <p>
+                                            High Performance Routers
+                                            10G and 40/100G
+                                            Dynamic Deep Buffer
+                                            Universal Leaf and Spine
+                                            Optimized for Routing and Storage</p>
+                                        <a href="https://www.arista.com/products/7280r3-series/7280r3-modular"
+                                            target="_blank" class="button primary small">Learn More</a><br><br>
+                                        <br><br>
+                                    </div>
+                                    <div class="column">
+                                        <a href="https://www.arista.com/products/7280r3-series" target="_blank"><img
+                                                src="images/arista_router_12.png.webp" width="70%" alt=""></a><br><br>
+                                        <h4>Arista 7280R3 Series</h4>
+                                        <p>
+                                            High Performance Routers
+                                            10G and 40/100G
+                                            Dynamic Deep Buffer
+                                            Universal Leaf and Spine
+                                            Optimized for Routing and Storage</p>
+                                        <a href="https://www.arista.com/products/7280r3-series" target="_blank"
+                                            class="button small">Learn More</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Content -->
+                            <section id="five">
+                                <div class="wrapper style1 special fade-up">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="column">
+                                                <a href="https://www.arista.com/products/7020r-series"
+                                                    target="_blank"><img src="images/arista_router_13.png.webp"
+                                                        width="70%" alt=""></a><br><br>
+                                                <h4>Arista 7020R Series</h4>
+                                                <p>
+                                                    High Performance Routers
+                                                    1G-T and 10G
+                                                    Dynamic Deep Buffer
+                                                    Universal Leaf
+                                                    Optimized for Compute</p>
+                                                <a href="https://www.arista.com/products/7020r-series" target="_blank"
+                                                    class="button small">Learn More</a><br><br>
+                                                <br><br>
+                                            </div>
+                                            <div class="column">
+                                                <a href="https://www.arista.com/products/7300-series"
+                                                    target="_blank"><img src="images/arista_router_14.png.webp"
+                                                        width="70%" alt=""></a><br><br>
+                                                <h4>Arista 7300X Series</h4>
+                                                <p>
+                                                    High Performance
+                                                    Enterprise and Carrier Networks
+                                                    Power Efficient 10G to 100G Spine
+                                                    Machine Virtualization and Containerization
+                                                    Rich features for L2/L3 Networks</p>
+                                                <a href="https://www.arista.com/products/7300-series" target="_blank"
+                                                    class="button small primary">Learn More</a><br><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <!-- Sidebar -->
+                            <section id="sidebar">
+                                <section>
+                                    <a href="https://www.arista.com/products/7358x4-series" target="_blank"><img
+                                            src="images/arista_router_15.png.webp" width="70%" alt=""></a><br><br>
+                                    <h3>Arista 7358X4 Series</h3>
+                                    <p>
+                                        High Performance non-blocking modular
+                                        Versatile 100G and 400G for Large Enterprise Data Center
+                                        Power efficient
+                                        Up to 128 x 100G and 32 x 400G Rich features for L2/L3 networks</p>
+                                    <footer>
+                                        <ul class="actions">
+                                            <li><a href="https://www.arista.com/products/7358x4-series"
+                                                    class="button primary">Learn More</a></li>
+                                        </ul>
+                                    </footer>
+                                </section>
+                                <hr />
+                                <section>
+                                    <a href="https://www.arista.com/products/7050x3-series" target="_blank"><img
+                                            src="images/arista_router_16.png.webp" width="70%" alt=""></a><br><br>
+                                    <h3>Arista 7050X Series</h3>
+                                    <p>
+                                        High Performance non-blocking
+                                        Large Enterprise Data Center and Campus
+                                        Power Efficient 10G-T Leaf
+                                        Virtualization and Edge Networks
+                                        Rich features for wirespeed L2/L3 Networks</p>
+                                    <footer>
+                                        <ul class="actions">
+                                            <li><a href="https://www.arista.com/products/7050x3-series"
+                                                    class="button">Learn More</a></li>
+                                        </ul>
+                                    </footer>
+                                </section>
+                                <hr>
+                                <section><br><br>
+                                    <a href="https://www.arista.com/products/7800r3-series" target="_blank"><img
+                                        src="images/arista_router_17.png.webp" width="70%" alt=""></a><br><br>
+                                    <h3>Arista 7800R3 Series</h3>
+                                    <p>
+                                        High Performance Routers
+                                        100G, 400G and 800G Ready
+                                        Dynamic Deep Buffer
+                                        Universal Spine and Carrier Core
+                                        Optimized for Routing and Storage</p>
+                                    <footer>
+                                        <ul class="actions">
+                                            <li><a href="https://www.arista.com/products/7800r3-series"
+                                                    class="button">Learn More</a></li>
+                                        </ul>
+                                    </footer>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                    <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                            class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                    <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+                </ul>
+            </footer>
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+                function openModel(evt, modelName) {
+                    var i, tabcontent, tablinks;
+
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(modelName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+</body>
+
+</html>
