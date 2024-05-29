@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>News Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        .wrapper.style1 {
+            background: #272833;
+            padding: 50px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .news-article {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .news-article img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-right: 20px;
+            cursor: pointer;
+            /* Add cursor pointer for indicating clickable */
+        }
+
+        .news-article-content {
+            flex-grow: 1;
+        }
+
+        .news-article-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .news-article-content p {
+            font-size: 1em;
+        }
+
+        .news-article-content small {
+            display: block;
+            margin-top: 10px;
+            color: #777;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 270px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .popup-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+
+        .popup-content p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+        <header id="header">
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="Firewall.html">FireWall</a></li>
+                            <li><a href="#">Router & Switch</a>
+                                <ul>
+                                    <li><a href="router.html">Router</a></li>
+                                    <li><a href="switch.html">Switch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logmgmt.html">Logs Management</a></li>
+                            <li><a href="waf.html">Web Application Firewall</a></li>
+                            <li><a href="threat.html">Threat Intelligence</a></li>
+                            <li><a href="Endpoint_Security.html">Endpoint Security</a></li>
+                            <li><a href="pam.html">Privileged Access Management</a></li>
+                            <li><a href="pdpa.html">Data Protection & Data Loss</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li>
+                                <a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a></li>
+                                    <li><a href="#">Option 3</a></li>
+                                    <li><a href="#">Option 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contacts.html" class="button primary">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="head">
+            <div class="wrapper style2 special fade-up"
+                style="background-image: url(images/buidling.jpg); height: 500px; background-repeat: no-repeat; background-size: cover;">
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapper style1 special fade-up">
+        <div class="container">
+            <header>
+                <h2 style="font-size: 70px; text-align: left;"><br>What's New?</h2>
+            </header><br><br>
+
+            <div id="news-container">
+                <!-- News articles will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup for news images -->
+    <div id="news-popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="popup-content">
+            <img id="popup-image" src="" alt="">
+        </div>
+    </div>
+
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                    class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+        </ul>
+    </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js">
+    </script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
