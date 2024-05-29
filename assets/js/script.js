@@ -1,4 +1,3 @@
-// Sample news data
 const newsArticles = [
     {
         title: "Ruth Victor (Thailand) is pleased to welcome the Sales team from IT Green",
@@ -13,14 +12,13 @@ const newsArticles = [
         image: "images/News/vs_tech.jpg"
     },
     {
-        title: "News Article 3",
-        content: "Content for news article 3",
-        date: "2024-05-27",
-        image: "https://via.placeholder.com/150"
+        title: "Merry Christmas !",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
     }
 ];
 
-// Function to render news articles
 function renderNews() {
     const newsContainer = document.getElementById('news-container');
 
@@ -38,6 +36,11 @@ function renderNews() {
         const imageElement = document.createElement('img');
         imageElement.src = article.image;
         imageElement.alt = article.title;
+
+        // Add click event listener to each image
+        imageElement.addEventListener('click', function() {
+            showPopup(article.image);
+        });
 
         const contentElement = document.createElement('div');
         contentElement.className = 'news-article-content';
@@ -60,6 +63,35 @@ function renderNews() {
 
         newsContainer.appendChild(articleElement);
     });
+}
+
+// Function to show popup with image
+function showPopup(imageSrc) {
+    const popup = document.getElementById('news-popup');
+    const popupImage = document.getElementById('popup-image');
+    popupImage.src = imageSrc;
+    popup.style.display = 'flex';
+
+    // Close popup when clicking outside of the image
+    popup.onclick = function(event) {
+        if (event.target === popup) {
+            closePopup();
+        }
+    };
+
+    // Close popup when pressing "Esc" key
+    document.onkeydown = function(event) {
+        event = event || window.event;
+        if (event.key === 'Escape') {
+            closePopup();
+        }
+    };
+}
+
+// Function to close popup
+function closePopup() {
+    const popup = document.getElementById('news-popup');
+    popup.style.display = 'none';
 }
 
 // Initial render

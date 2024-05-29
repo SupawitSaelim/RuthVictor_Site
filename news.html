@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
-
         .wrapper.style1 {
             background: #272833;
             padding: 50px 0;
@@ -39,6 +38,8 @@
             height: 250px;
             object-fit: cover;
             margin-right: 20px;
+            cursor: pointer;
+            /* Add cursor pointer for indicating clickable */
         }
 
         .news-article-content {
@@ -59,13 +60,61 @@
             margin-top: 10px;
             color: #777;
         }
+
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 270px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .popup-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+
+        .popup-content p {
+            margin: 0;
+        }
+
     </style>
 </head>
 
 <body class="is-preload">
     <div id="page-wrapper">
-
-        <!-- Header -->
         <header id="header">
             <h1 id="logo"><img src="images/only_logo.png" width="10%" alt=""><a href="index.html"> Ruth Victor</a></h1>
             <nav id="nav">
@@ -109,20 +158,17 @@
             </nav>
         </header>
 
-
         <section id="head">
             <div class="wrapper style2 special fade-up"
-                style="background-image: url(images/buidling.jpg);height: 500px;background-repeat: no-repeat;background-size: cover;">
+                style="background-image: url(images/buidling.jpg); height: 500px; background-repeat: no-repeat; background-size: cover;">
             </div>
         </section>
     </div>
 
-
-    <!-- News -->
     <div class="wrapper style1 special fade-up">
         <div class="container">
             <header>
-                <h2 style="font-size: 70px;text-align: left;"><br>What's New?</h2>
+                <h2 style="font-size: 70px; text-align: left;"><br>What's New?</h2>
             </header><br><br>
 
             <div id="news-container">
@@ -131,9 +177,14 @@
         </div>
     </div>
 
+    <!-- Popup for news images -->
+    <div id="news-popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="popup-content">
+            <img id="popup-image" src="" alt="">
+        </div>
+    </div>
 
-
-    <!-- Footer -->
     <footer id="footer">
         <ul class="icons">
             <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
@@ -146,15 +197,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js">
+    </script>
 </body>
-
-</html>
