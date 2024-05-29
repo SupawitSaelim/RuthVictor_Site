@@ -1,139 +1,159 @@
-
-
 <!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Palo alto | Ruth Victor</title>
-		<link rel="icon" href="images/only_logo.png" type="image/x-icon">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <style>
-            .tab {
-            overflow: hidden;
-            background-color: rgb(140, 40, 60);
-            ;
-            border-bottom: 1px solid #ccc;
-        }
 
-        .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-        }
+<head>
+	<title>Palo alto | Ruth Victor</title>
+	<link rel="icon" href="images/only_logo.png" type="image/x-icon">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		.tab {
+			overflow: hidden;
+			background-color: rgb(140, 40, 60);
+			;
+			border-bottom: 1px solid #ccc;
+		}
 
-        .tab button:hover {
-            background-color: rgb(120, 0, 20);
-        }
+		.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+			font-size: 17px;
+		}
 
-        .tab button.active {
-            background-color: rgb(140, 40, 60);
-            ;
-        }
+		.tab button:hover {
+			background-color: rgb(120, 0, 20);
+		}
 
-        .spaced-paragraph {
-            margin-bottom: 20px;
-        }
-        
-        
-        
-    
-        .box .row.gtr-uniform {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .box .row .section {
-            flex: 1 1 calc(25% - 10px); /* Adjusting for spacing */
-            box-sizing: border-box;
-            margin: 5px;
-			
-        }
-        .custom-icon,
-        .custom-icon1 {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        center {
-            text-align: center;
-        }
+		.tab button.active {
+			background-color: rgb(140, 40, 60);
+			;
+		}
+
+		.spaced-paragraph {
+			margin-bottom: 20px;
+		}
+
+
+
+
+		.box .row.gtr-uniform {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.box .row .section {
+			flex: 1 1 calc(25% - 10px);
+			/* Adjusting for spacing */
+			box-sizing: border-box;
+			margin: 5px;
+
+		}
+
+		.custom-icon,
+		.custom-icon1 {
+			max-width: 100%;
+			height: auto;
+		}
+
+		center {
+			text-align: center;
+		}
+
 		.box.alt1 {
-            background-color: rgba(140, 40, 60);
-        }
+			background-color: rgba(140, 40, 60);
+		}
+
 		.row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .col-6 {
-            flex: 1;
-        }
-        ul.alt, ol {
-            list-style: none; /* เอาเครื่องหมาย bullet หรือหมายเลขออก */
-            padding: 0;
-            position: relative;
-        }
-        ul.alt1 li, ol li {
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding-right: 0px; /* ให้มีพื้นที่เพียงพอสำหรับรูปภาพ */
-        }
-        .image {
-            width: 500px; /* ขนาดของรูปภาพ */
-            margin-left: 0px; /* ระยะห่างระหว่างรูปภาพกับรายการ */
-            position: absolute; /* ทำให้รูปภาพวางตำแหน่งสัมพัทธ์ */
-            right: -30px; /* ขยับรูปภาพไปทางขวา */
-			
-        }
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.col-6 {
+			flex: 1;
+		}
+
+		ul.alt,
+		ol {
+			list-style: none;
+			/* เอาเครื่องหมาย bullet หรือหมายเลขออก */
+			padding: 0;
+			position: relative;
+		}
+
+		ul.alt1 li,
+		ol li {
+			display: flex;
+			align-items: center;
+			position: relative;
+			padding-right: 0px;
+		}
+
+		li:hover {
+			color: rgba(140, 40, 60);
+
+		}
+
+		.image {
+			width: 500px;
+			margin-left: 0px;
+			position: absolute;
+			right: -30px;
+
+		}
+
 		.widget {
-				background-color: rgba(140, 40, 60);
-				border: 1px solid #ddd;
-				border-radius: 8px;
-				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-				padding: 20px;
-				text-align: center;
-				flex: 1 1 calc(33.333% - 40px); /* Three widgets in a row */
-			}
-			.widget.large {
-				flex: 1 1 calc(50% - 40px); /* Two widgets in a row */
-			}
-			.widget:hover {
-				background-color: rgb(120, 0, 20);
-				color: #fff;
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        	}
-			
-			@media (max-width: 768px) {
-				.widget {
-					flex: 1 1 calc(50% - 40px);
-				}
-				.widget.large {
-					flex: 1 1 calc(100% - 40px);
-				}
-			}
-			@media (max-width: 480px) {
-				.widget {
-					flex: 1 1 calc(100% - 40px);
-				}
+			background-color: rgba(140, 40, 60);
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			text-align: center;
+			flex: 1 1 calc(33.333% - 40px);
+			/* Three widgets in a row */
+		}
+
+		.widget.large {
+			flex: 1 1 calc(50% - 40px);
+			/* Two widgets in a row */
+		}
+
+		.widget:hover {
+			background-color: rgb(120, 0, 20);
+			color: #fff;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		@media (max-width: 768px) {
+			.widget {
+				flex: 1 1 calc(50% - 40px);
 			}
 
-        </style>
-		
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+			.widget.large {
+				flex: 1 1 calc(100% - 40px);
+			}
+		}
+
+		@media (max-width: 480px) {
+			.widget {
+				flex: 1 1 calc(100% - 40px);
+			}
+		}
+	</style>
+
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
@@ -144,7 +164,7 @@
 							<li>
 								<a href="#">Products</a>
 								<ul>
-									<li><a href="Firewall.html">Firewall</a></li>
+									<li><a href="Firewall.html">FireWall</a></li>
 									<li><a href="#">Router & Switch</a>
 										<ul>
 											<li><a href="router.html">Router</a></li>
@@ -178,322 +198,334 @@
 					</nav>
 				</header>
 
-			<!-- Main -->
-				<div id="main" class="wrapper style1">
+		<!-- Main -->
+		<div id="main" class="wrapper style1">
+			<div class="container">
+				<header class="major"><br><br>
+					<div class="tab">
+						<button class="tablinks" onclick="navigateTo('Fortinet.html')"
+							style="color: white;">Fortinet</button>
+						<button class="tablinks" onclick="navigateTo('Sophos.html')"
+							style="color: white;">Sophos</button>
+						<button class="tablinks" onclick="navigateTo('Check_Point.html')"
+							style="color: white;">Checkpoint</button>
+						<button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
+							style="color: white;">Cisco</button>
+						<button class="tablinks" onclick="navigateTo('paloalto_firewall.html')"
+							style="color: white;">Palo alto</button>
+						<button class="tablinks" onclick="navigateTo('juniper_firewall.html')"
+							style="color: white;">Juniper</button>
+					</div>
+					<script>
+						function navigateTo(url) {
+							window.location.href = url;
+						}
+
+						function openModel(evt, modelName) {
+							var i, tabcontent, tablinks;
+
+							// Hide all tab content
+							tabcontent = document.getElementsByClassName("tabcontent");
+							for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+							}
+
+							// Remove the background color of all tablinks/buttons
+							tablinks = document.getElementsByClassName("tablinks");
+							for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+							}
+
+							// Show the specific tab content
+							document.getElementById(modelName).style.display = "block";
+							evt.currentTarget.className += " active";
+						}
+					</script>
+				</header>
+
+
+				<div id="main" class="wrapper style1 special fade-up">
 					<div class="container">
-						<header class="major"><br><br>
-                            <img src="images/paloaltoproduct/paloalto-firewall.png" alt="" width="50%" /><br><br><br>
-                            <div class="tab">
-                                <button class="tablinks" onclick="navigateTo('Fortinet.html')"
-                                    style="color: white;">Fortinet</button>
-                                <button class="tablinks" onclick="navigateTo('Sophos.html')"
-                                    style="color: white;">Sophos</button>
-                                <button class="tablinks" onclick="navigateTo('Check_Point.html')"
-                                    style="color: white;">Checkpoint</button>
-                                <button class="tablinks" onclick="navigateTo('cisco_firewall.html')"
-                                    style="color: white;">Cisco</button>
-                                <button class="tablinks" onclick="navigateTo('paloalto_firewall.html')"
-                                    style="color: white;">Palo alto</button>
-								<button class="tablinks" onclick="navigateTo('juniper_firewall.html')"
-                                    style="color: white;">Juniper</button>
-                            </div>
-        
-                            <!-- Tab Content -->
-                            <div id="Fortinet" class="tabcontent">
-                            </div>
-        
-                            <div id="Sophos" class="tabcontent">
-                            </div>
-        
-                            <div id="Check_Point" class="tabcontent">
-                            </div>
-        
-                            <div id="cisco_firewall" class="tabcontent">
-                            </div>
-                            <div id="paloalto_firewall" class="tabcontent">
-                            </div>
-							<div id="juniper_firewall class="tabcontent">
-                            </div>
-                            <script>
-                                function navigateTo(url) {
-                                    window.location.href = url;
-                                }
-        
-                                function openModel(evt, modelName) {
-                                    var i, tabcontent, tablinks;
-        
-                                    // Hide all tab content
-                                    tabcontent = document.getElementsByClassName("tabcontent");
-                                    for (i = 0; i < tabcontent.length; i++) {
-                                        tabcontent[i].style.display = "none";
-                                    }
-        
-                                    // Remove the background color of all tablinks/buttons
-                                    tablinks = document.getElementsByClassName("tablinks");
-                                    for (i = 0; i < tablinks.length; i++) {
-                                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                                    }
-        
-                                    // Show the specific tab content
-                                    document.getElementById(modelName).style.display = "block";
-                                    evt.currentTarget.className += " active";
-                                }
-                            </script>
-						</header>
-
-						<!-- Text -->
-							<section>
-                                <center>
+						<section>
+							<center>
+								<img src="images/paloaltoproduct/paloalto-firewall.png" alt=""
+									width="50%" /><br><br><br>
 								<h2>Palo alto</h2>
-								<h3>Stay ahead of the most complex threats with ML-powered, cloud-based network security</h3>
-                                
-								<p>Leverage inline deep learning to stop unknown zero-day attacks. Our latest innovations go beyond <br>signature-based detection to find the most evasive threats and stop them.
-
-                                </p>
-                                </center>
-                                
-                                
-                                <center>
-									
-								<a
-									href="https://start.paloaltonetworks.com/preventing-evasive-threats.html"
+								<h3>Stay ahead of the most complex threats with ML-powered, cloud-based network security
+								</h3>
+								<p>Leverage inline deep learning to stop unknown zero-day attacks. Our latest
+									innovations go
+									beyond <br>signature-based detection to find the most evasive threats and stop them.
+								</p>
+							</center>
+							<center>
+								<a href="https://start.paloaltonetworks.com/preventing-evasive-threats.html"
 									class="button" target="_blank">Learn More</a>
-									
-                                </center>
-								
-                                
 
-								<hr />
-
-								<body>
-                                    <header>
-                                        
-                                        <div class="box alt1">
-                                            <div class="row gtr-uniform">
-                                                <section class="section">
-                                                    <center>
-                                                        <img src="images/paloaltoproduct/secure-your-enterprise.svg" alt=""
-                                                            class="custom-icon" />
-                                                        <h3>Deep learning stops the most evasive threats</h3>
-                                                        <p>Delivers the highest-caliber threat prevention with award winning
-                                                            SandBlast Zero Day protection out of the box </p>
-                                                    </center>
-                                                </section>
-                                                <section class="section">
-                                                    <center>
-                                                        <img src="images/paloaltoproduct/ml-powered.svg" alt=""
-                                                            class="custom-icon1" />
-                                                        <h3>Zero-delay signatures provide updates in seconds</h3>
-                                                        <p>On-demand hyperscale threat prevention performance providing enterprises
-                                                            cloud level expansion and resiliency on premises</p>
-                                                    </center>
-                                                </section>
-                                                <section class="section">
-                                                    <center>
-                                                        <img src="images/paloaltoproduct/deep-learning.svg" alt="" class="custom-icon" />
-                                                        <h3>ML-powered visibility across IoT and other connected devices</h3>
-                                                        <p>R81 unified security management control across networks, clouds, and IoT
-                                                            increases efficiency cutting security operations up to 80%</p>
-                                                    </center>
-                                                </section>
-                                                <section class="section">
-                                                    <center>
-                                                        <img src="images/paloaltoproduct/automated.svg" alt="" class="custom-icon" />
-                                                        <h3>Maximize security and minimize downtime</h3>
-                                                        <p>R81 unified security management control across networks, clouds, and IoT
-                                                            increases efficiency cutting security operations up to 80%</p>
-                                                    </center>
-                                                </section>
-                                            </div>
-                                        </div>
-                                        <hr /><br><br>
-                                    </header>
-
-                                </body>
-								
-								<section>
-									<h3>11-time industry leader</h3>
-									<div class="row">
-										<div class="col-6 col-12-xsmall">
-	
-											
-	
-											<h4>Our continued innovations consistently outperform <br>the competition, establishing our products as best-in-class <br>for the 11th consecutive time.</h4>
-											<ul class="alt1">
-												<li data-img="images/paloaltoproduct/11-time-industry-leader.png" >11-time Leader in the Gartner Magic Quadrant for Network Firewalls <a href="https://start.paloaltonetworks.com/gartner-mq-for-firewalls.html" target="_blank">&nbsp;Read the report </a>
-													 </li>
-												<br>
-												<li data-img="images/paloaltoproduct/cq5dam.web.1280.1280.png">Named a Leader in the Forrester Wave™: Enterprise Firewalls, Q4 2022 report <a href="https://start.paloaltonetworks.com/leader-in-forrester-wave.html" target="_blank">&nbsp;Read the report </a></li>
-												
-											</ul>
-											<br><br><br><br><br><br>
-	
-										</div>
-									
-										
-									</div>
-									<hr/>
-									
-	
-									
-									
-								</section>
-								<script>
-									let previousImage = null;
-							
-									document.querySelectorAll('li').forEach(function(item) {
-										item.addEventListener('click', function() {
-											var imgSrc = item.getAttribute('data-img');
-											var existingImg = item.querySelector('.image');
-							
-											// If clicking the same item, toggle the image
-											if (existingImg) {
-												existingImg.remove();
-												previousImage = null;
-												return;
-											}
-							
-											// Remove the previous image if it exists
-											if (previousImage) {
-												previousImage.remove();
-											}
-							
-											// Create new image element
-											var img = document.createElement('img');
-											img.src = imgSrc;
-											img.className = 'image';
-							
-											// Insert image next to the clicked list item
-											item.appendChild(img);
-							
-											// Store the new image as the previous image
-											previousImage = img;
-										});
-									});
-								</script>
-								<header>
-									<center>
-									<h2>Don’t just react. Think ahead.</h2>
-									<p>
-										Reactive security can’t keep up with today’s threats – or prepare you for tomorrow’s. We’ve changed the game by making network security intelligent and proactive. Driven by innovation, our award-winning security features the world’s first ML-Powered NGFW and empowers you to stay ahead.</p>
-										<img src="images/paloaltoproduct/palo.png" alt=""  />
-									</center>
-								</header>
-								
-
-								<hr />
-								<center>
-								<h6>USE CASES</h6>
-								<h2>Securing your network requires the right <br>protection in the right place</h2>
-								<p>Our NGFW platform protects your entire business, no matter the size or complexity. With a unified network security architecture and the ability to leverage deep learning in real time, our firewalls can help you see and secure everything.</p>
-								
-								</center>
-								<div class="container">
-									<div class="widget">
-										<img src="images/paloaltoproduct/01-branch-icon.svg"  alt="">
-										<h3>Branch</h3>
-										<p>Enable Zero Trust Network Security with simplified security for thousands of branch offices.</p>
-										
-									</div>
-									<div class="widget">
-										<img src="images/paloaltoproduct/02-campus-icon.svg"  alt="">
-										<h3>Campus</h3>
-										<p>Integrated capabilities protect your internal assets and the outside world, so your users can connect to data and applications anywhere.</p>
-										
-									</div>
-									<div class="widget">
-										<img src="images/paloaltoproduct/03-data-center-icon.svg"  alt="">
-										<h3>Data Center</h3>
-										<p>Get deep visibility and consistent, best-in-class security controls across physical, virtualized, containerized and cloud environments.</p>
-										
-									</div>
-									<div class="widget large">
-										<img src="images/paloaltoproduct/04-public-cloud-icon-min.svg"  alt="">
-										<h3>Public Cloud</h3>
-										<p>Secure multiple public cloud environments with the same level of protection as on-premises data centers.</p>
-										
-									</div>
-									<div class="widget large">
-										<img src="images/paloaltoproduct/05-5g-icon.svg"  alt="">
-										<h3>5G Security</h3>
-										<p>Leverage a simplified solution to protect all facets of your unique mobile network.</p>
-										
-									</div>
-								</div>
-								<hr />
-								<div class="box alt">
-									<div class="row gtr-uniform">
-										<section class="col-4 col-6-medium col-12-xsmall">
-											<img src="images/paloaltoproduct/pa-5450.png"  style="max-width: 100%;" alt="">
-											<center>
-											<h3>PA-5450 Series</h3>
-											<h1>Defend high-speed data centers and large campuses</h1>
-											<p>Stop known and zero-day attacks hiding in all network traffic, even encrypted traffic.</p><br>
-											
-											<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-5450-series"
-												target="_blank" class="button">Learn More</a>
-											</center>
-										</section>
-										<section class="col-4 col-6-medium col-12-xsmall">
-											<img src="images/paloaltoproduct/06-PA_1410.png"  style="max-width: 100%;"  alt="">
-											<center>
-											<h3>PA-1400 Series</h3>
-											<h1>Protect large branch locations and small enterprise campuses</h1>
-											<p>Protect large branch locations and small enterprise campuses with support for Power over Ethernet (PoE) fiber ports.</p>
-											<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-1400-series"
-												target="_blank" class="button primary">Learn More</a>
-											</center>
-										</section>
-										<section class="col-4 col-6-medium col-12-xsmall">
-											<img src="images/paloaltoproduct/pa-400-series.png" style="max-width: 100%;"  alt=""><br><br><br>
-											<center>
-											<h3>PA-400 Series</h3>
-											<h1>Secure the distributed enterprise</h1>
-											<p>Get proactive threat prevention for your distributed enterprise with simplified security for thousands of branch offices.</p>
-											<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-400-series"
-												target="_blank" class="button">Learn More</a>
-											</center>
-										</section>
-										
-										
-									</div>
-								</div>
-
-								
-						
-							
-
-						
-
+							</center>
+						</section>
 					</div>
 				</div>
+			</div>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+			<div id="main" class="wrapper style2 special fade-up">
+				<div class="container">
+					<div class="box alt1" style="border: none;">
+						<div class="row gtr-uniform">
+							<section class="section">
+								<center>
+									<!-- <img src="images/paloaltoproduct/secure-your-enterprise.svg" style="" alt="" -->
+									<!-- class="custom-icon" />
+										 -->
+									<span class="icon solid alt major fa-shield-alt"></span>
+									<h3>Deep learning stops the most evasive threats</h3>
+									<p>Delivers the highest-caliber threat prevention with award winning
+										SandBlast Zero Day protection out of the box </p>
+								</center>
+							</section>
+							<section class="section">
+								<center>
+									<span class="icon solid alt major fa-tachometer-alt"></span>
+									<h3>Zero-delay signatures provide updates in seconds</h3>
+									<p>On-demand hyperscale threat prevention performance providing
+										enterprises
+										cloud level expansion and resiliency on premises</p>
+								</center>
+							</section>
+							<section class="section">
+								<center>
+									<!-- <img src="images/paloaltoproduct/deep-learning.svg" alt=""
+											class="custom-icon" /> -->
+									<span class="icon solid alt major fa-cog"></span>
+									<h3>ML-powered visibility across IoT and other connected devices
+									</h3>
+									<p>R81 unified security management control across networks, clouds,
+										and IoT
+										increases efficiency cutting security operations up to 80%</p>
+								</center>
+							</section>
+							<section class="section">
+								<center>
+									<!-- <img src="images/paloaltoproduct/automated.svg" alt="" class="custom-icon" /> -->
+									<span class="icon solid alt major fa-toolbox"></span>
+									<h3>Maximize security and minimize downtime</h3>
+									<p>R81 unified security management control across networks, clouds,
+										and IoT
+										increases efficiency cutting security operations up to 80%</p>
+								</center>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div class="wrapper style1 special fade-up">
+				<div class="container">
+					<section>
+						<h2>11-time industry leader</h2>
+						<div class="row">
+							<div class="col-6 col-12-xsmall">
+								<h4>Our continued innovations consistently outperform <br>the competition,
+									establishing
+									our products as best-in-class <br>for the 11th consecutive time.</h4>
+								<ul class="alt1">
+									<li data-img="images/paloaltoproduct/11-time-industry-leader.png">
+										11-time Leader in
+										the Gartner Magic Quadrant for Network Firewalls <a
+											href="https://start.paloaltonetworks.com/gartner-mq-for-firewalls.html"
+											target="_blank">&nbsp;Read the report </a>
+									</li>
+									<br>
+									<li data-img="images/paloaltoproduct/cq5dam.web.1280.1280.png">Named a
+										Leader in the
+										Forrester Wave™: Enterprise Firewalls, Q4 2022 report <a
+											href="https://start.paloaltonetworks.com/leader-in-forrester-wave.html"
+											target="_blank">&nbsp;Read the report </a></li>
+									<br>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+
+			<div class="wrapper style1 special fade-up">
+				<div class="container">
+					<center><br><br><br>
+						<h2>Don’t just react. Think ahead.</h2>
+						<p>
+							Reactive security can’t keep up with today’s threats – or prepare you for
+							tomorrow’s.
+							We’ve changed the game by making network security intelligent and proactive.
+							Driven by
+							innovation, our award-winning security features the world’s first ML-Powered
+							NGFW and
+							empowers you to stay ahead.</p>
+						<img src="images/paloaltoproduct/palo.png" alt="" />
+					</center>
+				</div>
+			</div>
+
+			<div class="wrapper style1 special fade-up">
+				<div class="container">
+					<h2>Securing your network requires the right <br>protection in the right place</h2>
+					<p>Our NGFW platform protects your entire business, no matter the size or
+						complexity. With a
+						unified network security architecture and the ability to leverage deep learning
+						in real
+						time, our firewalls can help you see and secure everything.</p>
+
+					<div class="container">
+						<div class="widget">
+							<img src="images/paloaltoproduct/01-branch-icon.svg" alt="">
+							<h3>Branch</h3>
+							<p>Enable Zero Trust Network Security with simplified security for thousands of
+								branch
+								offices.</p>
+
+						</div>
+						<div class="widget">
+							<img src="images/paloaltoproduct/02-campus-icon.svg" alt="">
+							<h3>Campus</h3>
+							<p>Integrated capabilities protect your internal assets and the outside world,
+								so your users
+								can connect to data and applications anywhere.</p>
+
+						</div>
+						<div class="widget">
+							<img src="images/paloaltoproduct/03-data-center-icon.svg" alt="">
+							<h3>Data Center</h3>
+							<p>Get deep visibility and consistent, best-in-class security controls across
+								physical,
+								virtualized, containerized and cloud environments.</p>
+
+						</div>
+						<div class="widget large">
+							<img src="images/paloaltoproduct/04-public-cloud-icon-min.svg" alt="">
+							<h3>Public Cloud</h3>
+							<p>Secure multiple public cloud environments with the same level of protection
+								as
+								on-premises data centers.</p>
+
+						</div>
+						<div class="widget large">
+							<img src="images/paloaltoproduct/05-5g-icon.svg" alt="">
+							<h3>5G Security</h3>
+							<p>Leverage a simplified solution to protect all facets of your unique mobile
+								network.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<div class="wrapper style2 special fade-up">
+			<div class="container">
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<img src="images/paloaltoproduct/pa-5450.png" style="max-width: 100%;" alt="">
+							<center>
+								<h3>PA-5450 Series</h3>
+								<h1>Defend high-speed data centers and large campuses</h1>
+								<p>Stop known and zero-day attacks hiding in all network traffic, even
+									encrypted
+									traffic.</p><br>
 
-	</body>
+								<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-5450-series"
+									target="_blank" class="button">Learn More</a>
+							</center>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<img src="images/paloaltoproduct/06-PA_1410.png" style="max-width: 100%;" alt="">
+							<center>
+								<h3>PA-1400 Series</h3>
+								<h1>Protect large branch locations and small enterprise campuses</h1>
+								<p>Protect large branch locations and small enterprise campuses with
+									support for
+									Power over Ethernet (PoE) fiber ports.</p><br>
+								<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-1400-series"
+									target="_blank" class="button">Learn More</a>
+							</center>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<img src="images/paloaltoproduct/pa-400-series.png" style="max-width: 100%;"
+								alt=""><br><br><br>
+							<center>
+								<h3>PA-400 Series</h3>
+								<h1>Secure the distributed enterprise</h1>
+								<p>Get proactive threat prevention for your distributed enterprise with
+									simplified
+									security for thousands of branch offices.</p><br>
+								<a href="https://www.paloaltonetworks.com/resources/datasheets/pa-400-series"
+									target="_blank" class="button">Learn More</a>
+							</center>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+				<li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+						class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+				<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+				<!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+				<!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		let previousImage = null;
+
+		document.querySelectorAll('li').forEach(function (item) {
+			item.addEventListener('click', function () {
+				var imgSrc = item.getAttribute('data-img');
+				var existingImg = item.querySelector('.image');
+
+				// If clicking the same item, toggle the image
+				if (existingImg) {
+					existingImg.remove();
+					previousImage = null;
+					return;
+				}
+				// Remove the previous image if it exists
+				if (previousImage) {
+					previousImage.remove();
+				}
+				// Create new image element
+				var img = document.createElement('img');
+				img.src = imgSrc;
+				img.className = 'image';
+
+				// Insert image next to the clicked list item
+				item.appendChild(img);
+
+				// Store the new image as the previous image
+				previousImage = img;
+			});
+		});
+	</script>
+
+</body>
+
 </html>

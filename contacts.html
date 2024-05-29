@@ -6,18 +6,66 @@
     <link rel="icon" href="images/only_logo.png" type="image/x-icon">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Contact Ruth Victor for any queries. We offer a range of products including Firewall, Router, Switch, Logs Management, Web Application Firewall, and Threat Intelligence.">
+    <meta name="description"
+        content="Contact Ruth Victor for any queries. We offer a range of products including Firewall, Router, Switch, Logs Management, Web Application Firewall, and Threat Intelligence.">
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for the columns */
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 20px auto;
+            max-width: 1200px;
+            /* Adjust as necessary */
+        }
+
+        /* Styling for each column */
+        .column {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        /* Add a background color for each column for clarity */
+        .column:nth-child(1) {
+            background-color: transparent;
+        }
+
+        .column:nth-child(2) {
+            background-color: transparent;
+        }
+
+        .column:nth-child(3) {
+            background-color: transparent;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body class="is-preload landing">
     <div id="page-wrapper">
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt="Ruth Victor Logo"><a href="index.html"> Ruth Victor</a></h1>
+            <h1 id="logo"><img src="images/only_logo.png" width="10%" alt="Ruth Victor Logo"><a href="index.html"> Ruth
+                    Victor</a></h1>
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -61,63 +109,48 @@
         <!-- Banner -->
         <section id="banner" style="background-image: url(images/buidling.jpg);">
             <div class="content">
-                <header>
-                    <h2>Get in touch</h2>
-                    <p>Feel free to contact us for any query</p>
-                </header>
-            </div>
-        </section>
-
-        <!-- Contact Information Section -->
-        <section id="one" class="spotlight style1 bottom">
-            <span class="image fit main"><img src="images/pic07.jpg" alt="Building" /></span>
-            <div class="content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-4 col-12-medium">
-                            <header>
-                                <h3>Email</h3>
-                                <p>support@ruthvictor.com</p>
-                                <h3>Postal Address</h3>
-                                <p>Ruth Victor (Thailand) Co., Ltd<br>
-                                    99/9 Soi Ladprao 80 Yak 9, Ladprao Road, Wang Thonglang, Bangkok, 10310 Thailand</p>
-                            </header>
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <h3>Call us</h3>
-                            <p>02 932 7900</p>
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.902451504091!2d100.60276047500747!3d13.784753686610559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29da12d936cad%3A0xcb4c64952e2b01fb!2sRuth%20Victor%20(Thailand)%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1716524086263!5m2!1sth!2sth"
-                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                    <div class="column" style="text-align: left;">
+                        <h3>Call us</h3>
+                        <p>02 932 7900</p>
+                        <h3>Email</h3>
+                        <p>support@ruthvictor.com</p>
+                        <h3>Postal Address</h3>
+                        <p>Ruth Victor (Thailand) Co., Ltd<br>
+                            99/9 Soi Ladprao 80 Yak 9, Ladprao Road, Wang Thonglang, Bangkok, 10310 Thailand</p>
                     </div>
-                    
+                    <div class="column" style="text-align: left;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.902451504091!2d100.60276047500747!3d13.784753686610559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29da12d936cad%3A0xcb4c64952e2b01fb!2sRuth%20Victor%20(Thailand)%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1716524086263!5m2!1sth!2sth"
+                            width="120%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
                 </div>
             </div>
         </section>
-    <div id="main" class="wrapper style1">
-        <div class="container">
-        <section>
-            <h3>Form</h3>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <div class="row gtr-uniform gtr-50">
-                    <input type="hidden" name="access_key" value="9d179cb4-5408-41d2-b636-b28b77a22338">
-                    <div class="col-6 col-12-xsmall">
-                        <input type="text" name="firstname" placeholder="Firstname" required>
-                    </div>
-                    <div class="col-6 col-12-xsmall">
-                        <input type="text" name="lastname" placeholder="Lastname" required>
-                    </div>
-                    <div class="col-6 col-12-xsmall">
-                        <input type="email" name="email" placeholder="Businesss Email" required>
-                    </div>
-                    <div class="col-6 col-12-xsmall">
-                        <input type="text"  name="phone" placeholder="Phone" required oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                    </div>
-                    <!-- <div class="col-12">
+
+        <div id="main" class="wrapper style1 special fade-up" >
+            <div class="container">
+                <section>
+                    <h2>Contact Us</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <div class="row gtr-uniform gtr-50">
+                            <input type="hidden" name="access_key" value="9d179cb4-5408-41d2-b636-b28b77a22338">
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="firstname" placeholder="Firstname" required>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="lastname" placeholder="Lastname" required>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <input type="email" name="email" placeholder="Businesss Email" required>
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="phone" placeholder="Phone" required
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                            </div>
+                            <!-- <div class="col-12">
                         <select name="job_level" id="job_level">
                             <option value="">- Job level -</option>
                             <option value="1">Manufacturing</option>
@@ -126,31 +159,33 @@
                             <option value="4">Human Resources</option>
                         </select>
                     </div> -->
-                    
-                    <script src="https://web3forms.com/client/script.js" async defer></script>
-                    <div class="col-12">
-                        <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-                    </div>
-                    <div class="col-4 col-12-medium">
-                        <div class="h-captcha" data-captcha="true"></div>
-                    </div>
-                    <div class="col-12">
-                        <ul class="actions">
-                            <li><input type="submit" value="Send Message" class="primary" /></li>
-                            <li><input type="reset" value="Reset" /></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </form>
-        </section>
+
+                            <script src="https://web3forms.com/client/script.js" async defer></script>
+                            <div class="col-12">
+                                <textarea name="message" id="message" placeholder="Enter your message"
+                                    rows="6"></textarea>
+                            </div>
+                            <div class="col-4 col-12-medium">
+                                <div class="h-captcha" data-captcha="true"></div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" class="primary" /></li>
+                                    <li><input type="reset" value="Reset" /></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
         </div>
-    </div>
 
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
-                <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                        class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
             </ul>
             <ul class="copyright">
                 <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
