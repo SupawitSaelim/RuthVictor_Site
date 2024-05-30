@@ -58,10 +58,32 @@
             }
         }
     </style>
+    <style>
+        /* CSS */
+        #backToTopBtn {
+            display: none; /* Hide the button by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #000; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #backToTopBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+        }
+    </style>
 </head>
 
 <body class="is-preload landing">
     <div id="page-wrapper">
+        <button id="backToTopBtn" title="Go to top">UP</button>
         <!-- Header -->
         <header id="header">
             <h1 id="logo"><img src="images/only_logo.png" width="10%" alt="Ruth Victor Logo"><a href="index.html"> Ruth
@@ -192,6 +214,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/topup.js"></script>
 </body>
 
 </html>
