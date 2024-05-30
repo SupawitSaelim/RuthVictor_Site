@@ -13,6 +13,7 @@
         a {
             border-bottom: none;
         }
+
         /* Styles for Tabs */
         .tab {
             overflow: hidden;
@@ -55,6 +56,50 @@
             content: "";
             display: table;
             clear: both;
+        }
+
+        .logos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3em;
+            /* Adjust the gap between logos */
+        }
+
+        .logos-container a {
+            flex: 1 1 150px;
+            /* Set a flexible base size for logos */
+            max-width: 100px;
+            /* Maximum width for logos */
+            margin: 0.5em;
+        }
+
+        
+        .logos-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* This will scale the logo to fill the container while maintaining its aspect ratio */
+        }
+        /* Responsive adjustments */
+        @media (min-width: 576px) {
+            .logos-container a {
+                flex: 1 1 200px;
+                max-width: 150px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .logos-container a {
+                flex: 1 1 250px;
+                max-width: 200px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .logos-container a {
+                flex: 1 1 300px;
+                max-width: 250px;
+            }
         }
     </style>
     <style>
@@ -103,14 +148,14 @@
                             <li><a href="waf.html">Web Application Firewall</a></li>
                             <li><a href="threat.html">Threat Intelligence</a></li>
                             <li><a href="Endpoint_Security.html">Endpoint Security</a></li>
-							<li><a href="pam.html">Privileged Access Management</a></li>
+                            <li><a href="pam.html">Privileged Access Management</a></li>
                             <li><a href="pdpa.html">Data Protection & Data Loss</a></li>
-							<li><a href="VA.html">Vulnerability Scanning & Automate pentest</a></li>
-						</ul>
-					</li>
+                            <li><a href="VA.html">Vulnerability Scanning & Automate pentest</a></li>
+                        </ul>
+                    </li>
                     <li><a href="news.html">News</a></li>
-					<li><a href="solutions.html">Solutions</a></li>
-					<li><a href="aboutus.html">About us</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
                     <li><a href="contacts.html" class="button primary">Contacts</a></li>
                 </ul>
             </nav>
@@ -156,10 +201,12 @@
                     </div>
                     <a href="#one" class="goto-next scrolly">Next</a>
                 </section>
+            </div>
 
-                <!-- One -->
-                <section id="one">
-                    <div class="content">
+            <!-- One -->
+            <section id="one">
+                <div class="wrapper style1 special fade-up">
+                    <div class="container">
                         <header><br><br>
                             <h2>What is threat intelligence?</h2>
                         </header>
@@ -196,11 +243,14 @@
                             thereby curbing detection expenses and mitigating the ramifications of successful breaches.
                         </p>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- two -->
-                <section id="two">
-                    <div class="content">
+
+            <!-- two -->
+            <section id="two">
+                <div class="wrapper style2 special fade-up">
+                    <div class="container">
                         <header><br><br>
                             <h2>Types of threat intelligence</h2>
                         </header>
@@ -240,12 +290,14 @@
                             organizational risk management strategies and investments with the evolving cyberthreat
                             landscape.</p>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- three -->
-                <section id="three">
-                    <div class="content">
-                        <header><br><br>
+            <!-- three -->
+            <section id="three">
+                <div class="wrapper style1 special fade-up">
+                    <div class="container">
+                        <header>
                             <h2>What is a malware signature?</h2>
                         </header>
                         <p>A signature serves as a distinctive pattern or sequence of bytes used to identify malware.
@@ -256,14 +308,14 @@
                             maintain efficacy, signature detection necessitates continual updates with the latest
                             malware signatures observed in real-world scenarios.</p>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- four -->
-                <section id="four">
-                    <div class="content">
-                        <header><br><br>
-                            <h2>What are indicators of compromise (IoC)?</h2>
-                        </header>
+            <!-- four -->
+            <section id="four">
+                <div class="wrapper style1 special fade-up" style="background-color: white;">
+                    <div class="container" style="color: black;">
+                        <h2 style="color: black;">What are indicators of compromise (IoC)?</h2>
                         <p>An indicator of compromise (IoC) is a data fragment aiding in the identification of whether
                             an attack has transpired or is ongoing. Much like physical evidence gathered by a detective
                             to ascertain who was present at a crime scene, IoCs include certain digital clues such as
@@ -274,7 +326,7 @@
                             frequently serves the attacker's interest to evade detection, particularly if they intend to
                             utilize a compromised device within a botnet, for instance.</p>
 
-                        <h2>What is a threat intelligence feed?</h2>
+                        <h2 style="color: black;">What is a threat intelligence feed?</h2>
                         <p>A threat intelligence feed functions as an external conduit for threat intelligence data.
                             Analogous to an RSS feed for blogs, organizations have the option to subscribe to a threat
                             intelligence feed to receive ongoing security updates for their systems.
@@ -282,122 +334,138 @@
                             These feeds vary in nature: some are freely accessible, while others entail a cost and
                             furnish proprietary intelligence not accessible through open sources.</p>
                     </div>
-                </section>
-                <hr><br><br>
-
-
-                <div class="row gtr-150" style="margin-top: 20px;">
-                    <div class="col-4 col-12-medium">
-                        <!-- Sidebar -->
-                        <section id="sidebar">
-                            <section>
-                                <h2>What are the available Threat Intelligence tools?</h2>
-                                <p>A diverse array of threat intelligence tools is available for purchase or accessible
-                                    at no cost through the open-source community. Each tool employs slightly distinct
-                                    methodologies for gathering threat intelligence</p>
-                            </section>
-                            <hr />
-                            <section>
-                                <a href="threat.html" class="image fit"><img src="images/threat_3.jpg" alt="" /></a>
-                                <ul>
-                                    <li>
-                                        <h3>Who benefits from threat intelligence?</h3>
-                                    </li>
-                                </ul>
-                                <p>Everyone who has an interest in security benefits from threat intelligence.
-                                    Particularly if you’re running a business, benefits include</p>
-                                <ul>
-                                    <li>
-                                        <h4>Reduced risks</h4>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <h4>Avoiding data breaches</h4>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <h4>Reduced costs</h4>
-                                    </li>
-                                </ul>
-                            </section>
-                        </section>
-                    </div>
-                    <div class="col-8 col-12-medium imp-medium">
-                        <!-- Content -->
-                        <section id="content">
-                            <a href="threat.html" class="image fit"><img src="images/threat_2.jpg" alt="" /></a><br>
-                            <ul>
-                                <li>
-                                    <h3>Malware disassemblers</h3>
-                                </li>
-                            </ul>
-                            <p>These tools engage in reverse engineering of malware to comprehend its functionality and
-                                aid security engineers in devising defenses against potential future attacks of a
-                                similar nature.</p>
-                            <ul>
-                                <li>
-                                    <h3>Security information and event management (SIEM) tools</h3>
-                                </li>
-                            </ul>
-                            <p>SIEM (Security Information and Event Management) tools empower security teams to monitor
-                                networks in real-time, collecting data on anomalous activities and potentially malicious
-                                traffic.</p>
-                            <ul>
-                                <li>
-                                    <h3>Network traffic analysis tools</h3>
-                                </li>
-                            </ul>
-                            <p>Network traffic analysis tools gather and log network data to furnish insights that
-                                facilitate the detection of intrusions, simplifying the process of identifying
-                                unauthorized access or suspicious activities.</p>
-                            <ul>
-                                <li>
-                                    <h3>Threat intelligence communities and resource collections</h3>
-                                </li>
-                            </ul>
-                            <p>Freely accessible websites that aggregate known indicators of compromise and
-                                community-generated threat data serve as valuable sources of threat intelligence.
-                                Certain communities facilitate collaborative research and offer actionable guidance on
-                                preventing or mitigating threats.</p>
-                            <p>Organizations equipped with awareness of emerging threats and strategies for avoidance
-                                can proactively prevent attacks before they occur. Incorporating the gathering and
-                                review of threat intelligence into the enterprise security strategy is essential for
-                                every organization.</p>
-                        </section>
-                    </div>
                 </div>
-                <hr>
+            </section>
+
+            <!-- five -->
+            <div class="wrapper style1 special fade-up">
+                <div class="container">
+                    <div class="row gtr-150" style="margin-top: 20px;">
+                        <div class="col-4 col-12-medium">
+                            <!-- Sidebar -->
+                            <section id="sidebar">
+                                <section>
+                                    <h2>What are the available Threat Intelligence tools?</h2>
+                                    <p>A diverse array of threat intelligence tools is available for purchase or
+                                        accessible
+                                        at no cost through the open-source community. Each tool employs slightly
+                                        distinct
+                                        methodologies for gathering threat intelligence</p>
+                                </section>
+                                <hr />
+                                <section>
+                                    <a href="threat.html" class="image fit"><img src="images/threat_3.jpg" alt="" /></a>
+                                    <ul>
+                                        <li>
+                                            <h3>Who benefits from threat intelligence?</h3>
+                                        </li>
+                                    </ul>
+                                    <p>Everyone who has an interest in security benefits from threat intelligence.
+                                        Particularly if you’re running a business, benefits include</p>
+                                    <ul>
+                                        <li>
+                                            <h4>Reduced risks</h4>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <h4>Avoiding data breaches</h4>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <h4>Reduced costs</h4>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="col-8 col-12-medium imp-medium">
+                            <!-- Content -->
+                            <section id="content">
+                                <a href="threat.html" class="image fit"><img src="images/threat_2.jpg" alt="" /></a><br>
+                                <ul>
+                                    <li>
+                                        <h3>Malware disassemblers</h3>
+                                    </li>
+                                </ul>
+                                <p>These tools engage in reverse engineering of malware to comprehend its functionality
+                                    and
+                                    aid security engineers in devising defenses against potential future attacks of a
+                                    similar nature.</p>
+                                <ul>
+                                    <li>
+                                        <h3>Security information and event management (SIEM) tools</h3>
+                                    </li>
+                                </ul>
+                                <p>SIEM (Security Information and Event Management) tools empower security teams to
+                                    monitor
+                                    networks in real-time, collecting data on anomalous activities and potentially
+                                    malicious
+                                    traffic.</p>
+                                <ul>
+                                    <li>
+                                        <h3>Network traffic analysis tools</h3>
+                                    </li>
+                                </ul>
+                                <p>Network traffic analysis tools gather and log network data to furnish insights that
+                                    facilitate the detection of intrusions, simplifying the process of identifying
+                                    unauthorized access or suspicious activities.</p>
+                                <ul>
+                                    <li>
+                                        <h3>Threat intelligence communities and resource collections</h3>
+                                    </li>
+                                </ul>
+                                <p>Freely accessible websites that aggregate known indicators of compromise and
+                                    community-generated threat data serve as valuable sources of threat intelligence.
+                                    Certain communities facilitate collaborative research and offer actionable guidance
+                                    on
+                                    preventing or mitigating threats.</p>
+                                <p>Organizations equipped with awareness of emerging threats and strategies for
+                                    avoidance
+                                    can proactively prevent attacks before they occur. Incorporating the gathering and
+                                    review of threat intelligence into the enterprise security strategy is essential for
+                                    every organization.</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
             </div>
+
+            <!-- Logo products -->
+            <div class="wrapper style2 special fade-up">
+                <div class="container logos-container">
+                    <a href="https://www.mandiant.com/advantage/threat-intelligence"><img src="images/threat_man.png" 
+                            alt=""></a>
+                    <a href="https://www.paloaltonetworks.com/cortex/threat-intelligence" target="_blank"><img 
+                            src="images/threat_palo.svg" alt=""></a>
+                    <a href="https://socradar.io/products/cyber-threat-intelligence/" target="_blank"><img
+                            src="images/threat_soc.png.webp" alt=""></a>
+                    <a href="https://www.recordedfuture.com/products/threat-intelligence" target="_blank"><img 
+                            src="images/threat_rec.png.webp" alt=""></a>
+                    <a href="https://cyble.com" target="_blank"><img src="images/threat_cyble.png" style="width: 50%;"  alt=""></a>
+
+                </div>
+            </div>
+
+
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                    <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
+                            class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+                    <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
+                </ul>
+            </footer>
         </div>
-
-        <!-- Logo products -->
-        <div class="wrapper style2 fade-up">
-        <a href="https://www.mandiant.com/advantage/threat-intelligence"><img src="images/threat_man.png" style="margin-left: 6em;" width="250em" alt=""></a>
-        <a href="https://www.paloaltonetworks.com/cortex/threat-intelligence" target="_blank"><img src="images/threat_palo.svg" style="margin-left: 6em;" width="170em" alt=""></a>
-        <a href="https://socradar.io/products/cyber-threat-intelligence/" target="_blank"><img src="images/threat_soc.png.webp" style="margin-left: 6em;" width="170em" alt=""></a>
-        <a href="https://www.recordedfuture.com/products/threat-intelligence" target="_blank"><img src="images/threat_rec.png.webp" style="margin-left: 6em;" width="170em" alt=""></a>
-        <a href="https://cyble.com" target="_blank"><img src="images/threat_cyble.png" style="margin-left: 6em;" width="70em" alt=""></a>
-        </div>
-
-
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-                <li><a href="https://web.facebook.com/profile.php?id=100040639733284" target="_blank"
-                        class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
-                <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
-                <!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
-                <!-- <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Ruth Victor Co., Ltd. 2024. All Rights Reserved</li>
-            </ul>
-        </footer>
-    </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -408,28 +476,27 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/topup.js"></script>
     <script>
         function openModel(evt, modelName) {
             var i, tabcontent, tablinks;
 
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
 
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
 
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(modelName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(modelName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
 </body>
 
 </html>
