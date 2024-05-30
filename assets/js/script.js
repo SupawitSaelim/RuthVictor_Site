@@ -17,7 +17,12 @@ const newsArticles = [
         date: "2023-12-28",
         image: "images/News/christmas.jpg"
     },
-   
+    {
+        title: "Test New News",
+        content: "For test Only",
+        date: "2024-05-30",
+        image: "images/News/test_news.jpg"
+    },
 ];
 
 function renderNews() {
