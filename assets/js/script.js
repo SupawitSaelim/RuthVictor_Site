@@ -17,12 +17,7 @@ const newsArticles = [
         date: "2023-12-28",
         image: "images/News/christmas.jpg"
     },
-    {
-        title: "3",
-        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
-        date: "2023-12-28",
-        image: "images/News/christmas.jpg"
-    },
+   
 ];
 
 function renderNews() {
