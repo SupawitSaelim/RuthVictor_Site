@@ -16,53 +16,125 @@ const newsArticles = [
         content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
         date: "2023-12-28",
         image: "images/News/christmas.jpg"
-    }
+    },
+    {
+        title: "3",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
+    },
+    {
+        title: "4",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
+    },
+    {
+        title: "5",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
+    },
+    {
+        title: "6",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
+    },
+    {
+        title: "7",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
+    },
+    {
+        title: "8",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
+    },
+    {
+        title: "9",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
+    },
+    {
+        title: "10",
+        content: "The company would like to announce that it will be closed from December 29, 2023, to January 2, 2024, due to the New Year festival. However, you can still contact us via email and personal phone numbers.",
+        date: "2023-12-28",
+        image: "images/News/christmas.jpg"
+    },
+
+
+
+    // Add more news articles here if needed
 ];
 
 function renderNews() {
     const newsContainer = document.getElementById('news-container');
-
-    // Clear existing content
     newsContainer.innerHTML = '';
 
     // Sort news articles by date (newest first)
     newsArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    // Render each news article
-    newsArticles.forEach(article => {
-        const articleElement = document.createElement('div');
-        articleElement.className = 'news-article';
+    // Limit the number of articles shown initially
+    const initialDisplayCount = 6;
+    let displayCount = Math.min(newsArticles.length, initialDisplayCount);
 
-        const imageElement = document.createElement('img');
-        imageElement.src = article.image;
-        imageElement.alt = article.title;
+    for (let i = 0; i < displayCount; i++) {
+        newsContainer.appendChild(createNewsElement(newsArticles[i]));
+    }
 
-        // Add click event listener to each image
-        imageElement.addEventListener('click', function() {
-            showPopup(article.image);
-        });
+    // If there are more articles, show the "View More" button
+    if (newsArticles.length > initialDisplayCount) {
+        const viewMoreButton = document.createElement('button');
+        viewMoreButton.textContent = 'View More';
+        viewMoreButton.className = 'button primary';
+        viewMoreButton.style = 'margin-left: 80%;margin-top: 5%';
+        viewMoreButton.onclick = function () {
+            for (let i = initialDisplayCount; i < newsArticles.length; i++) {
+                newsContainer.appendChild(createNewsElement(newsArticles[i]));
+            }
+            viewMoreButton.style.display = 'none';
+        };
+        newsContainer.appendChild(viewMoreButton);
+    }
+}
 
-        const contentElement = document.createElement('div');
-        contentElement.className = 'news-article-content';
+function createNewsElement(article) {
+    const articleElement = document.createElement('div');
+    articleElement.className = 'news-article';
 
-        const titleElement = document.createElement('h3');
-        titleElement.textContent = article.title;
+    const imageElement = document.createElement('img');
+    imageElement.src = article.image;
+    imageElement.alt = article.title;
 
-        const contentTextElement = document.createElement('p');
-        contentTextElement.textContent = article.content;
-
-        const dateElement = document.createElement('small');
-        dateElement.textContent = article.date;
-
-        contentElement.appendChild(titleElement);
-        contentElement.appendChild(contentTextElement);
-        contentElement.appendChild(dateElement);
-
-        articleElement.appendChild(imageElement);
-        articleElement.appendChild(contentElement);
-
-        newsContainer.appendChild(articleElement);
+    // Add click event listener to each image
+    imageElement.addEventListener('click', function () {
+        showPopup(article.image);
     });
+
+    const contentElement = document.createElement('div');
+    contentElement.className = 'news-article-content';
+
+    const titleElement = document.createElement('h3');
+    titleElement.textContent = article.title;
+
+    const contentTextElement = document.createElement('p');
+    contentTextElement.textContent = article.content;
+
+    const dateElement = document.createElement('small');
+    dateElement.textContent = article.date;
+
+    contentElement.appendChild(titleElement);
+    contentElement.appendChild(contentTextElement);
+    contentElement.appendChild(dateElement);
+
+    articleElement.appendChild(imageElement);
+    articleElement.appendChild(contentElement);
+
+    return articleElement;
 }
 
 // Function to show popup with image
@@ -73,14 +145,14 @@ function showPopup(imageSrc) {
     popup.style.display = 'flex';
 
     // Close popup when clicking outside of the image
-    popup.onclick = function(event) {
+    popup.onclick = function (event) {
         if (event.target === popup) {
             closePopup();
         }
     };
 
     // Close popup when pressing "Esc" key
-    document.onkeydown = function(event) {
+    document.onkeydown = function (event) {
         event = event || window.event;
         if (event.key === 'Escape') {
             closePopup();
